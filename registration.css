@@ -28,3 +28,8 @@ html:not(.designer) [name="SignUpButton"]{
     background-color:var(--orange)!important;
     border:none!important;
 }
+html:not(.designer) .panel-body,
+[name="SignUp.Form Area Item"]{
+    background-color:transparent!important;
+    box-shadow:none!important;
+}
