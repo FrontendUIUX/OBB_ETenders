@@ -8,23 +8,23 @@
 html:not(.designer){
     font-size:16px!important;
 }
-span[name*="SignUpTitle"] span[name="HeaderTitle"] {
+html:not(.designer) span[name*="SignUpTitle"] span[name="HeaderTitle"] {
     font-size: 2.5rem !important;
     color:var(--black)
 }
-span[name*="SignUpDescription"] span[name*="SubHeader"]{
+html:not(.designer) span[name*="SignUpDescription"] span[name*="SubHeader"]{
     color:var(--description);
     font-size:1rem;
 }
-[name*="OBB_asterik"]{
+html:not(.designer) [name*="OBB_asterik"]{
     color:var(--aqua)!important;
 }
-[name*="OBB_label"]{
-    color:var(--black);
-    font-size:1rem;
+html:not(.designer) [name*="OBB_label"]{
+    color:var(--black)!important;
+    font-size:1rem!important;
     
 }
-[name="SignUpButton"]{
+html:not(.designer) [name="SignUpButton"]{
     background-color:var(--orange)!important;
     border:none!important;
 }
