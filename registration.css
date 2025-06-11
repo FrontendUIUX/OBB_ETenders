@@ -28,6 +28,7 @@ html:not(.designer) [name*="OBB_label"]{
 html:not(.designer) [name="SignUpButton"]{
     background-color:var(--orange)!important;
     border:none!important;
+    box-shadow:none!important;
 }
 html:not(.designer) .panel-body,
 [name="SignUp.Form Area Item"]{
@@ -46,4 +47,11 @@ html:not(.designer) [name*="OBB_textbox"]{
 
 div#\30 8a4b971-0644-46a5-bfb6-ec499e676dd1 {
     width: 40%;
+}
+[name="LoginButton"]{
+    background-color:transparent!important;
+    border:none!IMPORTANT;
+    box-shadow:none!important;
+    color:var(--orange)!important;
+    font-size:1rem!important;
 }
