@@ -24,3 +24,7 @@ span[name*="SignUpDescription"] span[name*="SubHeader"]{
     font-size:1rem;
     
 }
+[name="SignUpButton"]{
+    background-color:var(--orange)!important;
+    border:none!important;
+}
