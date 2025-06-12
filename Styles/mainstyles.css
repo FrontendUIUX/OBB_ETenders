@@ -210,6 +210,7 @@ html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-
 html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper{
 	padding:1rem 2rem;
 	background-color:white;
+	width: calc(100% - 4rem);
 }
 html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper .panel-header-text{
 	font-size:1.6rem;
