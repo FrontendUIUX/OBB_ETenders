@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 // Append Icon and Text
-                const iconElement = $('<img>').attr('src', `${item.icon}`).addClass('sidebar-icon');
-                link.append(iconElement).append($('<span>').text(item.text));
+                const iconElement = $('<img>').attr('src', `${item.icon}`).addClass('icon');
+                link.append(iconElement).append($('<span class="nav-link-text">').text(item.text));
                 sidebar.append(link);
             });
         }
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sidebar.append(logoContainer);
 
         // Sidebar Menu Sections
-        sidebar.append(`<div class="sidebar-section">Menu</div>`);
+        sidebar.append(`<div class="topic">Menu</div>`);
 
         // Define English and Arabic menu items
         const englishMenuItems = [
