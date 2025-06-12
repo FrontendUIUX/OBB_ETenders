@@ -225,7 +225,16 @@ html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper .g
 	font-family:var(--regularFont);
 	padding: 0;
 }
-html:not(.designer) [name*="OBB_Collapse"] .panel-body{padding: 1rem 2rem;}
+html:not(.designer) [name*="OBB_Collapse"] .panel-body{
+	padding: 1rem 2rem;
+}
+td#\38 045da8e-fbf6-2785-88ce-9edf65552682,
+td#c2b54e05-058a-e4e8-00d1-406cf875ab16,
+td#\37 dbd9ea0-a3af-08f8-cd42-1be157d6274d{
+    width: fit-content;
+    margin-left: auto;
+    display: block;
+}
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
