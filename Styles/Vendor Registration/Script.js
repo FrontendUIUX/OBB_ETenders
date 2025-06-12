@@ -57,6 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
         createMenuItems(menuItems);
 
         // Append Sidebar to the Body
-        $('body').append(sidebar);
+        $('body').addClass("sidebarAvailable").append(sidebar);
     }
 });
