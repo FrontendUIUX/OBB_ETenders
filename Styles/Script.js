@@ -85,79 +85,8 @@ document.documentElement.style.overflow = "hidden"; // Ensures no scrolling on H
 
         // Insert layoutDiv into the parent container
         parentContainer.appendChild(layoutDiv);
-		
-		
 		    var span = document.getElementById("00000000-0000-0000-0000-000000000000_c43033e9-f288-a521-0ee1-4e4b61d63a65"); // replace with actual span ID
-
- if (!window.location.href.includes("/Public/Runtime/")) {
-					 
-					 
-					  if (span) span.textContent = "English";
-                }
-             else if (!window.location.href.includes("/PublicAR/Runtime/")){
-                 
-					    if (span) span.textContent = "العربية";   
-
-                }
-
-
     } else {
         console.error("Form container not found.");
     }
-	
-	
-	
-    document.querySelectorAll(".row:nth-child(2) .formcontrol:first-child .innerpanel:first-child").forEach(function (img) {
-        img.onclick = function () {
-    var span = document.getElementById("00000000-0000-0000-0000-000000000000_c43033e9-f288-a521-0ee1-4e4b61d63a65"); // replace with actual span ID
-
-           
-                if (!window.location.href.includes("/Public/Runtime/")) {
-                    window.location.href = "https://nshq-k2dev-wfe.supply.nama.om/Public/Runtime/Form/User.UserRegistration.Form/";
-					 if (span) span.textContent = "العربية";
-                }
-             else if (!window.location.href.includes("/PublicAR/Runtime/")){
-                 {
-                    window.location.href = "https://nshq-k2dev-wfe.supply.nama.om/PublicAR/Runtime/Form/User.UserRegistration.Form/";
-					        if (span) span.textContent = "English";
-
-                }
-            
-        };
-    };
-	});
 });
-// Function to translate the heading based on URL parameters
-function translateHeadingBasedOnURL() {
-    // Retrieve the current URL
-    var currentURL = window.location.href;
-
-    // Define translation mappings
-    var translations = {
-        'PublicAR': 'المرجع الرائد لتميز خدمات التوريد<br>في المنطقة',
-        // Add more mappings as needed
-    };
-
-    // Iterate over each translation key
-    for (var key in translations) {
-        if (translations.hasOwnProperty(key)) {
-            // Check if the URL contains the key
-            if (currentURL.includes(key)) {
-                // Select the heading element within the videoWrapper
-                var videoWrapper = document.querySelector('.video-container');
-                if (videoWrapper) {
-                    var heading = videoWrapper.querySelector('.overlay-content h1.overlay-text');
-                    if (heading) {
-                        // Update the heading text with the corresponding translation
-                        heading.innerHTML = translations[key];
-                    }
-                }
-                break; // Exit the loop once a translation is applied
-            }
-        }
-    }
-}
-
-// Execute the translation function after the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', translateHeadingBasedOnURL);
-
