@@ -46,6 +46,10 @@ html:not(.designer) [name="SignUpButton"]{
     box-shadow:none!important;
     font-family: var(--regularFont);
     color: white!important;
+    min-height: unset;
+    height: unset;
+    padding: .4rem 1rem;
+    border-radius: .5rem;
 }
 html:not(.designer) .panel-body,
 [name="SignUp.Form Area Item"]{
