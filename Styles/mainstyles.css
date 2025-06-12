@@ -136,3 +136,15 @@ display:flex;
 .theme-entry .invalid .input-control-watermark *{
 	background-color:transparent!important;
 }
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 14rem;
+    padding: 3rem;
+    z-index: 1;
+    height: 100vh;
+    background-image: url("https://frontenduiux.github.io/OBB_ETenders/Images/Registration%20Background.png");
+    background-size: cover;
+    background-position: top;
+}
