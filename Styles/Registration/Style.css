@@ -1,4 +1,4 @@
-:root{
+/*:root{
     --black:#000000;
     --white:#ffffff;
     --aqua:#00A8B5;
@@ -21,7 +21,7 @@ html:not(.designer) body{
 }
 html:not(.designer) .runtime-content{
     margin:0!important;
-}
+}*/
 html:not(.designer) span[name*="SignUpTitle"] span[name="HeaderTitle"] {
     font-size: 2.5rem !important;
     color:var(--black);
@@ -32,14 +32,14 @@ html:not(.designer) span[name*="SignUpDescription"] span[name*="SubHeader"]{
     font-size:1rem;
     font-family: var(--regularFont);
 }
-html:not(.designer) [name*="OBB_asterik"]{
+/*html:not(.designer) [name*="OBB_asterik"]{
     color:var(--aqua)!important;
 }
 html:not(.designer) [name*="OBB_label"]{
     color:var(--black)!important;
     font-size:1rem!important;
     font-family: var(--regularFont);
-}
+}*/
 html:not(.designer) [name="SignUpButton"]{
     background-color:var(--orange)!important;
     border:none!important;
@@ -57,7 +57,7 @@ html:not(.designer) .panel-body,
     background-color:transparent!important;
     box-shadow:none!important;
 }
-html:not(.designer) [name*="OBB_textbox"]{
+/*html:not(.designer) [name*="OBB_textbox"]{
     border:1px solid var(--borderColor)!important;
     font-size:1rem!important;
     border-radius: .5rem!important;
@@ -66,7 +66,7 @@ html:not(.designer) [name*="OBB_textbox"]{
     display: flex;
     align-items: center;
     font-family: var(--regularFont)!important;
-}
+}*/
 [name="LoginButton"]{
     background-color:transparent!important;
     border:none!IMPORTANT;
@@ -106,7 +106,7 @@ html:not(.designer) .video-container .intro h2{
     width: 90%;
     font-family: var(--regularFont);
 }
-html:not(.designer) .form{
+/*html:not(.designer) .form{
     padding: 3rem 4rem;
     height:100%;
 }
@@ -118,9 +118,9 @@ html:not(.designer) [name*="OBB_dropdown "] .select-box{
 html:not(.designer) [name*="OBB_dropdown "] .select-box .input-control-m-c,
 html:not(.designer) [name*="OBB_dropdown "] .select-box  .input-control-buttons{
     border:none!important;
-}
+}*/
 /**/
-.tooltip.validation{
+/*.tooltip.validation{
 	font-size: .8rem;
 	color: #ff6a6a!important;
 	background-color: white!important;
@@ -143,7 +143,7 @@ html:not(.designer) [name*="OBB_dropdown "] .select-box  .input-control-buttons{
  background: none!important;
  /* position:relative!important; */
 }
-.tooltip.validation .tooltip-pointer .tooltip-pointer-inner{
+/*.tooltip.validation .tooltip-pointer .tooltip-pointer-inner{
   width: 0px;
   height: 0px;
   border-bottom: solid 10px #d3d3d3!important;
@@ -197,7 +197,7 @@ display:flex;
 html:not(.designer) [name="RegistrationLowerSection"]{
     margin-top:1rem;
   
-}
+}*/
 html:not(.designer) [name="RegistrationLowerSection"] [name="QuestionLabel"]{
       font-family:var(--regularFont);
     font-size:1rem;
