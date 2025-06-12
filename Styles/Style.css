@@ -5,6 +5,11 @@
     --orange:#E57431;
     --description:#3E3E3E;
     --borderColor:#E3E3E3;
+    --regularFont:"Co Headline";
+}
+@font-face {
+    font-family:"Co Headline" ;
+    src: url("https://frontenduiux.github.io/OBB_ETenders/fonts/Co%20Headline.otf");
 }
 html:not(.designer){
     font-size:16px!important;
