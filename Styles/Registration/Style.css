@@ -77,6 +77,9 @@ html:not(.designer) .theme-entry .form{
    height:100%;
    padding: 3vw 4vw;
 }
+[name="RegistrationLowerSection"]{
+    margin-top:1rem;
+}
 @media(min-width:1600px){
     html:not(.designer) .video-container .intro{
         padding:2vw;
@@ -86,5 +89,8 @@ html:not(.designer) .theme-entry .form{
 }
 	html:not(.designer) .video-container .intro h2{
     width: 66%;
+}
+    [name="RegistrationLowerSection"]{
+    margin-top:1vw;
 }
 }
