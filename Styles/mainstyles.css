@@ -19,6 +19,12 @@ html:not(.designer) body{
     padding:0;
     font-family: var(--regularFont);
 }
+html:not(.designer) .theme-entry.sidebarAvailable{
+	left: 20rem;
+	width: calc(100%  - 20rem);
+	padding: 0 1rem;
+	position: relative;
+}
 html:not(.designer) .runtime-content{
     margin:0!important;
 }
