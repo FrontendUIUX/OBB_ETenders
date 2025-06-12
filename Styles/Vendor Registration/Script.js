@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Select elements to move
-    let headerCard = document.querySelector('[name^="CustomHeader"]');
+    let headerCard = document.querySelector('[name*="CustomHeader"]');
     let tabBoxTabs = document.querySelector('.tab-box-tabs');
 
     // Move elements inside the sticky header in order
