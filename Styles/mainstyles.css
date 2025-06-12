@@ -20,8 +20,8 @@ html:not(.designer) body{
     font-family: var(--regularFont);
 }
 html:not(.designer) .theme-entry.sidebarAvailable{
-	left: 20rem;
-	width: calc(100%  - 20rem);
+	left: 19rem;
+	width: calc(100%  - 19rem);
 	padding: 0 1rem;
 	position: relative;
 }
@@ -146,11 +146,24 @@ display:flex;
     position: fixed;
     top: 0;
     left: 0;
-    width: 14rem;
-    padding: 3rem;
+    width: 12rem;
+    padding: 2rem;
     z-index: 1;
     height: 100vh;
     background-image: url("https://frontenduiux.github.io/OBB_ETenders/Images/Registration%20Background.png");
     background-size: cover;
     background-position: top;
+}
+.navbarBrand a{width: 9rem;display: block;margin: auto;}
+.navbarBrand a img{
+	height:100%;
+	width:100%;
+	object-fit:contain;
+}
+@media(min-width:1600px){
+.sidebar {
+    width: 12vw;
+    padding: 2vw;
+}
+.navbarBrand a{width: 9vw;}
 }
