@@ -207,10 +207,14 @@ html:not(.designer) [name*="OBB_Collapse"]{
 html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper{
 	border-bottom:1px solid #E8E8E8;
 }
+html:not(.designer) [name*="OBB_Collapse"] .panel-header{
+	height: 5rem;
+}
 html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper{
 	padding:1rem 2rem;
 	background-color:white;
 	width: calc(100% - 4rem);
+	height:100%;
 }
 html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper .panel-header-text{
 	font-size:1.6rem;
