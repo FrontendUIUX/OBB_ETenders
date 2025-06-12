@@ -81,7 +81,7 @@ html:not(.designer) .video-container .intro h2{
     width: 66%;
 }
 html:not(.designer) .form{
-    padding:2rem 4rem;
+    padding: 3rem 4rem;
     height:100%;
 }
 @media(min-width:1600px){
@@ -89,6 +89,6 @@ html:not(.designer) .form{
         padding:2vw;
     }
     html:not(.designer) .form{
-    padding:2vw 4vw;
+    padding: 3vw 4vw;
 }
 }
