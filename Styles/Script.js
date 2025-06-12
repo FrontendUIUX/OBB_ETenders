@@ -80,9 +80,8 @@ document.documentElement.style.overflow = "hidden"; // Ensures no scrolling on H
         formWrapper.appendChild(formContainer); // Append form inside the wrapper
 
         // Append both form and video to the layout
-        layoutDiv.appendChild(formWrapper);
         layoutDiv.appendChild(videoWrapper);
-
+        layoutDiv.appendChild(formWrapper);
         // Insert layoutDiv into the parent container
         parentContainer.appendChild(layoutDiv);
 		    var span = document.getElementById("00000000-0000-0000-0000-000000000000_c43033e9-f288-a521-0ee1-4e4b61d63a65"); // replace with actual span ID
