@@ -160,6 +160,30 @@ display:flex;
 	width:100%;
 	object-fit:contain;
 }
+.sidebar .topic{
+	margin-top:4rem;
+	margin-bottom:2rem;
+	text-transform:uppercase;
+	color:#FDFDFD;
+	opacity: .8;
+	font-weight:300;
+	font-family: var(--regularFont);
+	letter-spacing: 0.23rem;
+}
+.sidebar .nav-link{
+	display:block;
+	margin-bottom:1rem;
+	text-decoration:none;
+	opacity:0.9;
+}
+.sidebar .nav-link .icon{
+	height: 1.5rem;
+	widtH: 1.5rem;
+	margin-right: 1rem;
+}
+.sidebar .nav-link .nav-link-text{
+	color:#ffffff;
+}
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
