@@ -69,6 +69,10 @@ html:not(.designer) [name*="OBB_textbox"]{
     display: flex;
     align-items: center;
     font-family: var(--regularFont)!important;
+    width: 100%;
+}
+html:not(.designer) .readonly[name*="OBB_textbox"]{
+	background-color:#f7f7f7;
 }
 html:not(.designer) [name*="OBB_dropdown"] .select-box{
     border:1px solid var(--borderColor)!important;
