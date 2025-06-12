@@ -22,16 +22,6 @@ html:not(.designer) body{
 html:not(.designer) .runtime-content{
     margin:0!important;
 }
-html:not(.designer) span[name*="SignUpTitle"] span[name="HeaderTitle"] {
-    font-size: 2.5rem !important;
-    color:var(--black);
-    font-family: var(--regularFont);
-}
-html:not(.designer) span[name*="SignUpDescription"] span[name*="SubHeader"]{
-    color:var(--description);
-    font-size:1rem;
-    font-family: var(--regularFont);
-}
 html:not(.designer) [name*="OBB_asterik"]{
     color:var(--aqua)!important;
 }
@@ -52,8 +42,7 @@ html:not(.designer) [name="SignUpButton"]{
     border-radius: .5rem;
     font-size: 1rem;
 }
-html:not(.designer) .panel-body,
-[name="SignUp.Form Area Item"]{
+html:not(.designer) .panel-body{
     background-color:transparent!important;
     box-shadow:none!important;
 }
@@ -94,29 +83,12 @@ html:not(.designer) .video-container{
 html:not(.designer) .form-wrapper{
     width: 50%;
 }
-html:not(.designer) .video-container .intro{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    height: -webkit-fill-available;
-    padding:2rem;
-}
-html:not(.designer) .video-container .intro h2{
-    color:white;
-    width: 90%;
-    font-family: var(--regularFont);
-}
-html:not(.designer) .form{
-    padding: 3rem 4rem;
-    height:100%;
-}
-html:not(.designer) [name*="OBB_dropdown "] .select-box{
+html:not(.designer) [name*="OBB_dropdown"] .select-box{
     border:1px solid var(--borderColor)!important;
     border-radius:.5rem;
 }
-
-html:not(.designer) [name*="OBB_dropdown "] .select-box .input-control-m-c,
-html:not(.designer) [name*="OBB_dropdown "] .select-box  .input-control-buttons{
+html:not(.designer) [name*="OBB_dropdown"] .select-box .input-control-m-c,
+html:not(.designer) [name*="OBB_dropdown"] .select-box  .input-control-buttons{
     border:none!important;
 }
 /**/
@@ -138,10 +110,8 @@ html:not(.designer) [name*="OBB_dropdown "] .select-box  .input-control-buttons{
 }
 .tooltip.validation .tooltip-pointer,
 .tooltip.validation .tooltip-pointer .tooltip-pointer-inner{
- /* border:none!important; */
  border-color:transparent!important;
  background: none!important;
- /* position:relative!important; */
 }
 .tooltip.validation .tooltip-pointer .tooltip-pointer-inner{
   width: 0px;
@@ -206,14 +176,21 @@ span#f26272d5-f664-befc-2ead-d3513424ee2c{
     display:flex;
     align-items:center;
 }
+[name="HeaderTitleContainer"] [name="HeaderTitle"]{
+	font-size:2rem;
+	font-family:var(--regularFont);
+	color:black;
+}
+[name="HeaderDescriptionContainer"] [name="HeaderDescription"]{
+	font-size:1rem;
+	color:var(--description);
+	font-family:var(--regularFont);
+}
 @media(min-width:1600px){
-    html:not(.designer) .video-container .intro{
-        padding:2vw;
-    }
-    html:not(.designer) .form{
-    padding: 3vw 4vw;
-}
-	html:not(.designer) .video-container .intro h2{
-    width: 66%;
-}
+ [name="HeaderTitleContainer"] [name="HeaderTitle"]{
+	 font-size:2vw;
+ }
+ [name="HeaderDescriptionContainer"] [name="HeaderDescription"]{
+	 font-size:1vw;
+ }
 }
