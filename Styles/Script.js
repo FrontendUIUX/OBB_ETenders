@@ -77,10 +77,11 @@ document.documentElement.style.overflow = "hidden"; // Ensures no scrolling on H
 
         // Move the form inside formWrapper
         parentContainer.replaceChild(formWrapper, formContainer); // Replace original form
-        formWrapper.appendChild(formContainer); // Append form inside the wrapper
+        // Append form inside the wrapper
 
         // Append both form and video to the layout
         layoutDiv.appendChild(videoWrapper);
+        formWrapper.appendChild(formContainer); 
         layoutDiv.appendChild(formWrapper);
         // Insert layoutDiv into the parent container
         parentContainer.appendChild(layoutDiv);
