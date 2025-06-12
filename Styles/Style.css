@@ -50,6 +50,7 @@ html:not(.designer) [name="SignUpButton"]{
     height: unset;
     padding: .4rem 1rem;
     border-radius: .5rem;
+    font-size: 1rem;
 }
 html:not(.designer) .panel-body,
 [name="SignUp.Form Area Item"]{
@@ -117,6 +118,93 @@ html:not(.designer) [name*="OBB_dropdown "] .select-box{
 html:not(.designer) [name*="OBB_dropdown "] .select-box .input-control-m-c,
 html:not(.designer) [name*="OBB_dropdown "] .select-box  .input-control-buttons{
     border:none!important;
+}
+/**/
+.tooltip.validation{
+	font-size: .8rem;
+	color: #ff6a6a!important;
+	background-color: white!important;
+	padding: 0.8rem 1rem;
+	text-wrap: nowrap;
+	height: fit-content;
+	border-radius: 0.7rem!important;
+	border: 1px solid #d3d3d3!important;
+	width: fit-content;
+}
+.tooltip.validation span{
+	line-height: 1.6;
+	display: block;
+	text-wrap: auto;
+}
+.tooltip.validation .tooltip-pointer,
+.tooltip.validation .tooltip-pointer .tooltip-pointer-inner{
+ /* border:none!important; */
+ border-color:transparent!important;
+ background: none!important;
+ /* position:relative!important; */
+}
+.tooltip.validation .tooltip-pointer .tooltip-pointer-inner{
+  width: 0px;
+  height: 0px;
+  border-bottom: solid 10px #d3d3d3!important;
+  border-left: solid 10px transparent!important;
+  border-right: solid 10px transparent!important;
+  top: 0.2rem;
+}
+.theme-entry .day {
+    font-size: 1rem;
+    height: 2.5rem!important;
+    width: 2.5rem!important;
+    text-align: center!important;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+}
+.calendar-row .dayname{
+	height:2.5rem!important;
+	width:2.5rem!important;
+	margin-bottom:1rem;
+}
+.theme-entry .popup.id-calendar-control-popup {
+    width: 18rem !important;
+    height: auto!important;
+}
+.theme-entry .top-calendar a.today-title {
+    border: none;
+    border-radius: 0;
+    margin-top: 1rem;
+    padding: 0;
+}
+.theme-entry .top-calendar a {
+    margin-top: 1rem;
+    background-repeat: no-repeat;
+    height: 1rem;
+}
+.theme-entry .week{
+display:flex;
+}
+.theme-entry .today-text{
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+.datepicker.invalid{
+	border: 1px solid var(--input-error-border-color) !important;
+	background-color: #f8e8e8!important;
+}
+.theme-entry .invalid .input-control-watermark *{
+	background-color:transparent!important;
+}
+html:not(.designer) [name="RegistrationLowerSection"]{
+    margin-top:1rem;
+  
+}
+html:not(.designer) [name="RegistrationLowerSection"] [name="QuestionLabel"]{
+      font-family:var(--regularFont);
+    font-size:1rem;
+}
+span#f26272d5-f664-befc-2ead-d3513424ee2c{
+    display:flex;
+    align-items:center;
 }
 @media(min-width:1600px){
     html:not(.designer) .video-container .intro{
