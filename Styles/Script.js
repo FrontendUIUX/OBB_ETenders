@@ -51,14 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // Create a new wrapper for the form
         var formWrapper = document.createElement("div");
         formWrapper.className = "form-wrapper";
-        formWrapper.style.flex = "4"; // 30% width for form
-        formWrapper.style.maxWidth = "40vw"; // Ensure it doesn't exceed 30% of screen width
-
-
-		formWrapper.style.overflowY = "auto"; // This allows scrolling only inside the form
-		formWrapper.style.maxHeight = "100vh"; // Ensures it can scroll if content exceeds viewport height
-
-
         // Move the form inside formWrapper
         parentContainer.replaceChild(formWrapper, formContainer); // Replace original form
         // Append form inside the wrapper
@@ -69,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function() {
         layoutDiv.appendChild(formWrapper);
         // Insert layoutDiv into the parent container
         parentContainer.appendChild(layoutDiv);
-		    var span = document.getElementById("00000000-0000-0000-0000-000000000000_c43033e9-f288-a521-0ee1-4e4b61d63a65"); // replace with actual span ID
     } else {
         console.error("Form container not found.");
     }
