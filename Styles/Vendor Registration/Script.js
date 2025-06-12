@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Define English and Arabic menu items
         const englishMenuItems = [
-            { text: "Dashboard", url: "#", icon: "Dashboard-active.svg" },
-            { text: "Submitted Tenders", url: "#", icon: "Document.svg" },
+            { text: "Dashboard", url: "#", icon: "https://frontenduiux.github.io/OBB_ETenders/Images/menu.png" },
+            { text: "Submitted Tenders", url: "#", icon: "https://frontenduiux.github.io/OBB_ETenders/Images/submitted%20tasks.png" },
         ];
 
 
