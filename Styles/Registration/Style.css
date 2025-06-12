@@ -73,14 +73,15 @@ span#f26272d5-f664-befc-2ead-d3513424ee2c{
     display:flex;
     align-items:center;
 }
-.theme-entry .form{
-height:100%;
+html:not(.designer) .theme-entry .form{
+   height:100%;
+   padding: 3vw 4vw;
 }
 @media(min-width:1600px){
     html:not(.designer) .video-container .intro{
         padding:2vw;
     }
-    html:not(.designer) .form{
+    html:not(.designer)  .theme-entry .form{
     padding: 3vw 4vw;
 }
 	html:not(.designer) .video-container .intro h2{
