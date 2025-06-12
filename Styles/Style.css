@@ -47,14 +47,43 @@ html:not(.designer) [name*="OBB_textbox"]{
     display: flex;
     align-items: center;
 }
-
-div#\30 8a4b971-0644-46a5-bfb6-ec499e676dd1 {
-    width: 40%;
-}
 [name="LoginButton"]{
     background-color:transparent!important;
     border:none!IMPORTANT;
     box-shadow:none!important;
     color:var(--orange)!important;
     font-size:1rem!important;
+}
+html:not(.designer) .IntroSection{
+    height:100vh;
+}
+html:not(.designer) .video-container{
+    background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/Registration%20Background.png");
+    background-size:cover;
+    background-position: top;
+    background-repeat:no-repeat;
+    height: 100%;
+}
+html:not(.designer) .video-container .intro{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height: -webkit-fill-available;
+    padding:2rem;
+}
+html:not(.designer) .video-container .intro h2{
+    color:white;
+    width: 66%;
+}
+html:not(.designer) .form{
+    padding:2rem 4rem;
+    height:100%;
+}
+@media(min-width:1600px){
+    html:not(.designer) .video-container .intro{
+        padding:2vw;
+    }
+    html:not(.designer) .form{
+    padding:2vw 4vw;
+}
 }
