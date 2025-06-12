@@ -18,6 +18,7 @@ html:not(.designer) body{
     margin:0;
     padding:0;
     font-family: var(--regularFont);
+    background-color: white;
 }
 html:not(.designer) .theme-entry.sidebarAvailable{
 	left: 19rem;
