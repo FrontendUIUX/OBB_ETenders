@@ -56,13 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Create menu items
         createMenuItems(menuItems);
 
-        // Others Section
-        sidebar.append(`<div class="sidebar-section">${isArabic ? "أخرى" : "OTHERS"}</div>`);
-        const helpLink = $('<a href="#" class="sidebar-link"></a>');
-        const helpIcon = $('<img src="https://nshq-k2dev-wfe.supply.nama.om/Style/logos/help.svg" class="sidebar-icon" alt="Help">');
-        helpLink.append(helpIcon).append($('<span>').text(isArabic ? "مساعدة" : "Help"));
-        sidebar.append(helpLink);
-
         // Append Sidebar to the Body
         $('body').append(sidebar);
     }
