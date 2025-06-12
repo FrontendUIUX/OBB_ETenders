@@ -17,18 +17,20 @@ html:not(.designer){
 html:not(.designer) body{
     margin:0;
     padding:0;
-    font-family:var(--regularFont);
+    font-family: var(--regularFont);
 }
 html:not(.designer) .runtime-content{
     margin:0!important;
 }
 html:not(.designer) span[name*="SignUpTitle"] span[name="HeaderTitle"] {
     font-size: 2.5rem !important;
-    color:var(--black)
+    color:var(--black);
+    font-family: var(--regularFont);
 }
 html:not(.designer) span[name*="SignUpDescription"] span[name*="SubHeader"]{
     color:var(--description);
     font-size:1rem;
+    font-family: var(--regularFont);
 }
 html:not(.designer) [name*="OBB_asterik"]{
     color:var(--aqua)!important;
@@ -36,12 +38,14 @@ html:not(.designer) [name*="OBB_asterik"]{
 html:not(.designer) [name*="OBB_label"]{
     color:var(--black)!important;
     font-size:1rem!important;
-    
+    font-family: var(--regularFont);
 }
 html:not(.designer) [name="SignUpButton"]{
     background-color:var(--orange)!important;
     border:none!important;
     box-shadow:none!important;
+    font-family: var(--regularFont);
+    color: white!important;
 }
 html:not(.designer) .panel-body,
 [name="SignUp.Form Area Item"]{
@@ -56,6 +60,7 @@ html:not(.designer) [name*="OBB_textbox"]{
     vertical-align: middle;
     display: flex;
     align-items: center;
+    font-family: var(--regularFont)!important;
 }
 [name="LoginButton"]{
     background-color:transparent!important;
@@ -63,6 +68,11 @@ html:not(.designer) [name*="OBB_textbox"]{
     box-shadow:none!important;
     color:var(--orange)!important;
     font-size:1rem!important;
+    padding: 0!important;
+    min-width: fit-content!important;
+    margin-left: .7rem;
+    font-family: var(--regularFont)!important;
+    min-height: unset!important;
 }
 html:not(.designer) .IntroSection{
     height:100vh;
@@ -89,6 +99,7 @@ html:not(.designer) .video-container .intro{
 html:not(.designer) .video-container .intro h2{
     color:white;
     width: 66%;
+    font-family: var(--regularFont);
 }
 html:not(.designer) .form{
     padding: 3rem 4rem;
