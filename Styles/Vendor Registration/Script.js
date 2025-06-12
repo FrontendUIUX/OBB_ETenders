@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 // Append Icon and Text
-                const iconElement = $('<img>').attr('src', `https://nshq-k2dev-wfe.supply.nama.om/Style/logos/${item.icon}`).addClass('sidebar-icon');
+                const iconElement = $('<img>').attr('src', `${item.icon}`).addClass('sidebar-icon');
                 link.append(iconElement).append($('<span>').text(item.text));
                 sidebar.append(link);
             });
