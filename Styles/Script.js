@@ -20,31 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 		
 		document.body.style.overflow = "hidden"; // Prevents scrolling of the whole page
-document.documentElement.style.overflow = "hidden"; // Ensures no scrolling on HTML root
+        document.documentElement.style.overflow = "hidden"; // Ensures no scrolling on HTML root
 
 
         // Create a wrapper div for the layout
         var layoutDiv = document.createElement("div");
         layoutDiv.className = "IntroSection"; // Add a class for styling
-        layoutDiv.style.display = "flex"; // Use flexbox
-        //layoutDiv.style.alignItems = "center"; // Align items vertically
-        layoutDiv.style.justifyContent = "space-between"; // Space between form & video
-        layoutDiv.style.width = "100%"; // Full width
-        //layoutDiv.style.gap = "20px"; // Add spacing between elements
-		layoutDiv.style.flexDirection = "row"; // This swaps their positions
-		layoutDiv.style.alignItems = "stretch"; // Ensure both elements stretch to the same height
-		layoutDiv.style.overflowY = "hidden"; // This prevents vertical scrolling on the entire layout
-
-
-
-
         // Create a wrapper div for the video
         var videoWrapper = document.createElement("div");
         videoWrapper.className = "video-container"; // Add a class for styling
-        videoWrapper.style.flex = "6"; // 70% width for video
-        videoWrapper.style.maxWidth = "60vw"; // Ensure it doesn't exceed 70% of screen width
-        
-
         // Add video content
          videoWrapper.innerHTML = `
             <div class="intro">
