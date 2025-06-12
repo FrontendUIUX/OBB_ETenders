@@ -240,6 +240,21 @@ td#\37 dbd9ea0-a3af-08f8-cd42-1be157d6274d{
     margin-left: auto;
     display: block;
 }
+html:not(.designer) [name*="OBB_button"]{
+	border-radius:.5rem;
+	margin-left: 1rem;
+	border:none;
+	transition:var(--transition);
+}
+html:not(.designer) [name*="OBB_button OBB_primary_button"]{
+	background-color:var(--orange);
+	color:white!important;
+}
+html:not(.designer) [name*="OBB_button OBB_secondary_button"]{
+	color:var(--orange);
+	border:1px solid var(--orange);
+	background-color:white!important;
+}
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
