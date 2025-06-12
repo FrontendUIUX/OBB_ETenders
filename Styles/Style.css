@@ -103,7 +103,7 @@ html:not(.designer) .video-container .intro{
 }
 html:not(.designer) .video-container .intro h2{
     color:white;
-    width: 66%;
+    width: 90%;
     font-family: var(--regularFont);
 }
 html:not(.designer) .form{
@@ -212,5 +212,8 @@ span#f26272d5-f664-befc-2ead-d3513424ee2c{
     }
     html:not(.designer) .form{
     padding: 3vw 4vw;
+}
+	html:not(.designer) .video-container .intro h2{
+    width: 66%;
 }
 }
