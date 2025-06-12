@@ -1,4 +1,4 @@
-<script>
+
 document.addEventListener("DOMContentLoaded", function () {
     // Step 1: Create sticky header container if it doesn't exist
     let stickyHeader = document.getElementById('custom-sticky-header');
@@ -34,4 +34,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }, 500); // Adjust timing if needed
 });
-</script>
+
