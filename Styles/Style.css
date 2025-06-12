@@ -109,6 +109,15 @@ html:not(.designer) .form{
     padding: 3rem 4rem;
     height:100%;
 }
+html:not(.designer) [name*="OBB_dropdown "] .select-box{
+    border:1px solid var(--borderColor)!important;
+    border-radius:.5rem;
+}
+
+html:not(.designer) [name*="OBB_dropdown "] .select-box .input-control-m-c,
+html:not(.designer) [name*="OBB_dropdown "] .select-box  .input-control-buttons{
+    border:none!important;
+}
 @media(min-width:1600px){
     html:not(.designer) .video-container .intro{
         padding:2vw;
