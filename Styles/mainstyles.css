@@ -65,7 +65,8 @@ html:not(.designer) .panel-body{
     background-color:transparent!important;
     box-shadow:none!important;
 }
-html:not(.designer) [name*="OBB_textbox"]{
+html:not(.designer) [name*="OBB_textbox"],
+.filterTxt .input-control-m-c{
     border:1px solid var(--borderColor)!important;
     font-size:1rem!important;
     border-radius: .5rem!important;
@@ -86,9 +87,10 @@ html:not(.designer) .disabled[name*="OBB_textbox"],
 }
 html:not(.designer) [name*="OBB_dropdown"] .select-box,
 html:not(.designer) .select-box[name*="OBB_calendar"],
-html:not(.designer) .input-control.select-box.lookup-box.picker-input.double-buttons{
+html:not(.designer) .input-control.select-box.lookup-box.picker-input.double-buttons,
+.searchDdl .select-box{
     border:1px solid var(--borderColor)!important;
-    border-radius:.5rem;
+    border-radius:.5rem!important;
 	height:2.9rem;
 	min-height:2.9rem;
 }
@@ -103,8 +105,17 @@ html:not(.designer) [name*="OBB_dropdown"] .select-box  .input-control-buttons,
 html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c,
 html:not(.designer) .select-box[name*="OBB_calendar"]  .input-control-buttons,
 .input-control.select-box.lookup-box.picker-input.double-buttons .input-control-m-c,
-.input-control.select-box.lookup-box.picker-input.double-buttons .input-control-buttons {
+.input-control.select-box.lookup-box.picker-input.double-buttons .input-control-buttons,
+.searchDdl .select-box .input-control-m-c,
+.searchDdl .select-box .input-control-buttons{
     border:none!important;
+}
+.filterLabel{
+	font-size:1rem;
+}
+.searchDdl .select-box{
+	margin-top:.5rem;
+	margin-bottom:.5rem;
 }
 .tooltip.validation{
 	font-size: .8rem;
@@ -327,6 +338,11 @@ html:not(.designer) [name*="OBB_WorkList"] .SourceCodeFormsControlsWorklist{
 }
 .ui-lookupbox-disabled .input-control-buttons {
 	display:none!important;
+}
+.empty-grid .grid-content-cell-wrapper{
+	margin: 1rem auto;
+	font-size: 1rem;
+	font-family: var(--regularFont);
 }
 @media(min-width:1600px){
 .sidebar {
