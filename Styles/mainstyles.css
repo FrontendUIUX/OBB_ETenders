@@ -6,6 +6,7 @@
     --description:#3E3E3E;
     --borderColor:#E3E3E3;
     --regularFont:"Co Headline";
+    --transition:all .3s ease-in-out;
 }
 @font-face {
     font-family:"Co Headline" ;
@@ -293,7 +294,7 @@ html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	font-family:var(--regularFont);
 }
 html:not(.designer) [name*="OBB_button OBB_primary_button"],
-html:not(.designer) .SourceCode-Forms-Controls-Web-Button:first-child{
+html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	background-color:var(--orange)!important;
 	color:white!important;
 }
