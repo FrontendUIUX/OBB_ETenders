@@ -12,6 +12,9 @@
     font-family:"Co Headline" ;
     src: url("https://frontenduiux.github.io/OBB_ETenders/fonts/Co%20Headline.otf");
 }
+.button.help{
+	display:none;
+}
 html:not(.designer) .page-title{
 	font-size: 2rem;
     font-family: var(--regularFont);
