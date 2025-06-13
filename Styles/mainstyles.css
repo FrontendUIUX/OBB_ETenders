@@ -78,16 +78,25 @@ html:not(.designer) .empty[name*="OBB_textbox"]{
 	background-color:#f7f7f7;
 }
 html:not(.designer) [name*="OBB_dropdown"] .select-box,
-html:not(.designer) .select-box[name*="OBB_calendar"]{
+html:not(.designer) .select-box[name*="OBB_calendar"],
+html:not(.designer) .input-control.select-box.lookup-box.picker-input.double-buttons{
     border:1px solid var(--borderColor)!important;
     border-radius:.5rem;
 	height:2.9rem;
 	min-height:2.9rem;
 }
+html:not(.designer) .input-control.text-input.control-group-container .input-control-m-c{
+	border:1px solid var(--borderColor)!important;
+    border-radius:.5rem;
+	height:3.2rem;
+	min-height:3.2rem;
+}
 html:not(.designer) [name*="OBB_dropdown"] .select-box .input-control-m-c,
 html:not(.designer) [name*="OBB_dropdown"] .select-box  .input-control-buttons,
 html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c,
-html:not(.designer) .select-box[name*="OBB_calendar"]  .input-control-buttons{
+html:not(.designer) .select-box[name*="OBB_calendar"]  .input-control-buttons,
+.input-control.select-box.lookup-box.picker-input.double-buttons .input-control-m-c,
+.input-control.select-box.lookup-box.picker-input.double-buttons .input-control-buttons {
     border:none!important;
 }
 .tooltip.validation{
@@ -208,6 +217,7 @@ html:not(.designer) [name*="OBB_Collapse"]{
 	border:1px solid #E8E8E8;
 	border-radius:1rem!important;
 	overflow:hidden;
+	margin-bottom: 1rem;
 }
 html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper,
 html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper{
