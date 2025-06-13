@@ -80,8 +80,9 @@ html:not(.designer) [name*="OBB_textbox"]{
 }
 html:not(.designer) .readonly[name*="OBB_textbox"],
 html:not(.designer) .empty[name*="OBB_textbox"],
-html:not(.designer) .disabled[name*="OBB_textbox"]{
-	background-color:#f7f7f7;
+html:not(.designer) .disabled[name*="OBB_textbox"],
+.ui-lookupbox-disabled{
+	background-color:#f7f7f7!important;
 }
 html:not(.designer) [name*="OBB_dropdown"] .select-box,
 html:not(.designer) .select-box[name*="OBB_calendar"],
@@ -315,8 +316,17 @@ html:not(.designer) [name*="OBB_WorkList"] .SourceCodeFormsControlsWorklist{
 .theme-entry h3.SourceCode-Forms-Controls-Web-DataLabel.preview, 
 .theme-entry h4.SourceCode-Forms-Controls-Web-DataLabel.preview, 
 .theme-entry label.SourceCode-Forms-Controls-Web-DataLabel.preview, 
-.theme-entry p.SourceCode-Forms-Controls-Web-DataLabel.preview{
+.theme-entry p.SourceCode-Forms-Controls-Web-DataLabel.preview,
+.theme-entry .input-control.disabled, 
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.disabled, 
+.theme-entry .textbox-style-wrapper.disabled, 
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.preview, 
+.theme-entry .textbox-style-wrapper.preview, 
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-RadioButton.preview{
 	opacity:1;
+}
+.ui-lookupbox-disabled .input-control-buttons {
+	display:none!important;
 }
 @media(min-width:1600px){
 .sidebar {
