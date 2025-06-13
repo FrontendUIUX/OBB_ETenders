@@ -255,6 +255,11 @@ html:not(.designer) [name*="OBB_button OBB_secondary_button"]{
 	border:1px solid var(--orange);
 	background-color:white!important;
 }
+html:not(.designer) .theme-entry .input-control.style-aware.radio  span{
+	height:unset!important;
+	font-size:1rem;
+	font-family:var(--regularFont);
+}
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
