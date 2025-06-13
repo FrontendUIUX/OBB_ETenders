@@ -79,7 +79,8 @@ html:not(.designer) [name*="OBB_textbox"]{
     height: 3rem!important;
 }
 html:not(.designer) .readonly[name*="OBB_textbox"],
-html:not(.designer) .empty[name*="OBB_textbox"]{
+html:not(.designer) .empty[name*="OBB_textbox"],
+html:not(.designer) .disabled[name*="OBB_textbox"]{
 	background-color:#f7f7f7;
 }
 html:not(.designer) [name*="OBB_dropdown"] .select-box,
