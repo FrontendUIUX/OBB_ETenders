@@ -105,9 +105,8 @@ html:not(.designer) .input-control.select-box.lookup-box.picker-input.double-but
 .searchDdl .select-box{
     border:1px solid var(--borderColor)!important;
     border-radius:.5rem!important;
-    height:2.9rem;
-    min-height:2.9rem;
-    overflow: hidden;
+	height:2.9rem;
+	min-height:2.9rem;
 }
 html:not(.designer) .input-control.text-input.control-group-container .input-control-m-c{
 	border:1px solid var(--borderColor)!important;
@@ -366,6 +365,10 @@ html:not(.designer) [name*="OBB_WorkList"] .SourceCodeFormsControlsWorklist{
 	display:flex;
 	align-items:center;
 	justify-content:center;
+}
+.theme-entry label.file-label{
+	font-size:1rem!important;
+	font-family:var(--regularFont)!important;
 }
 @media(min-width:1600px){
 .sidebar {
