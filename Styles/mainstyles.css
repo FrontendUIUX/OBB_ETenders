@@ -276,7 +276,8 @@ html:not(.designer) [name*="OBB_button"]{
 	transition:var(--transition);
 	font-family:var(--regularFont);
 }
-html:not(.designer) [name*="OBB_button OBB_primary_button"]{
+html:not(.designer) [name*="OBB_button OBB_primary_button"],
+.SourceCode-Forms-Controls-Web-Button:first-child{
 	background-color:var(--orange);
 	color:white!important;
 }
