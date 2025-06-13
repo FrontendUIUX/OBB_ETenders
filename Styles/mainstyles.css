@@ -79,6 +79,20 @@ html:not(.designer) [name*="OBB_textbox"],
     min-height: 3rem!important;
     height: 3rem!important;
 }
+html:not(.designer) [name*="OBB_textarea"]{
+	  border:1px solid var(--borderColor)!important;
+    font-size:1rem!important;
+    border-radius: .5rem!important;
+    padding: .4rem 1rem!important;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    font-family: var(--regularFont)!important;
+    width: 100%;
+}
+html:not(.designer) .input-control.text-input .input-control-m-c{
+	border:none!important
+}
 html:not(.designer) .readonly[name*="OBB_textbox"],
 html:not(.designer) .empty[name*="OBB_textbox"],
 html:not(.designer) .disabled[name*="OBB_textbox"],
