@@ -287,6 +287,36 @@ html:not(.designer) [name*="OBB_WorkList"]{
 html:not(.designer) [name*="OBB_WorkList"] .SourceCodeFormsControlsWorklist{
 	border:none!important;
 }
+.theme-entry span.SourceCode-Forms-Controls-Web-Label.disabled, 
+.theme-entry h1.SourceCode-Forms-Controls-Web-Label.disabled, 
+.theme-entry h2.SourceCode-Forms-Controls-Web-Label.disabled, 
+.theme-entry h3.SourceCode-Forms-Controls-Web-Label.disabled, 
+.theme-entry h4.SourceCode-Forms-Controls-Web-Label.disabled, 
+.theme-entry label.SourceCode-Forms-Controls-Web-Label.disabled, 
+.theme-entry p.SourceCode-Forms-Controls-Web-Label.disabled, 
+.theme-entry span.SourceCode-Forms-Controls-Web-DataLabel.disabled, 
+.theme-entry h1.SourceCode-Forms-Controls-Web-DataLabel.disabled, 
+.theme-entry h2.SourceCode-Forms-Controls-Web-DataLabel.disabled, 
+.theme-entry h3.SourceCode-Forms-Controls-Web-DataLabel.disabled, 
+.theme-entry h4.SourceCode-Forms-Controls-Web-DataLabel.disabled, 
+.theme-entry label.SourceCode-Forms-Controls-Web-DataLabel.disabled, 
+.theme-entry p.SourceCode-Forms-Controls-Web-DataLabel.disabled, 
+.theme-entry span.SourceCode-Forms-Controls-Web-Label.preview, 
+.theme-entry h1.SourceCode-Forms-Controls-Web-Label.preview, 
+.theme-entry h2.SourceCode-Forms-Controls-Web-Label.preview, 
+.theme-entry h3.SourceCode-Forms-Controls-Web-Label.preview, 
+.theme-entry h4.SourceCode-Forms-Controls-Web-Label.preview, 
+.theme-entry label.SourceCode-Forms-Controls-Web-Label.preview, 
+.theme-entry p.SourceCode-Forms-Controls-Web-Label.preview, 
+.theme-entry span.SourceCode-Forms-Controls-Web-DataLabel.preview, 
+.theme-entry h1.SourceCode-Forms-Controls-Web-DataLabel.preview, 
+.theme-entry h2.SourceCode-Forms-Controls-Web-DataLabel.preview, 
+.theme-entry h3.SourceCode-Forms-Controls-Web-DataLabel.preview, 
+.theme-entry h4.SourceCode-Forms-Controls-Web-DataLabel.preview, 
+.theme-entry label.SourceCode-Forms-Controls-Web-DataLabel.preview, 
+.theme-entry p.SourceCode-Forms-Controls-Web-DataLabel.preview{
+	opacity:1;
+}
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
