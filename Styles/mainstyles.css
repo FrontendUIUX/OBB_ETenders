@@ -375,6 +375,18 @@ html:not(.designer) [name*="OBB_WorkList"] .SourceCodeFormsControlsWorklist{
 	font-size:1rem;
 	font-family:var(--regularFont);
 }
+.input-control.style-aware.radio svg{
+	height: 1.4rem!important;
+}
+.theme-entry .stack-container .stack div.multi-select-box-list-item label.input-control .input-control-text{
+	max-width:fit-content!important;
+	white-space:nowrap!important;
+}
+.theme-entry .stack-container .stack div.multi-select-box-list-item label.input-control{
+	width:fit-content!important;
+	display: flex;
+	align-items: center;
+}
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
