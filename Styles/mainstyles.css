@@ -285,8 +285,8 @@ html:not(.designer) .SourceCode-Forms-Controls-Web-Button:first-child{
 html:not(.designer) [name="RFQTenderCreation_Button  OBB_button OBB_primary_button"]{
 	margin:0;
 }
-html:not(.designer) [name*="OBB_button OBB_secondary_button"]{
-	color:var(--orange);
+html:not(.designer) .SourceCode-Forms-Controls-Web-Button[name*="OBB_button OBB_secondary_button"]{
+	color:var(--orange)!important;
 	border:1px solid var(--orange);
 	background-color:white!important;
 }
