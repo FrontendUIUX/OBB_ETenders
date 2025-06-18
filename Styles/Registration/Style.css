@@ -94,3 +94,7 @@ html:not(.designer) .theme-entry .form{
     margin-top:1vw;
 }
 }
+html:not(.designer) [name="LoginButton"].SourceCode-Forms-Controls-Web-Button{
+    background-color:transparent!important;
+    color:var(--orange)!important;
+}
