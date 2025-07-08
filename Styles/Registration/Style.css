@@ -52,6 +52,7 @@ html:not(.designer) .video-container{
 }
 html:not(.designer) .form-wrapper{
     width: 50%;
+    overflow: auto;
 }
 html:not(.designer) .video-container .intro{
     display:flex;
