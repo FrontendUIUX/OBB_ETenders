@@ -1,5 +1,6 @@
 
-html:not(.designer) span[name*="SignUpTitle"] span[name="HeaderTitle"] {
+html:not(.designer) span[name*="SignUpTitle"] span[name*="HeaderTitle"],
+[name="HeaderTitle"]{
     font-size: 2.5rem !important;
     color:var(--black);
     font-family: var(--regularFont);
