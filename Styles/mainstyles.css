@@ -91,6 +91,9 @@ html:not(.designer) [name*="OBB_textbox"],
 .grid-column-headers{
 	padding:0 2rem;
 }
+[name="Dashboard.VendorDashboard.Form Area Item1 OBB_Collapse"] .grid-column-headers{
+	padding:0!important;
+}
 html:not(.designer) [name*="OBB_textarea"]{
 	  border:1px solid var(--borderColor)!important;
     font-size:1rem!important;
