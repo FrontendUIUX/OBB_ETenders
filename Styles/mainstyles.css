@@ -121,7 +121,7 @@ html:not(.designer) .searchDdl .select-box{
     min-height:2.9rem;
     overflow: hidden;
 }
-html:not(.designer) .input-control.select-box.dropdown-box.watermark .input-control-m-c{
+html:not(.designer) .input-control.select-box.dropdown-box .input-control-m-c{
     border:1px solid var(--borderColor)!important;
 	border-right:none!important;
     border-top-left-radius:.5rem!important;
@@ -139,7 +139,7 @@ html:not(.designer) .input-control-buttons.styling-right.styling-inner-wrapper{
 	 min-height: 2.7rem;
 	 overflow: hidden;
 }
-html:not(.designer) .input-control.select-box.dropdown-box.watermark{
+html:not(.designer) .input-control.select-box.dropdown-box{
 	margin-top:2rem;
 	margin-bottom:2rem;
 	outline:none!important;
