@@ -238,9 +238,6 @@ html:not(.designer) [name*="OBB_textbox"],
 	margin: 2rem 2rem;
 	width:calc(100% - 4rem);
 }
-.grid-column-headers{
-	/* padding:0 2rem; */
-}
 html:not(.designer) [name*="OBB_textarea"]{
 	  border:1px solid var(--borderColor)!important;
     font-size:1rem!important;
@@ -299,7 +296,6 @@ html:not(.designer) .theme-entry .input-control-buttons.styling-right.styling-in
 html:not(.designer) .input-control.select-box.dropdown-box{
 	outline:none!important;
 	border:none!important;
-	width:calc(100% - 2.5rem)!important;
 }
 html:not(.designer) .input-control.text-input.control-group-container .input-control-m-c{
 	border:1px solid var(--borderColor)!important;
