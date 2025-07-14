@@ -144,6 +144,11 @@
 [name*="d-block"]{
 	display:block!important;
 }
+[name*="OBB_checkbox"]{
+	display:flex;
+	align-items:center;
+	flex-wrap:nowrap!important;
+}
 .button.help{
 	display:none;
 }
