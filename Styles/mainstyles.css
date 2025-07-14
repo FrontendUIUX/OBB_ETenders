@@ -442,6 +442,16 @@ html:not(.designer) [name*="OBB_WorkList"] .SourceCodeFormsControlsWorklist{
 	display: flex;
 	align-items: center;
 }
+[name="HeaderTitleContainer"] [name="HeaderTitle"]{
+	font-size:2rem;
+	font-family:var(--regularFont);
+	color:black;
+}
+[name="HeaderDescriptionContainer"] [name="HeaderDescription"]{
+	font-size:1rem;
+	color:var(--description);
+	font-family:var(--regularFont);
+}
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
