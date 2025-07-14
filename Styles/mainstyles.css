@@ -91,7 +91,8 @@ html:not(.designer) [name*="OBB_textbox"],
 .grid-column-headers{
 	padding:0 2rem;
 }
-[name="Dashboard.VendorDashboard.Form Area Item1 OBB_Collapse"] .grid-column-headers{
+[name="Dashboard.VendorDashboard.Form Area Item1 OBB_Collapse"] .grid-column-headers,
+div#\36 f603d50-5e06-4d08-81f9-2d053f5fcbad_fa9afadf-ac72-8d63-8c33-4279df8a2555_a5163b91-6abb-d3cb-e911-8c7deb86f87e_c82fd159-0ee9-4b7f-8c07-9d76cf32923e .grid-column-headers{
 	padding:0!important;
 }
 html:not(.designer) [name*="OBB_textarea"]{
