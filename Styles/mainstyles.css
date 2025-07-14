@@ -284,11 +284,8 @@ html:not(.designer) .theme-entry .input-control-buttons.styling-right.styling-in
 	 overflow: hidden;
 }
 html:not(.designer) .input-control.select-box.dropdown-box{
-	margin-top:2rem;
-	margin-bottom:2rem;
 	outline:none!important;
 	border:none!important;
-	padding:0 2rem;
 	width:calc(100% - 2.5rem)!important;
 }
 html:not(.designer) .input-control.text-input.control-group-container .input-control-m-c{
