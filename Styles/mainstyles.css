@@ -114,12 +114,38 @@ html:not(.designer) .disabled[name*="OBB_textbox"],
 html:not(.designer) [name*="OBB_dropdown"] .select-box,
 html:not(.designer) .select-box[name*="OBB_calendar"],
 html:not(.designer) .input-control.select-box.lookup-box.picker-input.double-buttons,
-.searchDdl .select-box{
+html:not(.designer) .searchDdl .select-box{
     border:1px solid var(--borderColor)!important;
     border-radius:.5rem!important;
     height:2.9rem;
     min-height:2.9rem;
     overflow: hidden;
+}
+html:not(.designer) .input-control.select-box.dropdown-box.watermark .input-control-m-c{
+    border:1px solid var(--borderColor)!important;
+	border-right:none!important;
+    border-top-left-radius:.5rem!important;
+	border-bottom-left-radius:.5rem!important;
+    height:2.9rem;
+    min-height:2.9rem;
+    overflow: hidden;
+}
+html:not(.designer) .input-control-buttons.styling-right.styling-inner-wrapper{
+	 border:1px solid var(--borderColor)!important;
+	 border-left:none!important;
+	 border-top-right-radius:.5rem!important;
+	 border-bottom-right-radius:.5rem!important;
+	 height: 2.7rem;
+	 min-height: 2.7rem;
+	 overflow: hidden;
+}
+html:not(.designer) .input-control.select-box.dropdown-box.watermark{
+	margin-top:2rem;
+	margin-bottom:2rem;
+	outline:none!important;
+	border:none!important;
+	padding:0 2rem;
+	width:calc(100% - 4rem)!important;
 }
 html:not(.designer) .input-control.text-input.control-group-container .input-control-m-c{
 	border:1px solid var(--borderColor)!important;
