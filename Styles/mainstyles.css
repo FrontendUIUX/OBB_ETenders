@@ -255,6 +255,7 @@ html:not(.designer) [name*="OBB_Collapse"]{
 	border-radius:1rem!important;
 	overflow:hidden;
 	margin-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper,
 html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper{
