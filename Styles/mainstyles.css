@@ -124,6 +124,7 @@ html:not(.designer) .searchDdl .select-box{
     height:2.9rem;
     min-height:2.9rem;
     overflow: hidden;
+    margin: 0!important;
 }
 html:not(.designer) .input-control.select-box.dropdown-box .input-control-m-c{
     border:1px solid var(--borderColor)!important;
@@ -140,7 +141,7 @@ div#\31 e489858-29a8-1a34-c6bb-f5e8d6ad856f_0656aaf1-d794-c796-b814-7b3fb286f5da
 div#\31 e489858-29a8-1a34-c6bb-f5e8d6ad856f_ca291f9b-3694-0045-2467-19554786c6cc{
 padding-left:0!important;
 }
-html:not(.designer) .input-control-buttons.styling-right.styling-inner-wrapper{
+html:not(.designer) .theme-entry .input-control-buttons.styling-right.styling-inner-wrapper{
 	 border:1px solid var(--borderColor)!important;
 	 border-left:none!important;
 	 border-top-right-radius:.5rem!important;
