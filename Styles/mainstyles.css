@@ -80,16 +80,16 @@
 	margin-right:1rem!important;
 }
 /* MARGIN 1.6rem - top, bottom, left, right */
-[name*="mt-1_6"]{
+[name*="mt-16"]{
 	margin-top:1.6rem!important;
 }
-[name*="mb-1_6"]{
+[name*="mb-16"]{
 	margin-bottom:1.6rem!important;
 }
-[name*="ml-1_6"]{
+[name*="ml-16"]{
 	margin-left:1.6rem!important;
 }
-[name*="mr-1_6"]{
+[name*="mr-16"]{
 	margin-right:1.6rem!important;
 }
 /* MARGIN 2rem - top, bottom, left, right */
