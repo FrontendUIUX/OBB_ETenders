@@ -297,7 +297,10 @@ html:not(.designer) .input-control.text-input.control-group-container .input-con
 span#\30 c1813ed-549c-3fd6-c684-5c15245c5c66{
 	padding:0!important;
 }
-
+html:not(.designer) .filterContainer{
+	margin-bottom:1rem;
+	margin-top:1rem;
+}
 html:not(.designer) [name*="OBB_dropdown"] .select-box .input-control-m-c,
 html:not(.designer) [name*="OBB_dropdown"] .select-box  .input-control-buttons,
 html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c,
