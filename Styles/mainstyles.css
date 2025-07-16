@@ -385,8 +385,8 @@ html:not(.designer) .select-box[name*="OBB_calendar"]  .input-control-buttons,
 	margin-bottom:1rem;
 }
 .theme-entry .popup.id-calendar-control-popup {
-    width: 18rem !important;
-    height: auto!important;
+    /*width: 18rem !important;
+    height: auto!important;*/
 }
 .theme-entry .top-calendar a.today-title {
     border: none;
