@@ -185,6 +185,7 @@ html:not(.designer) body{
     padding:0;
     font-family: var(--regularFont);
     background-color: white;
+	position: relative;
 }
 html:not(.designer) .theme-entry.sidebarAvailable{
 	left: 19rem;
@@ -371,44 +372,44 @@ html:not(.designer) .select-box[name*="OBB_calendar"]  .input-control-buttons,
   top: 0.2rem;
 }
 .theme-entry .day {
-   /* font-size: 1rem;
+   font-size: 1rem;
     height: 2.5rem!important;
     width: 2.5rem!important;
     text-align: center!important;
     display: flex!important;
     align-items: center;
-    justify-content: center;*/
+    justify-content: center;
 }
 .calendar-row .dayname{
-	/*height:2.5rem!important;
+	height:2.5rem!important;
 	width:2.5rem!important;
-	margin-bottom:1rem;*/
+	margin-bottom:1rem;
 }
 .theme-entry .popup.id-calendar-control-popup {
-    /*width: 18rem !important;
-    height: auto!important;*/
+    width: 18rem !important;
+    height: auto!important;
 }
 .theme-entry .top-calendar a.today-title {
-   /* border: none;
+   border: none;
     border-radius: 0;
     margin-top: 1rem;
-    padding: 0;*/
+    padding: 0;
 }
 .theme-entry .top-calendar a {
-   /* margin-top: 1rem;
+   margin-top: 1rem;
     background-repeat: no-repeat;
-    height: 1rem;*/
+    height: 1rem;
 }
 .theme-entry .week{
-/*display:flex;*/
+display:flex;
 }
 .theme-entry .today-text{
-	/*padding-top:1rem;
-	padding-bottom:1rem;*/
+	padding-top:1rem;
+	padding-bottom:1rem;
 }
 .datepicker.invalid{
-	/*border: 1px solid var(--input-error-border-color) !important;
-	background-color: #f8e8e8!important;*/
+	border: 1px solid var(--input-error-border-color) !important;
+	background-color: #f8e8e8!important;
 }
 .theme-entry .invalid .input-control-watermark *{
 	background-color:transparent!important;
