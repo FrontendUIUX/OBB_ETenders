@@ -639,6 +639,12 @@ border-bottom:none!important
 .popup.dialog .popup-header .popup-header-text{
     font-size:1.4rem;
 }
+.theme-entry .message-box-content.error:before{
+    background-image:url("https://frontenduiux.github.io/OBB_Services/Images/error.svg");
+    background-size:3rem;
+    background-repeat:no-repeat;
+    background-position:center;
+}
 /* POPUP BRANDING END */
 @media(min-width:1600px){
 .sidebar {
