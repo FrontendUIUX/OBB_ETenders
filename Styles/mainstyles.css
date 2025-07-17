@@ -602,7 +602,7 @@ html:not(.designer) [name*="OBB_WorkList"] .SourceCodeFormsControlsWorklist{
 	color:black;
 }
 [name="HeaderDescriptionContainer"] [name="HeaderDescription"]{
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	color:var(--description);
 	font-family:var(--regularFont);
 }
@@ -676,7 +676,6 @@ background-color:transparent!important;
 }
 html:not(.designer) .theme-entry .grid .grid-column-header-text{
 	font-family:var(--regularFont);
-	cursor:pointer;
 }
 html:not(.designer) .theme-entry .grid .grid-column-header-cell{
 	padding:1rem 1.4rem;
