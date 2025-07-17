@@ -675,6 +675,9 @@ background-color:transparent!important;
 html:not(.designer) .theme-entry .grid .grid-column-header-text{
 	font-family:var(--regularFont);
 }
+html:not(.designer) .theme-entry .grid .grid-column-header-cell{
+	padding:1rem 1.4rem;
+}
 /* TABLE BRANDING END */
 @media(min-width:1600px){
 .sidebar {
