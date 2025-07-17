@@ -646,9 +646,19 @@ html:not(.designer) .theme-entry .message-box-content.error:before{
     background-position:center;
 }
 /* POPUP BRANDING END */
-.theme-entry .grid table.grid-column-header-table td{
+/* TABLE BRANDING START */
+html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
 	border: none!important;
+	background-color: transparent!important;
 }
+html:not(.designer) .theme-entry table.grid-column-header-table {
+    border: 1px solid rgb(220 220 220 / 80%);
+    border-bottom: none;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color:transparent!important;
+}
+/* POPUP BRANDING END */
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
