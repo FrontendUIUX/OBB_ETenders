@@ -676,6 +676,7 @@ background-color:transparent!important;
 }
 html:not(.designer) .theme-entry .grid .grid-column-header-text{
 	font-family:var(--regularFont);
+	cursor:pointer;
 }
 html:not(.designer) .theme-entry .grid .grid-column-header-cell{
 	padding:1rem 1.4rem;
