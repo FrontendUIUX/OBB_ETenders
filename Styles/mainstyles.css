@@ -669,6 +669,9 @@ html:not(.designer) .theme-entry table.grid-column-header-table {
 html:not(.designer) .theme-entry  .grid-column-headers{
 background-color:transparent!important;
 }
+html:not(.designer) .theme-entry .grid .grid-column-header-text{
+	font-family:var(--regularFont);
+}
 /* TABLE BRANDING END */
 @media(min-width:1600px){
 .sidebar {
