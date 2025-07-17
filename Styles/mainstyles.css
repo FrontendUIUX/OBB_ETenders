@@ -646,6 +646,9 @@ html:not(.designer) .theme-entry .message-box-content.error:before{
     background-position:center;
 }
 /* POPUP BRANDING END */
+.theme-entry .grid table.grid-column-header-table td{
+	border: none!important;
+}
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
