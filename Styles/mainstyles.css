@@ -11,6 +11,7 @@
 @font-face {
     font-family:"Co Headline" ;
     src: url("https://frontenduiux.github.io/OBB_ETenders/fonts/Co%20Headline.otf");
+	font-weight:400;
 }
 /* PADDINGS */
 /* PADDING 1rem - top, bottom, left, right */
