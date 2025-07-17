@@ -507,6 +507,8 @@ html:not(.designer) [name*="OBB_button OBB_primary_button"],
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	background-color:var(--orange)!important;
 	color:white!important;
+	padding: .7rem 2.5rem;
+	font-weight:400;
 }
 html:not(.designer) [name="RFQTenderCreation_Button  OBB_button OBB_primary_button"]{
 	margin:0;
@@ -600,7 +602,7 @@ html:not(.designer) [name*="OBB_WorkList"] .SourceCodeFormsControlsWorklist{
 	color:black;
 }
 [name="HeaderDescriptionContainer"] [name="HeaderDescription"]{
-	font-size:1rem;
+	font-size: 1.3rem;
 	color:var(--description);
 	font-family:var(--regularFont);
 }
