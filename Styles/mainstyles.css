@@ -665,14 +665,14 @@ html:not(.designer) .popupManager[style*="absolute"]{
 	position: fixed!important;
 	z-index: 1;
 }
-html:not(.designer) .popup.dialog{
+/*html:not(.designer) .popup.dialog{
     height:fit-content!important;
     border-radius:1rem!important;
     overflow:hidden;
     top: 50%!important;
     left: 50%!important;
     transform: translate(-50%, -50%);
-}
+}*/
 html:not(.designer) .popup.dialog .popup-header .popup-header-text{
     font-size:1.4rem;
 }
@@ -699,9 +699,6 @@ html:not(.designer) .theme-entry .grid table.grid-column-header-table td:last-ch
 }
 html:not(.designer) .theme-entry table.grid-column-header-table {
     border-bottom: 1px solid rgb(220 220 220 / 80%);
-   /* border-bottom: none;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem; */
     background-color:transparent!important;
 }
 html:not(.designer) .theme-entry  .grid-column-headers{
