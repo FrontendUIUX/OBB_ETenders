@@ -663,30 +663,183 @@ html:not(.designer) .theme-entry .message-box-content.error:before{
 /* POPUP BRANDING END */
 /* TABLE BRANDING START */
 html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
-	background-color: transparent!important;
+	background-color: #f6f6f6;
 	border-right: 1px solid rgb(220 220 220 / 80%);
 	cursor: pointer;
+	/* padding: 0 1rem; */
+}
+html:not(.designer) .theme-entry .grid-body-content table td{
+	padding: 0 1rem!important;
+}
+html:not(.designer) .theme-entry td span.runtime-list-item{
+	font-family: var(--regularFont)!important;
+	font-weight: 300!important;
+	padding: 0!important;
 }
 html:not(.designer) .theme-entry .grid table.grid-column-header-table td:last-child{
 	border:none!important;
 }
 html:not(.designer) .theme-entry table.grid-column-header-table {
-    border: 1px solid rgb(220 220 220 / 80%);
-    border-bottom: none;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    border-bottom: 1px solid rgb(220 220 220 / 80%);
     background-color:transparent!important;
 }
 html:not(.designer) .theme-entry  .grid-column-headers{
 background-color:transparent!important;
 }
 html:not(.designer) .theme-entry .grid .grid-column-header-text{
-	font-family:var(--regularFont);
+	font-family:var(--regularFont)!important;
+	/* max-width: fit-content!important; */
+	width: fit-content!important;
 }
 html:not(.designer) .theme-entry .grid .grid-column-header-cell{
-	padding:1rem 1.4rem;
+	padding: 0;
+	width: 100%!important;
+}
+html:not(.designer) .theme-entry .grid table.grid-content-table.zebra-stripes tr{
+	background-color: transparent;
+	padding:1rem 0!important;
+}
+html:not(.designer) .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(even){
+	/* background-color:#F2F2F6!important; */
+	background-color:#F9F9FB!important;
+}
+html:not(.designer) .grid-body{
+	margin: 1rem!important;
+	width: calc(100% - 2rem);
+	border: 1px solid rgb(220 220 220 / 80%)!important;
+	border-radius: 2rem;
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Saved"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to FTTX Desgin Team"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to Pricing Team"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Rejected"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Open"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approve"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="FTTX Desgin Team Approved"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Completed"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting RM Approval"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Return"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending recipient action"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending draft letter"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"]{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	vertical-align:middle;
+	height: 4.4rem!important;
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Saved"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to FTTX Desgin Team"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to Pricing Team"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Rejected"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Open"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approve"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="FTTX Desgin Team Approved"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Completed"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting RM Approval"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Return"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"] > span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending recipient action"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending draft letter"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"] > span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"] span{
+	border-radius:2rem;
+	min-height:unset!important;
+	height:unset!important;
+	line-height:unset!important;
+	padding: 0.6rem 2rem!important;
+	width:fit-content!important;
+	font-size: 8pt;
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span{
+	background-color:#EFEFEF;
+	color:#616161!important;
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending recipient action"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending draft letter"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"] > span{
+	background-color:#FFF3F0;
+	color:#FF8A65!important;
+}
+.grid-content-cell-wrapper[title="Saved"] >span.runtime-list-item,
+.grid-content-cell-wrapper[title="Completed"] >span.runtime-list-item{
+	background-color:#DCFCE7;
+	color:#17A34A!important;
+}
+html:not(.designer) .grid-content-cell-wrapper{
+	width: 100%!important;
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to FTTX Desgin Team"] > span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to Pricing Team"] > span{
+	background-color:#ECEEF8;
+	color:#3F51B5!important;
+	padding: 0.6rem 1.2rem!important;
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Rejected"] >span.runtime-list-item{
+	background-color:#F4EBEE;
+	color:#801533!important;
+	padding: 0.6rem 1.2rem!important;
+}
+html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Waiting RM Approval"] >span,
+html:not(.designer)  [name*="OBB_statusContainer"] span[title="Waiting RM Approval"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"] > span{
+	color:#FF9800!important;
+	background-color:#FFF5E5!important;
+	padding: 0.6rem 1.2rem!important;
+}
+html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Waiting Return"] >span,
+html:not(.designer)  [name*="OBB_statusContainer"] span[title="Waiting Return"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"] span{
+	color:#D19D00!important;
+	background-color:#FAF5E5!important;
+	padding: 0.6rem 1.2rem!important;
+}
+html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Approve"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="FTTX Desgin Team Approved"] > span,
+html:not(.designer)  [name*="OBB_statusContainer"] span[title="Approve"],
+html:not(.designer)  [name*="OBB_statusContainer"] span[title="FTTX Desgin Team Approved"]{
+	color:#009688!important;
+	background-color:#E5F4F3!important;
+	padding: 0.6rem 1.2rem!important;
+}
+html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Open"] >span,
+html:not(.designer)  [name*="OBB_statusContainer"] span[title="Open"]{
+	color:#2196F3!important;
+	background-color:#E9F4FE!important;
+	padding: 0.6rem 1.2rem!important;
+}
+html:not(.designer)  [name*="OBB_statusContainer"] span[title="Open"],
+html:not(.designer)  [name*="OBB_statusContainer"] span[title="Approve"],
+html:not(.designer)  [name*="OBB_statusContainer"] span[title="FTTX Desgin Team Approved"]{
+	border-radius:2rem; margin-left:1rem;
+}
+tr.selected img[src="https://ck2-app-tst-1.obc.local/Runtime/Style/eye.png"]{
+	filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(89deg) brightness(103%) contrast(101%);
+}
+body.theme-entry.topbarExists {
+    margin-top: 13rem;
+}
+html:not(.designer) .grid-column-header-cell{
+	background-color: transparent;
 }
 /* TABLE BRANDING END */
+
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
