@@ -16,9 +16,9 @@ html:not(.designer) .tab-box-tabs{
 	border-bottom:1px solid var(--borderColor)!important;
 	position:fixed!important;
 	top: 6rem;
-	width: calc(100vw - 18rem);
+	width: calc(100vw - 21rem);
 	z-index: 2;
-	left: 15rem;
+	left: 19rem;
 }
 html:not(.designer) .tab-box-tabs li .tab{
 	position:relative;
@@ -833,6 +833,13 @@ html:not(.designer) [name*="itemSpacing"] .grid-body-content-wrapper{
 .sidebar {
     width: 12vw;
     padding: 2vw;
+}
+	html:not(.designer) .tab-box-tabs{
+	padding: 0 1vw;
+	top: 6vw;
+	width: calc(100vw - 18vw);
+	z-index: 2;
+	left: 15vw;
 }
 	html:not(.designer) .theme-entry.sidebarAvailable{
 	left: 16vw;
