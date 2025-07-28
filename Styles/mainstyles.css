@@ -828,7 +828,36 @@ html:not(.designer) [name*="itemSpacing"] .grid-body-content-wrapper{
 	width:calc(100% - 4rem);
 	height:calc(100% - 4rem);
 }
+
 /* TABLE BRANDING END */
+
+html:not(.designer) .sidebarVisible [name="OBB_header"]{
+	left: 15rem;
+	width: calc(100vw - 15rem);
+	padding-top:1rem!important;
+	padding-bottom:1rem
+}
+html:not(.designer) [name="OBB_header"] > div{
+	display:flex!important;
+	align-items:center;
+	justify-content:space-between;
+	width:100%;
+	
+}
+html:not(.designer) [name*="HeaderTitleContainer"]{
+width:80%;}
+html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
+	font-size: 1.7rem;
+	font-family:var(--regularFont);
+	color:black;
+	padding: 0;
+}
+html:not(.designer) [name*="HeaderDescriptionContainer"] [name*="HeaderDescription"]{
+	font-size:1rem;
+	color:var(--description);
+	font-family:var(--regularFont);
+	padding-top: 0;
+}
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
