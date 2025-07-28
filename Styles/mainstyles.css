@@ -838,6 +838,9 @@ body.theme-entry.topbarExists {
 html:not(.designer) .grid-column-header-cell{
 	background-color: transparent;
 }
+html:not(.designer) .grid-column-header-cell-content{
+	padding:0 1rem;
+}
 /* TABLE BRANDING END */
 
 @media(min-width:1600px){
