@@ -1204,6 +1204,27 @@ html:not(.designer) img#\30 9a5c432-698e-951e-a5dc-30c1149241b3_8c40e4b4-a56c-25
 html:not(.designer) img#aaa2922e-a9d6-57b9-4b35-a5e16e1477be_8c40e4b4-a56c-2593-e555-118c658111a0_Picture{
     width: 10rem !important;
 }
+html:not(.designer) .sidebarVisible [name="OBB_header"]{
+	left: 15rem;
+	width: calc(100vw - 15rem);
+	padding-top:1rem!important;
+	padding-bottom:1rem
+}
+html:not(.designer) [name="OBB_header"] > div{
+	display:flex!important;
+	align-items:center;
+	justify-content:space-between;
+	width:100%;
+	
+}
+html:not(.designer) [name*="HeaderTitleContainer"]{
+width:80%;}
+html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
+	font-size: 1.7rem;
+	font-family:var(--regularFont);
+	color:black;
+	padding: 0;
+}
 @media(min-width:1600px){
 	html:not(.designer) .tab-box-tabs{
 	padding: 0 1vw;
