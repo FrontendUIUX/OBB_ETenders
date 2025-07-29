@@ -881,6 +881,39 @@ html:not(.designer) [name*="UserName"]{
 	font-size:1rem;
 	font-family:var(--regularFont)!important;
 }
+.filterTxt{
+	width: 21rem!important;
+}
+.filterTxt .input-control-wrapper{
+	width:100%!important;
+}
+html:not(.designer) [name*="OBB_textbox"],
+.filterTxt .input-control-m-c,
+.filterTxt input{
+    border:1px solid var(--borderColor)!important;
+    font-size:1rem!important;
+    border-radius: .5rem!important;
+    padding: .4rem 1rem!important;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    font-family: var(--regularFont)!important;
+    width: 100%;
+    min-height: 3rem!important;
+    height: 3rem!important;
+}
+.quickSearch.filter .toolbar-button.toolbar-button-inline.style-aware.refresh{
+	position:absolute;
+	right:1.5rem;
+	top: 0.4rem;
+	height: 3rem;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.quickSearch.filter{
+	position:relative;
+}
 html:not(.designer) [name*="Cancel Button"],
 html:not(.designer) [name*="Cancel Button"]:hover{
 	color: var(--orange)!important;
