@@ -64,4 +64,10 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.error("Form container not found.");
     }
+    $(window).on("load", function () {
+    if ($(".tab-box-tabs").length) {
+        $('body').addClass('topbarExists');
+    }
+
+})
 });
