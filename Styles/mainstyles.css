@@ -14,6 +14,35 @@
     src: url("https://frontenduiux.github.io/OBB_ETenders/fonts/Co%20Headline.otf");
 	font-weight:400;
 }
+html:not(.designer) .tab-box-tabs{
+	padding: 0 1rem;
+	background-color:white;
+	margin-bottom: 0rem;
+	border-bottom:1px solid var(--borderColor)!important;
+	position:fixed!important;
+	top: 6rem;
+	width: calc(100vw - 18rem);
+	z-index: 2;
+	left: 15rem;
+}
+html:not(.designer) .topbarExists .tab-box-tabs li .tab{
+	position:relative;
+	padding: 2rem 0 2rem !important;
+	color:#565656!important;
+	font-family:var(--regularFont);
+}
+html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected{
+	color:#131313!important;
+}
+html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected::after{
+	content:"";
+	position:absolute;
+	width:100%;
+	height:.3rem;
+	background-color:var(--orange);
+	bottom:0;
+	left:0;
+}
 /* PADDINGS */
 /* PADDING 1rem - top, bottom, left, right */
 [name*="pt-1"]{
@@ -921,6 +950,13 @@ html:not(.designer) [name*="Cancel Button"]:hover{
 	background-color: transparent!important;
 }
 @media(min-width:1600px){
+		html:not(.designer) .tab-box-tabs{
+	padding: 0 1vw;
+	/* margin-bottom:2vw; */
+	top: 3.7vw;
+	width: calc(100vw - 18.8vw);
+	left: 16vw;
+}
 .sidebar {
     width: 12vw;
     padding: 2vw;
