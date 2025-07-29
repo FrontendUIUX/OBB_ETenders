@@ -663,7 +663,7 @@ html:not(.designer) .theme-entry .message-box-content.error:before{
     background-repeat:no-repeat;
     background-position:center;
 }
-.popupManager {
+html:not(.designer) .popupManager[style*="position: absolute;"]{
     position: fixed !important;
     top: 0;
     left: 0;
