@@ -269,7 +269,7 @@ html:not(.designer) .dropdown-box .input-control-m-c{
 	display: flex;
 	align-items:center;
 }
-html:not(.designer) .sidebarVisible [name="OBB_header"]{
+html:not(.designer) .sidebarAvailable [name="OBB_header"]{
 	left: 15rem;
 	width: calc(100vw - 15rem);
 	padding-top:1rem!important;
@@ -1204,7 +1204,7 @@ html:not(.designer) img#\30 9a5c432-698e-951e-a5dc-30c1149241b3_8c40e4b4-a56c-25
 html:not(.designer) img#aaa2922e-a9d6-57b9-4b35-a5e16e1477be_8c40e4b4-a56c-2593-e555-118c658111a0_Picture{
     width: 10rem !important;
 }
-html:not(.designer) .sidebarVisible [name="OBB_header"]{
+html:not(.designer) .sidebarAvailable [name="OBB_header"]{
 	left: 15rem;
 	width: calc(100vw - 15rem);
 	padding-top:1rem!important;
@@ -1237,7 +1237,7 @@ html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
     width: 12vw;
     padding: 2vw;
 }
-html:not(.designer) body.sidebarVisible {
+html:not(.designer) body.sidebarAvailable {
     margin-left: 16vw !important;
     width: calc(100vw - 17vw) !important;
     padding: 0 1vw 1vw 1vw;
@@ -1245,7 +1245,7 @@ html:not(.designer) body.sidebarVisible {
 	body.theme-entry.topbarExists {
     margin-top: 9vw;
 }
-html:not(.designer) .sidebarVisible [name="OBB_header"] {
+html:not(.designer) .sidebarAvailable [name="OBB_header"] {
     left: 16vw;
     width: calc(100vw - 17vw);
 }
