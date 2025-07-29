@@ -104,7 +104,11 @@ html:not(.designer) .theme-entry .form{
     margin-top:1vw;
 }
 }
-html:not(.designer) [name="LoginButton"].SourceCode-Forms-Controls-Web-Button{
+html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="LoginButton"]{
     background-color:transparent!important;
     color:var(--orange)!important;
+}
+html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="LoginButton"]:hover{
+    background-color:transparent!important;
+    color:var(--orange-hover)!important;
 }
