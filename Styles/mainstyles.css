@@ -1203,10 +1203,10 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	padding-bottom:1rem
 }
 html:not(.designer) [name*="OBB_header"] > div{
-	display:flex!important;
+	/* display:flex!important;
 	align-items:center;
 	justify-content:space-between;
-	width:100%;
+	width:100%; */
 	
 }
 html:not(.designer) [name*="HeaderTitleContainer"]{
