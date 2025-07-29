@@ -1183,6 +1183,9 @@ html:not(.designer) [name*="button Cancel"]:hover{
 	border:1px solid var(--borderColor)!important;
 	background-color: transparent!important;
 }
+div#\35 2514ea1-299d-4d28-b86f-9e90b0bc2e6c_d1c2482c-6b44-446b-990a-c85ec1f18da5_d150917a-0cef-faf7-9774-3dba8d960e78_692d4e30-a9a2-4f51-ac33-21832711b4c0 .panel-body {
+    padding: 0;
+}
 html:not(.designer) .theme-entry .toolbars.double .toolbar table td{
 	height:unset!important;
 }
