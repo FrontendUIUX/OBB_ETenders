@@ -660,6 +660,15 @@ html:not(.designer) .theme-entry .message-box-content.error:before{
     background-repeat:no-repeat;
     background-position:center;
 }
+.popupManager {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh !important;
+    width: 100vw !important;
+    z-index: 2;
+}
 /* POPUP BRANDING END */
 /* TABLE BRANDING START */
 html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
