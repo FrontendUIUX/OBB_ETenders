@@ -9,9 +9,10 @@
     --regularFont:"Co Headline";
     --transition:all .3s ease-in-out;
 }
-html:not(.designer) [name*="OBB_button OBB_primary_button"]:hover,
-html:not(.designer) .SourceCode-Forms-Controls-Web-Button:hover{
-	background-color:var(--orange-hover)!important;
+@font-face {
+    font-family:"Co Headline" ;
+    src: url("https://frontenduiux.github.io/OBB_ETenders/fonts/Co%20Headline.otf");
+	font-weight:400;
 }
 html:not(.designer) .tab-box-tabs{
 	padding: 0 1rem;
@@ -20,37 +21,15 @@ html:not(.designer) .tab-box-tabs{
 	border-bottom:1px solid var(--borderColor)!important;
 	position:fixed!important;
 	top: 6rem;
-	width: calc(100vw - 19rem);
+	width: calc(100vw - 22rem);
 	z-index: 2;
-	left: 16rem;
+	left: 19rem;
 }
 html:not(.designer) .topbarExists .tab-box-tabs li .tab{
 	position:relative;
 	padding: 2rem 0 2rem !important;
 	color:#565656!important;
 	font-family:var(--regularFont);
-}
-html:not(.designer) body *{
-	font-family:var(--regularFont)!important;
-}
-html:not(.designer) .grid-column-header-cell-content{
-	padding:0 1rem;
-}
-html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] {
-	display:flex;
-	align-items:center;
-	/* justify-content:center; */
-	text-align:center;
-	/* max-width:100%!important; */
-	/* margin:0 -2rem; */
-	padding:0;
-}
-html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] .grid-column-header-text{
-	font-family:var(--regularFont)!important;
-	/* max-width: fit-content!important; */
-	width: fit-content!important;
-	margin:0 auto;
-	
 }
 html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected{
 	color:#131313!important;
@@ -63,16 +42,6 @@ html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected::after{
 	background-color:var(--orange);
 	bottom:0;
 	left:0;
-}
-html.no-border-box-support body{
-	margin:0!important;
-}
-html:not(.designer) [name="Worklist"]{
-	margin-top: 1rem;
-}
-@font-face {
-    font-family:"Co Headline" ;
-    src: url("https://frontenduiux.github.io/OBB_Services/fonts/Co%20Headline.otf");
 }
 /* PADDINGS */
 /* PADDING 1rem - top, bottom, left, right */
@@ -219,107 +188,18 @@ html:not(.designer) [name="Worklist"]{
 [name*="d-block"]{
 	display:block!important;
 }
-html:not(.Designer) .active[name="btnOutgoing"]:focus .button-text,
-html:not(.Designer) .active[name="btnIncoming"]:focus .button-text{
-	color:var(--aqua)!important;
-}
-html:not(.designer) .SourceCodeFormsControlsWorklist{
-	border-radius:1rem!important;
-	overflow:hidden;
-}
-html:not(.designer) [name="UserName"]{
-	font-size: 1rem;
-}
-html:not(.designer) div#d0e5951c-04b1-41f6-8482-bbb98c34e8cc_4d2cd33e-2345-417c-9d62-5b2ab67d9e55_a78c6f88-5c20-8a61-b557-643873abfd8f_1eb89a2d-3c0d-45b9-92bb-874012efeb68 {
-    margin-top: -1rem;
-}
-html:not(.designer) [name*="OBB_link"]{
-	font-size:.9rem;
-	font-family:var(--regularFont);
-	margin-left:.5rem;
-}
-html:not(.designer) [name*="OBB_header"]{
-	background-color:#F2F2F6;
-	position: fixed;
-	top: 0;
-	left:0;
-	width:100%;
-	z-index: 2;
-	/* height: 6rem; */
-	padding: 0 1rem!important;
-	display: flex!important;
-	align-items: center!important;
-	justify-content: space-between;
-	padding-top:1rem!important;
-	padding-bottom:1rem!important;
-}
-html:not(.designer) [name="Account Picture"]{
-	margin-right:.5rem;
-}
-html:not(.designer) [name*= "p-0"]{
-	padding:0!important;
-}
-html:not(.designer) [name*= "pb-0"]{
-	padding-bottom:0!important;
-}
-html:not(.designer) [name*= "pt-0"]{
-	padding-top:0!important;
-}
-html:not(.designer) .dropdown-box .input-control-m-c{
-	display: flex;
+[name*="OBB_checkbox"]{
+	display:flex;
 	align-items:center;
-}
-html:not(.designer) .sidebarVisible [name="OBB_header"]{
-	left: 15rem;
-	width: calc(100vw - 15rem);
-	padding-top:1rem!important;
-	padding-bottom:1rem
-}
-html:not(.designer) [name="OBB_header"] > div{
-	display:flex!important;
-	align-items:center;
-	justify-content:space-between;
-	width:100%;
-	
-}
-html:not(.designer) [name*="HeaderTitleContainer"]{
-width:80%;}
-html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
-	font-size: 1.7rem;
-	font-family:var(--regularFont);
-	color:black;
-	padding: 0;
-}
-html:not(.designer) [name*="HeaderDescriptionContainer"] [name*="HeaderDescription"]{
-	font-size:1rem;
-	color:var(--description);
-	font-family:var(--regularFont);
-	padding-top: 0;
-}
-html:not(.designer) [name*="HeaderContent"]{
-	display:flex!important;
-	flex-direction:column;
-	border-left:1px solid rgb(0 0 0 / 20%);
-	padding-left:2rem;
-}
-html:not(.designer) [name*="HeaderContent"] span{
-	padding:0;
+	flex-wrap:nowrap!important;
 }
 .button.help{
 	display:none;
-}
-.sidebar .nav-link{
-	color:white;
-	transition:var(--transition);
 }
 html:not(.designer) .page-title{
 	font-size: 2rem;
     font-family: var(--regularFont);
     color: black;
-}
-html:not(.designer) .theme-entry.runtime-form span.runtime-list-item-wrap{
-	font-family: var(--regularFont);
-	padding: 0;
 }
 html:not(.designer) header{
 	background-color:#F2F2F6;
@@ -329,34 +209,18 @@ html:not(.designer) header{
 	width:calc(100% - 20rem);
 }
 html:not(.designer){
-    font-size:14px!important;
-}
-html:not(.designer) .grid-content-cell-wrapper a{
-	color:var(--orange);
-	font-family:var(--regularFont);
-	font-weight:400;
-	transition:all .3s ease-in-out;
-	font-size:8pt;
-}
-html:not(.designer) .grid-content-cell-wrapper a:hover{
-	color:var(--orange-hover);
+    font-size:12px!important;
 }
 html:not(.designer) body{
     margin:0;
-    padding: 1rem;
+    padding:0;
     font-family: var(--regularFont);
     background-color: white;
-    margin-top: 6rem;
-    height: calc(100% - 4rem);
-    width: calc(100% - 0rem);
-}
-html:not(.designer) tr.selected [src*="/Runtime/Style/eye.png"],
-html:not(.designer) tr.selected [src*="https://ck2-app-tst-1.obc.local//Runtime/Image.ashx"]{
-	filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(183deg) brightness(99%) contrast(91%);
+	position: relative;
 }
 html:not(.designer) .theme-entry.sidebarAvailable{
-	left: 15rem;
-	width: calc(100%  - 15rem);
+	left: 19rem;
+	width: calc(100%  - 19rem);
 	padding: 0 1rem;
 	position: relative;
 }
@@ -365,16 +229,10 @@ html:not(.designer) .runtime-content{
 }
 html:not(.designer) [name*="OBB_asterik"]{
     color:var(--aqua)!important;
-    padding: 0;
 }
 html:not(.designer) [name*="OBB_label"]{
     color:var(--black)!important;
     font-size:1rem!important;
-    font-family: var(--regularFont);
-}
-html:not(.designer) [name*="OBB_Title"]{
-	 color:var(--black)!important;
-    font-size:1.5rem!important;
     font-family: var(--regularFont);
 }
 html:not(.designer) [name="SignUpButton"]{
@@ -388,45 +246,14 @@ html:not(.designer) [name="SignUpButton"]{
     padding: .4rem 1rem;
     border-radius: .5rem;
     font-size: 1rem;
+	transition: all .3s ease-in-out;
+}
+html:not(.designer) [name="SignUpButton"]:hover{
+	background-color: var(--orange-hover)!important;
 }
 html:not(.designer) .panel-body{
     background-color:transparent!important;
     box-shadow:none!important;
-}
-html:not(.designer) td .grid-content-cell{
-	height:4rem!important;
-	display:flex;
-	align-items:center;
-}
-html:not(.designer) [name*="OBB_textbox"],
-.filterTxt .input-control-m-c,
-.filterTxt input{
-    border:1px solid var(--borderColor)!important;
-    font-size:1rem!important;
-    border-radius: .5rem!important;
-    padding: .4rem 1rem!important;
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
-    font-family: var(--regularFont)!important;
-    width: 100%;
-    min-height: 3rem!important;
-    height: 3rem!important;
-}
-html:not(.designer) [name*="OBB_textarea"]{
-	  border:1px solid var(--borderColor)!important;
-    font-size:1rem!important;
-    border-radius: .5rem!important;
-    padding: .4rem 1rem!important;
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
-    font-family: var(--regularFont)!important;
-    width: 100%;
-}
-
-html:not(.designer) .input-control.text-input .input-control-m-c{
-	border:none!important
 }
 html:not(.designer) .readonly[name*="OBB_textbox"],
 html:not(.designer) .empty[name*="OBB_textbox"],
@@ -439,21 +266,99 @@ html:not(.designer) .disabled[name*="OBB_textbox"],
 .input-control.select-box.read-only  .input-control-buttons{
 display:none;
 }
+html:not(.designer) [name*="OBB_textbox"],
+.filterTxt .input-control-m-c,
+.SFC.SourceCode-Forms-Controls-Web-TextBox{
+    border:1px solid var(--borderColor)!important;
+    font-size:1rem!important;
+    border-radius: .5rem!important;
+    padding: .4rem 1rem!important;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    font-family: var(--regularFont)!important;
+    width: 100%;
+    min-height: 3rem!important;
+    height: 3rem!important;
+}
+.grid-content-cell-wrapper input.SFC.SourceCode-Forms-Controls-Web-TextBox{
+	margin: 2rem 2rem;
+	width:calc(100% - 4rem);
+}
+html:not(.designer) [name*="OBB_textarea"]{
+	  border:1px solid var(--borderColor)!important;
+    font-size:1rem!important;
+    border-radius: .5rem!important;
+    padding: .4rem 1rem!important;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    font-family: var(--regularFont)!important;
+    width: 100%;
+}
+html:not(.designer) .input-control.text-input .input-control-m-c{
+	border:none!important
+}
+html:not(.designer) .readonly[name*="OBB_textbox"],
+html:not(.designer) .empty[name*="OBB_textbox"],
+html:not(.designer) .disabled[name*="OBB_textbox"],
+.ui-lookupbox-disabled{
+	background-color:#f7f7f7!important;
+}
 html:not(.designer) [name*="OBB_dropdown"] .select-box,
 html:not(.designer) .select-box[name*="OBB_calendar"],
 html:not(.designer) .input-control.select-box.lookup-box.picker-input.double-buttons,
-.searchDdl .select-box{
+html:not(.designer) .searchDdl .select-box{
     border:1px solid var(--borderColor)!important;
     border-radius:.5rem!important;
     height:2.9rem;
     min-height:2.9rem;
     overflow: hidden;
+    margin: 0!important;
+}
+html:not(.designer) .input-control.select-box.dropdown-box .input-control-m-c{
+    border:1px solid var(--borderColor)!important;
+	border-right:none!important;
+    border-top-left-radius:.5rem!important;
+	border-bottom-left-radius:.5rem!important;
+    height:2.9rem;
+    min-height:2.9rem;
+    overflow: hidden;
+}
+div#\31 e489858-29a8-1a34-c6bb-f5e8d6ad856f_0656aaf1-d794-c796-b814-7b3fb286f5da{
+	padding-right:0!important;
+}
+div#\31 e489858-29a8-1a34-c6bb-f5e8d6ad856f_ca291f9b-3694-0045-2467-19554786c6cc{
+padding-left:0!important;
+}
+div#\33 28fdd5a-aaf1-cc53-a997-845d85b84385_7e85db03-9b35-b228-87aa-d98d395a4f5b_FilePanel{
+	width: calc(100% - 2rem);
+}
+html:not(.designer) .theme-entry .input-control-buttons.styling-right.styling-inner-wrapper{
+	 border:1px solid var(--borderColor)!important;
+	 border-left:none!important;
+	 border-top-right-radius:.5rem!important;
+	 border-bottom-right-radius:.5rem!important;
+	 height: 2.7rem;
+	 min-height: 2.7rem;
+	 overflow: hidden;
+}
+html:not(.designer) .input-control.select-box.dropdown-box{
+	outline:none!important;
+	border:none!important;
 }
 html:not(.designer) .input-control.text-input.control-group-container .input-control-m-c{
 	border:1px solid var(--borderColor)!important;
     border-radius:.5rem;
 	height:3.2rem;
 	min-height:3.2rem;
+}
+span#\30 c1813ed-549c-3fd6-c684-5c15245c5c66{
+	padding:0!important;
+}
+html:not(.designer) .filterContainer{
+	margin-bottom:1rem;
+	margin-top:1rem;
 }
 html:not(.designer) [name*="OBB_dropdown"] .select-box .input-control-m-c,
 html:not(.designer) [name*="OBB_dropdown"] .select-box  .input-control-buttons,
@@ -464,13 +369,6 @@ html:not(.designer) .select-box[name*="OBB_calendar"]  .input-control-buttons,
 .searchDdl .select-box .input-control-m-c,
 .searchDdl .select-box .input-control-buttons{
     border:none!important;
-}
-html:not(.designer) .select-box[name*="OBB_calendar"] *,
-[name*="OBB_textbox"],[name*="OBB_textarea"] ,textarea,
-.input-control-watermark,
-[name*="OBB_dropdown"] *{
-	font-family:var(--regularFont);
-	font-size:1rem!important;
 }
 .filterLabel{
 	font-size:1rem;
@@ -509,7 +407,7 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
   top: 0.2rem;
 }
 .theme-entry .day {
-    font-size: 1rem;
+   font-size: 1rem;
     height: 2.5rem!important;
     width: 2.5rem!important;
     text-align: center!important;
@@ -527,19 +425,15 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
     height: auto!important;
 }
 .theme-entry .top-calendar a.today-title {
-    border: none;
+   border: none;
     border-radius: 0;
     margin-top: 1rem;
     padding: 0;
 }
 .theme-entry .top-calendar a {
-    margin-top: 1rem;
+   margin-top: 1rem;
     background-repeat: no-repeat;
     height: 1rem;
-}
-.theme-entry .top-calendar a.top-calendar-right,
-.theme-entry .top-calendar a.top-calendar-left{
-height:unset;
 }
 .theme-entry .week{
 display:flex;
@@ -559,11 +453,11 @@ display:flex;
     position: fixed;
     top: 0;
     left: 0;
-    width: 12rem;
+    width: 15rem;
     padding: 2rem;
     z-index: 1;
     height: 100vh;
-    background-image: url("https://frontenduiux.github.io/OBB_Services/Images/Registration%20Background.png");
+    background-image: url("https://frontenduiux.github.io/OBB_ETenders/Images/Registration%20Background.png");
     background-size: cover;
     background-position: top;
 }
@@ -588,7 +482,6 @@ display:flex;
 	margin-bottom:1rem;
 	text-decoration:none;
 	opacity:0.9;
-	position:relative;
 }
 .sidebar .nav-link .icon{
 	height: 1.5rem;
@@ -597,38 +490,6 @@ display:flex;
 }
 .sidebar .nav-link .nav-link-text{
 	color:#ffffff;
-	font-size: 1rem;
-}
-.sidebar .nav-link.has-children::after{
-	content:"";
-	background-image:url("https://frontenduiux.github.io/OBB_Services/Images/chevronDown.svg");
-	height: 1rem;
-	width:1rem;
-	background-repeat:no-repeat;
-	background-position:center;
-	background-size: contain;
-	position:absolute;
-	right:0;
-	top: 50%;
-	transform: translateY(-50%);
-	transition:var(--transition);
-}
-.sidebar .nav-link.has-children.expanded::after{
-	transform: translateY(-50%) rotate(180deg);
-}
-.sidebar .sidebar-submenu {
-	padding:0 1rem 1rem;
-	display:flex;
-	flex-direction:column;
-	border-bottom:1px solid rgb(255 255 255 / 30%);
-	margin-bottom:1rem;
-}
-.sidebar .sidebar-submenu .sidebar-link.sub-link{
-	font-size:1rem;
-	text-decoration:none;
-	color:white;
-	width:100%;
-	margin: 0rem 0 .5rem;
 }
 html:not(.designer) [name*="OBB_Collapse"]{
 	border:1px solid #E8E8E8;
@@ -653,15 +514,9 @@ html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper{
 }
 html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper .panel-header-text,
 html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper .grid-header-text{
-	font-size: 1.6rem;
+	font-size:1.6rem;
 	font-family:var(--regularFont);
 	padding: 0;
-	height: unset;
-	min-height: unset;
-}
-html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper .panel-header-text > span,
-html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper .grid-header-text> span{
-	min-height: 3rem;
 	color: #ffffff;
 }
 html:not(.designer) [name*="OBB_Collapse"] .panel-body{
@@ -678,7 +533,7 @@ td#eb4aa284-91ee-abc7-1932-9e5f938473b7{
 html:not(.designer) [name*="OBB_button"],
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	border-radius:.5rem;
-	/* margin-left: 1rem; */
+	margin-left: 1rem;
 	border:none;
 	transition:var(--transition);
 	font-family:var(--regularFont);
@@ -687,44 +542,8 @@ html:not(.designer) [name*="OBB_button OBB_primary_button"],
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	background-color:var(--orange)!important;
 	color:white!important;
-}
-html:not(.designer) .timepicker-buttons{
-display:flex;
-align-items:center;
-}
-html:not(.designer) [name*="paddingTop"]{
-	padding-top:1rem !important;
-}
-html:not(.designer) [name*="paddingBottom"]{
-	padding-bottom:1rem!important;
-}
-html:not(.designer) [name*="marginTop"]{
-	margin-top:1rem !important;
-}
-html:not(.designer) [name*="marginBottom"]{
-	margin-bottom:1rem!important;
-}
-html:not(.designer) [name*="exportbtn"]{
-	position:relative;
-	right:1rem;
-	left:auto;
-	float:right;
-	background-image:url("https://frontenduiux.github.io/OBB_Services/Images/Export.png");
-	background-size:2rem;
-	background-repeat:no-repeat;
-	background-position:1rem center;
-	padding-left: 3.4rem;
-	background-color: transparent!important;
-	color: var(--orange)!important;
-	border: 2px solid var(--orange);
-}
-html:not(.designer) [name*="exportbtn"]:hover{
-	background-color:transparent!important;
-	color:var(--orange)!important;
-	background-image:url("https://frontenduiux.github.io/OBB_Services/Images/Export.png");
-	background-size:2rem;
-	background-repeat:no-repeat;
-	background-position:1rem center;
+	padding: .7rem 2.5rem;
+	font-weight:400;
 }
 html:not(.designer) [name="RFQTenderCreation_Button  OBB_button OBB_primary_button"]{
 	margin:0;
@@ -796,9 +615,9 @@ html:not(.designer) [name*="OBB_WorkList"] .SourceCodeFormsControlsWorklist{
 	align-items:center;
 	justify-content:center;
 }
-.styling-font{
-	font-size:1rem;
-	font-family:var(--regularFont);
+html:not(.designer) .theme-entry span.styling-font{
+	font-size:1rem!important;
+	font-family:var(--regularFont)!important;
 }
 .input-control.style-aware.radio svg{
 	height: 1.4rem!important;
@@ -812,38 +631,21 @@ html:not(.designer) [name*="OBB_WorkList"] .SourceCodeFormsControlsWorklist{
 	display: flex;
 	align-items: center;
 }
-[name*= "OBB_checkbox"] {
-    display: flex !important;
-    align-items: center !important;
-    align-content: center !important;
-    padding-top: 3.5rem !important;
-}
-[name*="Button marginBottom"]{
-	margin-bottom:1rem;
-}
-[name*= "OBB_checkbox noPadding"] {
-    padding-top: 0rem !important;
-}
-[name*= "OBB_checkbox"] *{
+[name="HeaderTitleContainer"] [name="HeaderTitle"]{
+	font-size:2rem;
 	font-family:var(--regularFont);
-	font-size: 1rem!important;
+	color:black;
 }
-[name*= "OBB_Collapse marginTop PaddingTop"]{
-	padding-top:1rem!important;
-}
-tr.selected .runtime-list-item,
-tr.selected .runtime-list-item-wrap{
-	color:white!important;
+[name="HeaderDescriptionContainer"] [name="HeaderDescription"]{
+	font-size: 1.1rem;
+	color:var(--description);
+	font-family:var(--regularFont);
 }
 /* POPUP BRANDING START */
 html:not(.designer) .theme-entry .message-box-content,
 html:not(.designer) .theme-entry .dialog .popup-body{
     height: fit-content;
 }
-html:not(.designer) .theme-entry .popup.dialog.error-message:not(.runtime-message) .message-box-content .panel-body-m-c{
-	margin: 0;
-}
-.theme-entry .base2.base1.modalizer
 html:not(.designer) .theme-entry .popup-header,
 html:not(.designer) .theme-entry .popup-body,
 html:not(.designer) .theme-entry .popup-footer{
@@ -858,22 +660,28 @@ height:fit-content!important;
 html:not(.designer) .theme-entry .popup-header{
     padding:1rem 2rem;
     background-color:#f7f7f7;
-    margin: 0!important;
-    position: relative!important;
-    height: fit-content!important;
+	margin: 0!important;
+	width: 100%;
 }
 html:not(.designer) .theme-entry .popup-body{
 padding:1rem 2rem 0;
-border-bottom:none!important
+border-bottom:none!important;
+margin: 0!important;
+width: 100%;
 }
 html:not(.designer) .theme-entry .popup-footer{
     padding:0rem 2rem 1rem;
     border-top:none!important;
+	margin: 0!important;
+	width: 100%;
 }
 html:not(.designer) .popup.dialog{
     height:fit-content!important;
     border-radius:1rem!important;
     overflow:hidden;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%);
 }
 html:not(.designer) .popup.dialog .popup-header .popup-header-text{
     font-size:1.4rem;
@@ -884,79 +692,16 @@ html:not(.designer) .theme-entry .message-box-content.error:before{
     background-repeat:no-repeat;
     background-position:center;
 }
+html:not(.designer) .popupManager[style*="position: absolute;"]{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh !important;
+    width: 100vw !important;
+    z-index: 2;
+}
 /* POPUP BRANDING END */
-html:not(.designer) .theme-entry span[name*="profilePhoto"]{
-	border:1px solid rgb(220 220 220 / 80%)!important;
-	border-radius:2rem;
-	display: flex!important;
-	align-items: center!important;
-	width: fit-content!important;
-	padding: 0.4rem 1.6rem;
-	height: 3rem!important;
-	min-height:unset!important;
-	line-height:unset!important
-}
-/* */
-html:not(.designer) .worklist-grid-column-header-cell-text,
-html:not(.designer) .WorklistItemGridCell span{
-font-size:8pt!important;
-}
-/* OBB SERVICES START */
-.SFC[name*="OBB_Service"]{
-	height:14rem;
-	width: 23.9rem;
-	border-radius:1rem;
-	cursor: pointer;
-	background-color: #ffffff;
-	display: flex;
-	flex-direction:column;
-	align-items:center;
-	justify-content:center;
-	transition:all .3s ease-in-out;
-	padding: 1rem;
-	/* margin: 1rem; */
-	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/backgroundimage.png");
-	background-size: 116%;
-	background-repeat:no-repeat;
-	background-position:center;
-	transition:all .3s ease-in-out;
-	/* margin: 0 auto!important; */
-	margin-bottom: 0rem;
-}
-.SFC[name*="OBB_Service"]:hover{
-	background-size:126%;
-}
-.SFC[name*="OBB_Service"]:nth-child(3n+1){
-	/* margin-left:0; */
-}
-/* [name*="OBB_Service"]:hover{
-background-color:#00a9b550;;
-} */
-[name*="OBB_ServiceIcon"]{
-	width:4rem!important;
-	height:auto!important;
-	position:relative!important;
-	border-radius: 0;
-	display: block;
-	background-color: transparent!important;
-}
-[name*="OBB_ServiceIcon"] img{
-	height:100%!important;
-	width:100%!important;
-	object-fit:contain;
-}
-[name*="OBB_Service"] [name*="OBB_ServiceName"]{
-	display: block;
-	position:relative!important;
-	margin: 0!important;
-	height: unset;
-	border-radius: inherit;
-	background: transparent;
-}
-/* OBB SERVICES END */
-.theme-entry .popup.id-calendar-control-popup.type-date-time{
-	min-height: unset!important;
-}
 /* TABLE BRANDING START */
 html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
 	background-color: #f6f6f6;
@@ -1020,7 +765,6 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Docu
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending recipient action"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"],
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending draft letter"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"],
@@ -1051,8 +795,7 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending revi
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"] > span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"] span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "] span{
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"] span{
 	border-radius:2rem;
 	min-height:unset!important;
 	height:unset!important;
@@ -1070,8 +813,7 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending draf
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"] >span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"] > span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "] > span{
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"] > span{
 	background-color:#FFF3F0;
 	color:#FF8A65!important;
 }
@@ -1137,6 +879,9 @@ body.theme-entry.topbarExists {
 html:not(.designer) .grid-column-header-cell{
 	background-color: transparent;
 }
+html:not(.designer) .grid-column-header-cell-content{
+	padding:0 1rem;
+}
 /* TABLE BRANDING END */
 .worklistToolbarHeaderTextWrapper .headerTxt{
 	font-size:1.5rem;
@@ -1171,6 +916,21 @@ html:not(.designer) [name*="UserName"]{
 .filterTxt .input-control-wrapper{
 	width:100%!important;
 }
+html:not(.designer) [name*="OBB_textbox"],
+.filterTxt .input-control-m-c,
+.filterTxt input{
+    border:1px solid var(--borderColor)!important;
+    font-size:1rem!important;
+    border-radius: .5rem!important;
+    padding: .4rem 1rem!important;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    font-family: var(--regularFont)!important;
+    width: 100%;
+    min-height: 3rem!important;
+    height: 3rem!important;
+}
 .quickSearch.filter .toolbar-button.toolbar-button-inline.style-aware.refresh{
 	position:absolute;
 	right:1.5rem;
@@ -1189,23 +949,8 @@ html:not(.designer) [name*="Cancel Button"]:hover{
 	border:1px solid var(--borderColor)!important;
 	background-color: transparent!important;
 }
-html:not(.designer) .theme-entry .toolbars.double .toolbar table td{
-	height:unset!important;
-}
-html:not(.designer) .theme-entry a.toolbar-button[name*="toolbarButton"]{
-	min-height:unset!important;
-	line-height:unset!important;
-}
-html:not(.designer) [name*="toolbarButton"] .button-c,
-html:not(.designer) [name*="toolbarButton"] .button-c .button-text{
- padding:0!important;
-}
-html:not(.designer) img#\30 9a5c432-698e-951e-a5dc-30c1149241b3_8c40e4b4-a56c-2593-e555-118c658111a0_Picture ,
-html:not(.designer) img#aaa2922e-a9d6-57b9-4b35-a5e16e1477be_8c40e4b4-a56c-2593-e555-118c658111a0_Picture{
-    width: 10rem !important;
-}
 @media(min-width:1600px){
-	html:not(.designer) .tab-box-tabs{
+		html:not(.designer) .tab-box-tabs{
 	padding: 0 1vw;
 	/* margin-bottom:2vw; */
 	top: 3.7vw;
@@ -1216,19 +961,5 @@ html:not(.designer) img#aaa2922e-a9d6-57b9-4b35-a5e16e1477be_8c40e4b4-a56c-2593-
     width: 12vw;
     padding: 2vw;
 }
-html:not(.designer) body.sidebarVisible {
-    margin-left: 16vw !important;
-    width: calc(100vw - 17vw) !important;
-    padding: 0 1vw 1vw 1vw;
-}
-	body.theme-entry.topbarExists {
-    margin-top: 9vw;
-}
-html:not(.designer) .sidebarVisible [name="OBB_header"] {
-    left: 16vw;
-    width: calc(100vw - 17vw);
-}
-.navbarBrand a{
-	width: 9vw;
-}
+.navbarBrand a{width: 9vw;}
 }
