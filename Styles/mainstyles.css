@@ -854,7 +854,12 @@ html:not(.designer) .grid-column-header-cell-content{
 	padding:0 1rem;
 }
 /* TABLE BRANDING END */
-
+html:not(.designer) [name*="Cancel Button"],
+html:not(.designer) [name*="Cancel Button"]:hover{
+	color: var(--orange)!important;
+	border:1px solid var(--borderColor)!important;
+	background-color: transparent!important;
+}
 @media(min-width:1600px){
 .sidebar {
     width: 12vw;
