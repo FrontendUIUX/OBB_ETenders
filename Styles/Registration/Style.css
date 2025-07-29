@@ -5,6 +5,14 @@ html:not(.designer) span[name*="SignUpTitle"] span[name*="HeaderTitle"],
     color:var(--black);
     font-family: var(--regularFont);
 }
+html:not(.designer) body {
+    margin: 0!important;
+    padding: 0rem!important;
+    font-family: var(--regularFont);
+    background-color: white;
+    height: 100%!important;
+    width: 100%!important;
+}
 html:not(.designer) span[name*="SignUpDescription"] span[name*="SubHeader"]{
     color:var(--description);
     font-size:1rem;
