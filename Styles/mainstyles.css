@@ -21,9 +21,9 @@ html:not(.designer) .tab-box-tabs{
 	border-bottom:1px solid var(--borderColor)!important;
 	position:fixed!important;
 	top: 6rem;
-	width: calc(100vw - 18rem);
+	width: calc(100vw - 22rem);
 	z-index: 2;
-	left: 15rem;
+	left: 19rem;
 }
 html:not(.designer) .topbarExists .tab-box-tabs li .tab{
 	position:relative;
