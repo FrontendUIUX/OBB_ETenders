@@ -854,6 +854,33 @@ html:not(.designer) .grid-column-header-cell-content{
 	padding:0 1rem;
 }
 /* TABLE BRANDING END */
+.worklistToolbarHeaderTextWrapper .headerTxt{
+	font-size:1.5rem;
+	font-family: var(--regularFont);
+}
+html:not(.designer) .filterContainer{
+	display: flex;
+	justify-content: space-between;
+}
+html:not(.designer) [name*="UserName"]{
+	font-family:var(--regularFont);
+}
+.filterChosen.filter{
+	display: none!important;
+}
+.quickSearch.filter .filterLabel{
+	position:relative;
+	display:none;
+}
+.quickSearch.filter::before{
+	content:"Search by:";
+	position:relative;
+	left:0;
+	width:fit-content;
+	color:#131313;
+	font-size:1rem;
+	font-family:var(--regularFont)!important;
+}
 html:not(.designer) [name*="Cancel Button"],
 html:not(.designer) [name*="Cancel Button"]:hover{
 	color: var(--orange)!important;
