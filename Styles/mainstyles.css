@@ -650,6 +650,9 @@ html:not(.designer) .popup.dialog{
     height:fit-content!important;
     border-radius:1rem!important;
     overflow:hidden;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%);
 }
 html:not(.designer) .popup.dialog .popup-header .popup-header-text{
     font-size:1.4rem;
