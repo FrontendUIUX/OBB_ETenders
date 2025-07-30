@@ -1234,6 +1234,18 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
     left: 15rem;
     width: calc(100vw - 15rem);
 }
+.popupManager{
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.popup.dialog{
+	top: 50%!important;
+	left: 50%!important;
+	transform: translate(-50%,-50%);
+}
 @media(min-width:1600px){
 	html:not(.designer) .tab-box-tabs{
 	padding: 0 1vw;
