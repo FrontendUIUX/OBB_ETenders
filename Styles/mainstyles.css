@@ -1191,6 +1191,15 @@ html:not(.designer) [name*="Cancel Button"]:hover{
 	border:1px solid var(--borderColor)!important;
 	background-color: transparent!important;
 }
+html:not(.designer) a[name*="return"],
+html:not(.designer) a[name*="return"]:hover,
+html:not(.designer) a[name*="draftBtn"],
+html:not(.designer) a[name*="draftBtn"]:hover{
+	color: var(--orange)!important;
+	border:1px solid var(--orange)!important;
+	background-color: #FFF5E5!important;
+}
+
 html:not(.designer) .theme-entry .toolbars.double .toolbar table td{
 	height:unset!important;
 }
