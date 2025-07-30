@@ -20,9 +20,9 @@ html:not(.designer) .tab-box-tabs{
 	border-bottom:1px solid var(--borderColor)!important;
 	position:fixed!important;
 	top: 6rem;
-	width: calc(100vw - 19rem);
+	width: calc(100vw - 18rem);
 	z-index: 2;
-	left: 16rem;
+	left: 15rem;
 }
 html:not(.designer) .topbarExists .tab-box-tabs li .tab{
 	position:relative;
@@ -247,7 +247,7 @@ html:not(.designer) [name*="OBB_header"]{
 	z-index: 2;
 	/* height: 6rem; */
 	padding: 0 1rem!important;
-	/* display: flex!important; */
+	display: flex!important;
 	align-items: center!important;
 	justify-content: space-between;
 	padding-top:1rem!important;
@@ -269,7 +269,7 @@ html:not(.designer) .dropdown-box .input-control-m-c{
 	display: flex;
 	align-items:center;
 }
-html:not(.designer) .sidebarAvailable [name="OBB_header"]{
+html:not(.designer) .sidebarVisible [name="OBB_header"]{
 	left: 15rem;
 	width: calc(100vw - 15rem);
 	padding-top:1rem!important;
@@ -355,8 +355,8 @@ html:not(.designer) tr.selected [src*="https://ck2-app-tst-1.obc.local//Runtime/
 	filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(183deg) brightness(99%) contrast(91%);
 }
 html:not(.designer) .theme-entry.sidebarAvailable{
-	left: 15rem;
-	width: calc(100%  - 15rem);
+	left: 19rem;
+	width: calc(100%  - 19rem);
 	padding: 0 1rem;
 	position: relative;
 }
@@ -559,7 +559,7 @@ display:flex;
     position: fixed;
     top: 0;
     left: 0;
-    width: 12rem;
+    width: 11rem;
     padding: 2rem;
     z-index: 1;
     height: 100vh;
@@ -597,7 +597,6 @@ display:flex;
 }
 .sidebar .nav-link .nav-link-text{
 	color:#ffffff;
-	font-size: 1rem;
 }
 .sidebar .nav-link.has-children::after{
 	content:"";
@@ -861,7 +860,6 @@ html:not(.designer) .theme-entry .popup-header{
     margin: 0!important;
     position: relative!important;
     height: fit-content!important;
-    left: 0;
 }
 html:not(.designer) .theme-entry .popup-body{
 padding:1rem 2rem 0;
@@ -915,16 +913,24 @@ font-size:8pt!important;
 	justify-content:center;
 	transition:all .3s ease-in-out;
 	padding: 1rem;
+	/* margin: 1rem; */
 	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/backgroundimage.png");
 	background-size: 116%;
 	background-repeat:no-repeat;
 	background-position:center;
 	transition:all .3s ease-in-out;
+	/* margin: 0 auto!important; */
 	margin-bottom: 0rem;
 }
 .SFC[name*="OBB_Service"]:hover{
 	background-size:126%;
 }
+.SFC[name*="OBB_Service"]:nth-child(3n+1){
+	/* margin-left:0; */
+}
+/* [name*="OBB_Service"]:hover{
+background-color:#00a9b550;;
+} */
 [name*="OBB_ServiceIcon"]{
 	width:4rem!important;
 	height:auto!important;
@@ -996,7 +1002,7 @@ html:not(.designer) .grid-body{
 	margin: 1rem!important;
 	width: calc(100% - 2rem);
 	border: 1px solid rgb(220 220 220 / 80%)!important;
-	border-radius: .7rem;
+	border-radius: 2rem;
 }
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Saved"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to FTTX Desgin Team"],
@@ -1177,26 +1183,10 @@ html:not(.designer) [name*="UserName"]{
 	position:relative;
 }
 html:not(.designer) [name*="Cancel Button"],
-html:not(.designer) [name*="Cancel Button"]:hover,
-html:not(.designer) [name*="button Cancel"],
-html:not(.designer) [name*="button Cancel"]:hover{
+html:not(.designer) [name*="Cancel Button"]:hover{
 	color: var(--orange)!important;
 	border:1px solid var(--borderColor)!important;
 	background-color: transparent!important;
-}
-html:not(.designer) [name*="Button Return"],
-html:not(.designer) [name*="Button Return"]:hover,
-html:not(.designer) [name*="draftBtn"],
-html:not(.designer) [name*="draftBtn"]:hover{
-	background-color:rgb(229 116 49 / 10%)!important;
-	border:1px solid var(--orange);
-	color:var(--orange)!important;
-}
-html:not(.designer) .grid-column-header-text {
-	text-transform: capitalize!important;
-}
-div#\35 2514ea1-299d-4d28-b86f-9e90b0bc2e6c_d1c2482c-6b44-446b-990a-c85ec1f18da5_d150917a-0cef-faf7-9774-3dba8d960e78_692d4e30-a9a2-4f51-ac33-21832711b4c0 .panel-body {
-    padding: 0;
 }
 html:not(.designer) .theme-entry .toolbars.double .toolbar table td{
 	height:unset!important;
@@ -1213,47 +1203,27 @@ html:not(.designer) img#\30 9a5c432-698e-951e-a5dc-30c1149241b3_8c40e4b4-a56c-25
 html:not(.designer) img#aaa2922e-a9d6-57b9-4b35-a5e16e1477be_8c40e4b4-a56c-2593-e555-118c658111a0_Picture{
     width: 10rem !important;
 }
-html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
-	left: 16rem;
-	width: calc(100vw - 16rem);
-	padding-top:1rem!important;
-	padding-bottom:1rem
-}
-html:not(.designer) [name*="OBB_header"] > div{
-	/* display:flex!important;
-	align-items:center;
-	justify-content:space-between;
-	width:100%; */
-	
-}
-html:not(.designer) [name*="HeaderTitleContainer"]{
-width:80%;}
-html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
-	font-size: 1.7rem;
-	font-family:var(--regularFont);
-	color:black;
-	padding: 0;
-}
-.toolbar-wrapper > table > tbody > tr:first-child > td:first-child {
+/* Table Toolbar Buttons Alignment Start */
+/* VMS.AdministrationForm, LMS.AdministrationForm*/
+td#\39 9e0a7a0-73d3-eba6-9232-e7c5509f59df,
+td#\30 64aa9f2-8dc0-4e3d-b02f-7e1ee8742977,
+.toolbar-wrapper>table>tbody>tr:first-child > td:first-child {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.toolbar-wrapper > table > tbody > tr:first-child > td:first-child a{
-    font-size:1rem;
+/* Table Toolbar Buttons Alignment End */
+/* BUTTONS BRANDING START */
+[name="LetterPendingFormCopy Area Item OBB_Collapse"] table col{
+	width: auto!important;
 }
-.popupManager[style*="position: absolute;"]{
-	position:fixed!important;
-	top:0;
-	left:0;
-	height:100vh!important;
-	width:100vw!important;
-	z-index:2;
-}
-.popup.dialog{
-	top: 50%!important;
-	left: 50%!important;
-	transform:translate(-50%,-50%);
+html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	display:flex!important;
+	flex-direction:column!important;
+	align-items:flex-start!important;
+	justify-content:flex-start!important;
+	border:1px solid var(--borderColor)!important;
+	border-radius:.7rem;
 }
 @media(min-width:1600px){
 	html:not(.designer) .tab-box-tabs{
@@ -1267,7 +1237,7 @@ html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
     width: 12vw;
     padding: 2vw;
 }
-html:not(.designer) body.sidebarAvailable {
+html:not(.designer) body.sidebarVisible {
     margin-left: 16vw !important;
     width: calc(100vw - 17vw) !important;
     padding: 0 1vw 1vw 1vw;
@@ -1275,7 +1245,7 @@ html:not(.designer) body.sidebarAvailable {
 	body.theme-entry.topbarExists {
     margin-top: 9vw;
 }
-html:not(.designer) .sidebarAvailable [name="OBB_header"] {
+html:not(.designer) .sidebarVisible [name="OBB_header"] {
     left: 16vw;
     width: calc(100vw - 17vw);
 }
