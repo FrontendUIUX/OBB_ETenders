@@ -861,6 +861,7 @@ html:not(.designer) .theme-entry .popup-header{
     margin: 0!important;
     position: relative!important;
     height: fit-content!important;
+    left: 0;
 }
 html:not(.designer) .theme-entry .popup-body{
 padding:1rem 2rem 0;
