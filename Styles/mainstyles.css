@@ -1231,6 +1231,14 @@ html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
 	color:black;
 	padding: 0;
 }
+.toolbar-wrapper > table > tbody > tr:first-child > td:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.toolbar-wrapper > table > tbody > tr:first-child > td:first-child a{
+    font-size:1rem;
+}
 @media(min-width:1600px){
 	html:not(.designer) .tab-box-tabs{
 	padding: 0 1vw;
