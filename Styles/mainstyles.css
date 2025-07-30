@@ -1234,7 +1234,7 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
     left: 15rem;
     width: calc(100vw - 15rem);
 }
-.popupManager{
+.popupManager[style*="position: absolute;"]{
 	height: 100vh;
 	width: 100vw;
 	position: fixed;
