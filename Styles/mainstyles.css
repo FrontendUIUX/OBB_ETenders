@@ -354,11 +354,11 @@ html:not(.designer) tr.selected [src*="/Runtime/Style/eye.png"],
 html:not(.designer) tr.selected [src*="https://ck2-app-tst-1.obc.local//Runtime/Image.ashx"]{
 	filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(183deg) brightness(99%) contrast(91%);
 }
-html:not(.designer) .theme-entry.sidebarAvailable{
-	left: 19rem;
-	width: calc(100%  - 19rem);
-	padding: 0 1rem;
-	position: relative;
+html:not(.designer) .theme-entry.sidebarAvailable {
+    left: 15rem;
+    width: calc(100% - 15rem);
+    padding: 0 1rem;
+    position: relative;
 }
 html:not(.designer) .runtime-content{
     margin:0!important;
