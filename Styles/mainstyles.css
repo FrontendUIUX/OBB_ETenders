@@ -1241,6 +1241,19 @@ html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
 .toolbar-wrapper > table > tbody > tr:first-child > td:first-child a{
     font-size:1rem;
 }
+.popupManager[style*="position: absolute;"]{
+	position:fixed!important;
+	top:0;
+	left:0;
+	height:100vh!important;
+	width:100vw!important;
+	z-index:2;
+}
+.popup.dialog{
+	top: 50%!important;
+	left: 50%!important;
+	transform:translate(-50%,-50%);
+}
 @media(min-width:1600px){
 	html:not(.designer) .tab-box-tabs{
 	padding: 0 1vw;
