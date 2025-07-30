@@ -58,5 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Append Sidebar to the Body
         $('body').addClass("sidebarAvailable").append(sidebar);
+        $(window).on("load", function () {
+    if ($(".tab-box-tabs").length) {
+        $('body').addClass('topbarExists');
+    }
+})
     }
 });
