@@ -14,13 +14,13 @@ html:not(.designer) .SourceCode-Forms-Controls-Web-Button:hover{
 	background-color:var(--orange-hover)!important;
 }
 html:not(.designer) .tab-box-tabs{
-	padding: 0 1rem;
+	padding: 1rem;
 	background-color:white;
 	margin-bottom: 0rem;
 	border-bottom:1px solid var(--borderColor)!important;
 	position:fixed!important;
-	top: 6rem;
-	width: calc(100vw - 18rem);
+	top: 7.6rem;
+	width: calc(100vw - 17rem);
 	z-index: 2;
 	left: 15rem;
 }
@@ -349,6 +349,9 @@ html:not(.designer) body{
     margin-top: 6rem;
     height: calc(100% - 4rem);
     width: calc(100% - 0rem);
+}
+html:not(.designer) body.topbarExists{
+	margin-top:13.3rem;
 }
 html:not(.designer) tr.selected [src*="/Runtime/Style/eye.png"],
 html:not(.designer) tr.selected [src*="https://ck2-app-tst-1.obc.local//Runtime/Image.ashx"]{
@@ -1247,6 +1250,9 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	transform: translate(-50%,-50%);
 }
 @media(min-width:1600px){
+	html:not(.designer) body.topbarExists{
+	margin-top:13.3vw;
+}
 	html:not(.designer) .tab-box-tabs{
 	padding: 0 1vw;
 	/* margin-bottom:2vw; */
