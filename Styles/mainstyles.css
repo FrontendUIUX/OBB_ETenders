@@ -1239,6 +1239,13 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	transform: translate(-50%,-50%);
 }
 @media(min-width:1600px){
+	    html:not(.designer) .select-box[name*="OBB_calendar"] *, 
+    [name*="OBB_textbox"], [name*="OBB_textarea"], 
+    textarea, .input-control-watermark, 
+    [name*="OBB_dropdown"] *{
+    font-family: var(--regularFont);
+    font-size: 1vw !important;
+}
 	html:not(.designer) [name="SignUpButton"]{
     padding: .4vw 1vw;
     border-radius: .5vw;
