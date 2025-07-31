@@ -1253,6 +1253,9 @@ table td .select-box.dropdown-box.watermark .input-control-buttons{
 	border:none!important;
 }
 @media(min-width:1600px){
+	html:not(.designer) .theme-entry td span.runtime-list-item{
+		font-size:.9vw!important;
+	}
 	table td .select-box.dropdown-box.watermark{
 		height:3vw;
 		border:1px solid var(--borderColor)!important;
