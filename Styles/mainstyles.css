@@ -39,15 +39,11 @@ html:not(.designer) .grid-column-header-cell-content{
 html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] {
 	display:flex;
 	align-items:center;
-	/* justify-content:center; */
 	text-align:center;
-	/* max-width:100%!important; */
-	/* margin:0 -2rem; */
 	padding:0;
 }
 html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] .grid-column-header-text{
 	font-family:var(--regularFont)!important;
-	/* max-width: fit-content!important; */
 	width: fit-content!important;
 	margin:0 auto;
 	
@@ -252,6 +248,7 @@ html:not(.designer) [name*="OBB_header"]{
 	justify-content: space-between;
 	padding-top:1rem!important;
 	padding-bottom:1rem!important;
+	height: 7.6rem;
 }
 html:not(.designer) [name="Account Picture"]{
 	margin-right:.5rem;
@@ -916,24 +913,16 @@ font-size:8pt!important;
 	justify-content:center;
 	transition:all .3s ease-in-out;
 	padding: 1rem;
-	/* margin: 1rem; */
 	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/backgroundimage.png");
 	background-size: 116%;
 	background-repeat:no-repeat;
 	background-position:center;
 	transition:all .3s ease-in-out;
-	/* margin: 0 auto!important; */
 	margin-bottom: 0rem;
 }
 .SFC[name*="OBB_Service"]:hover{
 	background-size:126%;
 }
-.SFC[name*="OBB_Service"]:nth-child(3n+1){
-	/* margin-left:0; */
-}
-/* [name*="OBB_Service"]:hover{
-background-color:#00a9b550;;
-} */
 [name*="OBB_ServiceIcon"]{
 	width:4rem!important;
 	height:auto!important;
@@ -964,7 +953,6 @@ html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
 	background-color: #f6f6f6;
 	border-right: 1px solid rgb(220 220 220 / 80%);
 	cursor: pointer;
-	/* padding: 0 1rem; */
 }
 html:not(.designer) .theme-entry .grid-body-content table td{
 	padding: 0 1rem!important;
@@ -986,7 +974,6 @@ background-color:transparent!important;
 }
 html:not(.designer) .theme-entry .grid .grid-column-header-text{
 	font-family:var(--regularFont)!important;
-	/* max-width: fit-content!important; */
 	width: fit-content!important;
 }
 html:not(.designer) .theme-entry .grid .grid-column-header-cell{
@@ -998,7 +985,6 @@ html:not(.designer) .theme-entry .grid table.grid-content-table.zebra-stripes tr
 	padding:1rem 0!important;
 }
 html:not(.designer) .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(even){
-	/* background-color:#F2F2F6!important; */
 	background-color:#F9F9FB!important;
 }
 html:not(.designer) .grid-body{
@@ -1217,14 +1203,6 @@ html:not(.designer) img#aaa2922e-a9d6-57b9-4b35-a5e16e1477be_8c40e4b4-a56c-2593-
 }
 /* Table Toolbar Buttons Alignment Start */
 /* VMS.AdministrationForm, LMS.AdministrationForm*/
-td#\39 9e0a7a0-73d3-eba6-9232-e7c5509f59df,
-td#\30 64aa9f2-8dc0-4e3d-b02f-7e1ee8742977,
-.toolbar-wrapper>table>tbody>tr:first-child > td:first-child {
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: flex-end; */
-    /* height: unset; */
-}
 /* Table Toolbar Buttons Alignment End */
 /* BUTTONS BRANDING START */
 [name="LetterPendingFormCopy Area Item OBB_Collapse"] table col{
@@ -1266,7 +1244,6 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 }
 	html:not(.designer) .tab-box-tabs{
 	padding: 0 1vw;
-	/* margin-bottom:2vw; */
 	top: 3.7vw;
 	width: calc(100vw - 18.8vw);
 	left: 16vw;
