@@ -241,7 +241,7 @@ html:not(.designer) [name*="OBB_header"]{
 	left: 0;
 	width:100%;
 	z-index: 2;
-	/* height: 6rem; */
+	height: 6rem;
 	padding: 0 1rem!important;
 	/* display: flex!important; */
 	align-items: center!important;
@@ -1239,20 +1239,28 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	transform: translate(-50%,-50%);
 }
 @media(min-width:1600px){
-	.logo{
-    width: 12vw;
+	html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper,
+html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper{
+	padding:1vw 2vw;
+	width: calc(100% - 4vw);
 }
-.logo svg{
-    height:100%;
-    width:100%;
-    
+	html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper .panel-header-text > span,
+html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper .grid-header-text> span{
+	min-height: 3vw;
+	font-size: 1.3vw;
 }
-	    html:not(.designer) .select-box[name*="OBB_calendar"] *, 
-    [name*="OBB_textbox"], [name*="OBB_textarea"], 
-    textarea, .input-control-watermark, 
-    [name*="OBB_dropdown"] *{
-    font-family: var(--regularFont);
-    font-size: 1vw !important;
+html:not(.designer) [name*="OBB_Collapse"] .panel-body{
+	padding: 1vw 2vw;
+}
+	html:not(.designer) [name*="OBB_header"]{
+	padding: 1vw!important;
+	height: 5.4vw;
+}
+	html:not(.designer) [name*="HeaderDescriptionContainer"] [name*="HeaderDescription"]{
+	font-size:1vw;
+}
+	html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
+	font-size: 1.7vw;
 }
 	html:not(.designer) [name="SignUpButton"]{
     padding: .4vw 1vw;
