@@ -91,6 +91,20 @@ html:not(.designer) .theme-entry .form{
     margin-top:1rem;
 }
 @media(min-width:1600px){
+    [name="LoginButton"]{
+    font-size:1vw!important;
+    margin-left: .7vw;
+}
+    html:not(.designer) [name="RegistrationLowerSection"] [name="QuestionLabel"]{
+    font-size:1vw;
+}
+    html:not(.designer) span[name*="SignUpTitle"] span[name*="HeaderTitle"],
+[name="HeaderTitle"]{
+    font-size: 2.5vw !important;
+}
+html:not(.designer) span[name*="SignUpDescription"] span[name*="SubHeader"]{
+    font-size:1vw;
+}
     html:not(.designer) .video-container .intro{
         padding:2vw;
     }

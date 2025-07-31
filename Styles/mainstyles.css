@@ -1238,13 +1238,35 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	left: 50%!important;
 	transform: translate(-50%,-50%);
 }
-.toolbar .toolbar-wrapper > table > tbody > tr:first-child > td:first-child {
-    display: flex;
-    justify-content: flex-end;
-}
 @media(min-width:1600px){
+	html:not(.designer) [name="SignUpButton"]{
+    padding: .4vw 1vw;
+    border-radius: .5vw;
+    font-size: 1vw;
+}
+	html:not(.designer) [name*="OBB_dropdown"] .select-box,
+html:not(.designer) .select-box[name*="OBB_calendar"],
+html:not(.designer) .input-control.select-box.lookup-box.picker-input.double-buttons,
+.searchDdl .select-box{
+    border-radius:.5vw!important;
+    height:2.9vw;
+    min-height:2.9vw;
+	font-size:1vw;
+}
+	html:not(.designer) [name*="OBB_textbox"],
+.filterTxt .input-control-m-c,
+.filterTxt input{
+    font-size:1vw!important;
+    border-radius: .5vw!important;
+    padding: .4vw 1vw!important;
+    min-height: 3vw!important;
+    height: 3vw!important;
+}
 	html:not(.designer) body{
     margin-top: 7vw;
+}
+html:not(.designer) [name*="OBB_label"]{
+    font-size:1vw!important;
 }
 	html:not(.designer) .theme-entry.sidebarAvailable {
     left: 16vw;
