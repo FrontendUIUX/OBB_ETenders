@@ -1242,8 +1242,17 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	left: 50%!important;
 	transform: translate(-50%,-50%);
 }
+table td .select-box.dropdown-box.watermark{
+		height:3rem;
+		border:1px solid var(--borderColor)!important;
+		border-radius: .5rem!important;
+	}
 @media(min-width:1600px){
-	
+	table td .select-box.dropdown-box.watermark{
+		height:3vw;
+		border:1px solid var(--borderColor)!important;
+		border-radius: .5rem!important;
+	}
 	.theme-entry{
 		font-size:1vw!important;
 	}
