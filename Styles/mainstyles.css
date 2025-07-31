@@ -1238,6 +1238,10 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	left: 50%!important;
 	transform: translate(-50%,-50%);
 }
+.toolbar .toolbar-wrapper > table > tbody > tr:first-child > td:first-child {
+    display: flex;
+    justify-content: flex-end;
+}
 @media(min-width:1600px){
 	html:not(.designer) body{
     margin-top: 7vw;
