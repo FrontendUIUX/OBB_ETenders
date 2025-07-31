@@ -16,6 +16,9 @@
 	font-size:1rem;
 }
 @media(min-width:1600px){
+		html.no-border-box-support body{
+	margin:0!important;
+}
 	[name*="AttachmentListsNonSMEData"] ul li{
 	
 	font-size:1vw;

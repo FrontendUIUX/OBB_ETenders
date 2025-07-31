@@ -92,6 +92,9 @@ html:not(.designer) .theme-entry .form{
     margin-top:1rem;
 }
 @media(min-width:1600px){
+    	html.no-border-box-support body{
+	margin:0!important;
+}
     [name="LoginButton"]{
     font-size:1vw!important;
     margin-left: .7vw;
