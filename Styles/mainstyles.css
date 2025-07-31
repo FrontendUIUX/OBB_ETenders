@@ -1267,7 +1267,7 @@ span#\33 585609f-0fb5-ed21-b958-02bb5f93b809
    padding:0!important;
 }
 .theme-entry .toolbar table td {
-    height: auto;
+    height: auto!important;
 }
 @media(min-width:1600px){
 	.empty-grid .grid-content-cell-wrapper {
