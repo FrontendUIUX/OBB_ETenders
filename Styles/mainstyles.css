@@ -1243,6 +1243,9 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	transform: translate(-50%,-50%);
 }
 @media(min-width:1600px){
+	html:not(.designer) .theme-entry td span.runtime-list-item{
+		font-size:.8vw!important
+	}
 	.theme-entry{
 		font-size:1vw!important;
 	}
