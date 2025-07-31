@@ -1243,9 +1243,7 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	transform: translate(-50%,-50%);
 }
 @media(min-width:1600px){
-	html:not(.designer) .theme-entry td span.runtime-list-item{
-		font-size:.8vw!important
-	}
+	
 	.theme-entry{
 		font-size:1vw!important;
 	}
@@ -1329,6 +1327,9 @@ html:not(.designer) .input-control.select-box.lookup-box.picker-input.double-but
 }
 	html:not(.designer) body{
     margin-top: 7vw!important;
+}
+	html.no-border-box-support body{
+	margin:0!important;
 }
 html:not(.designer) [name*="OBB_label"]{
     font-size:1vw!important;
