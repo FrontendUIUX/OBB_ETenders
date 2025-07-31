@@ -1260,6 +1260,16 @@ table td .select-box.dropdown-box.watermark .input-control-buttons{
     justify-content: flex-end!important;
 }
 @media(min-width:1600px){
+	.empty-grid .grid-content-cell-wrapper {
+    margin: 1vw auto;
+    font-size: 1vw;
+}
+	#pgWizard .theme-entry .grid-header-wrapper .inline-editable, 
+	#pgWizard .theme-entry .panel-header-wrapper .inline-editable, 
+	.theme-entry .grid-header-wrapper .grid-header-text, 
+	.theme-entry .panel-header-wrapper .panel-header-text {
+    line-height: 4.4rem!important;
+}
 	html:not(.designer) .theme-entry td span.runtime-list-item{
 		font-size:.9vw!important;
 	}
