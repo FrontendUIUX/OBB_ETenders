@@ -1239,6 +1239,12 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	transform: translate(-50%,-50%);
 }
 @media(min-width:1600px){
+	html:not(.designer) .theme-entry.sidebarAvailable {
+    left: 16vw;
+    width: calc(100% - 16vw);
+    padding: 0 1rem;
+    position: relative;
+}
 	html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
     left: 16vw;
     width: calc(100vw - 16vw);
