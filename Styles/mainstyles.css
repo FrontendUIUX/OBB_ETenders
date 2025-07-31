@@ -1259,6 +1259,16 @@ table td .select-box.dropdown-box.watermark .input-control-buttons{
     align-items: center!important;
     justify-content: flex-end!important;
 }
+span#c6f73f43-e3dc-773f-43ef-22426926b675,
+span#d8ed58d7-b90b-9108-de21-5b8e078c208b_e0668ca0-3af6-a734-7c56-dc19c30bb9e2,
+span#\33 585609f-0fb5-ed21-b958-02bb5f93b809
+{
+   border-radius:0!important;
+   padding:0!important;
+}
+.theme-entry .toolbar table td {
+    height: auto;
+}
 @media(min-width:1600px){
 	.empty-grid .grid-content-cell-wrapper {
     margin: 1vw auto;
