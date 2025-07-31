@@ -1243,6 +1243,9 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	transform: translate(-50%,-50%);
 }
 @media(min-width:1600px){
+	.theme-entry{
+		font-size:1vw!important;
+	}
 	.theme-entry .grid .grid-content-cell{
 		min-height:5vw!important;
 	}
