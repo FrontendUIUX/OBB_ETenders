@@ -74,6 +74,7 @@ html:not(.designer) .video-container .intro h2{
     color:white;
     width: 90%;
     font-family: var(--regularFont);
+    font-size: 2rem;
 }
 html:not(.designer) [name="RegistrationLowerSection"] [name="QuestionLabel"]{
       font-family:var(--regularFont);
@@ -113,6 +114,7 @@ html:not(.designer) span[name*="SignUpDescription"] span[name*="SubHeader"]{
 }
 	html:not(.designer) .video-container .intro h2{
     width: 66%;
+    font-size: 2vw;
 }
     [name="RegistrationLowerSection"]{
     margin-top:1vw;
