@@ -1240,6 +1240,13 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	transform: translate(-50%,-50%);
 }
 @media(min-width:1600px){
+	html:not(.designer) .select-box[name*="OBB_calendar"] *,
+[name*="OBB_textbox"],[name*="OBB_textarea"] ,textarea,
+.input-control-watermark,
+[name*="OBB_dropdown"] *{
+	font-family:var(--regularFont);
+	font-size:1vw!important;
+}
 	.theme-entry .grid-header-wrapper, .theme-entry .panel-header, .theme-entry .panel-header-c, .theme-entry .panel-header-wrapper {
     height: 3vw;
     line-height: 3vw;
