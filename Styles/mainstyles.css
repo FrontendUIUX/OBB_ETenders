@@ -1239,6 +1239,14 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	transform: translate(-50%,-50%);
 }
 @media(min-width:1600px){
+	.logo{
+    width: 12vw;
+}
+.logo svg{
+    height:100%;
+    width:100%;
+    
+}
 	    html:not(.designer) .select-box[name*="OBB_calendar"] *, 
     [name*="OBB_textbox"], [name*="OBB_textarea"], 
     textarea, .input-control-watermark, 
