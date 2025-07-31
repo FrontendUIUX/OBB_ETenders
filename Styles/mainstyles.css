@@ -1183,8 +1183,8 @@ html:not(.designer) [name*="button Cancel"]:hover{
 	background-color: transparent!important;
 
 }
-html:not(.designer) a[name*="return"],
-html:not(.designer) a[name*="return"]:hover,
+html:not(.designer) a[name*="Button Return"],
+html:not(.designer) a[name*="Button Return"]:hover,
 html:not(.designer) a[name*="draftBtn"],
 html:not(.designer) a[name*="draftBtn"]:hover{
 	color: var(--orange)!important;
