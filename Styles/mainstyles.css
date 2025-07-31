@@ -1322,7 +1322,7 @@ html:not(.designer) .input-control.select-box.lookup-box.picker-input.double-but
     height: 3vw!important;
 }
 	html:not(.designer) body{
-    margin-top: 7vw;
+    margin-top: 7vw!important;
 }
 html:not(.designer) [name*="OBB_label"]{
     font-size:1vw!important;
