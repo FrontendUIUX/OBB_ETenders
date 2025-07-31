@@ -1247,6 +1247,11 @@ table td .select-box.dropdown-box.watermark{
 		border:1px solid var(--borderColor)!important;
 		border-radius: .5rem!important;
 	}
+table td .select-box.dropdown-box.watermark .input-control-m-c,
+table td .select-box.dropdown-box.watermark .input-control-body, 
+table td .select-box.dropdown-box.watermark .input-control-buttons{
+	border:none!important;
+}
 @media(min-width:1600px){
 	table td .select-box.dropdown-box.watermark{
 		height:3vw;
