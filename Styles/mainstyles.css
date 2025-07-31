@@ -1254,6 +1254,11 @@ table td .select-box.dropdown-box.watermark .input-control-body,
 table td .select-box.dropdown-box.watermark .input-control-buttons{
 	border:none!important;
 }
+.toolbar  table  tbody  tr  td{
+    display: flex!important;
+    align-items: center!important;
+    justify-content: flex-end!important;
+}
 @media(min-width:1600px){
 	html:not(.designer) .theme-entry td span.runtime-list-item{
 		font-size:.9vw!important;
