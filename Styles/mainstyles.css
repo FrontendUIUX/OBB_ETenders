@@ -248,7 +248,7 @@ html:not(.designer) [name*="OBB_header"]{
 	justify-content: space-between;
 	padding-top:1rem!important;
 	padding-bottom:1rem!important;
-	height: 7.6rem;
+	/* height: 7.6rem; */
 }
 html:not(.designer) [name="Account Picture"]{
 	margin-right:.5rem;
