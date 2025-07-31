@@ -678,7 +678,6 @@ td#eb4aa284-91ee-abc7-1932-9e5f938473b7{
 html:not(.designer) [name*="OBB_button"],
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	border-radius:.5rem;
-	/* margin-left: 1rem; */
 	border:none;
 	transition:var(--transition);
 	font-family:var(--regularFont);
@@ -687,6 +686,8 @@ html:not(.designer) [name*="OBB_button OBB_primary_button"],
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	background-color:var(--orange)!important;
 	color:white!important;
+	font-size:1rem;
+	padding: 0.6rem 2rem;
 }
 html:not(.designer) .timepicker-buttons{
 display:flex;
@@ -992,7 +993,7 @@ html:not(.designer) .grid-body{
 	margin: 1rem!important;
 	width: calc(100% - 2rem);
 	border: 1px solid rgb(220 220 220 / 80%)!important;
-	border-radius: 2rem;
+	border-radius: .7rem;
 }
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Saved"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to FTTX Desgin Team"],
@@ -1177,6 +1178,7 @@ html:not(.designer) [name*="Cancel Button"]:hover{
 	color: var(--orange)!important;
 	border:1px solid var(--borderColor)!important;
 	background-color: transparent!important;
+
 }
 html:not(.designer) a[name*="return"],
 html:not(.designer) a[name*="return"]:hover,
@@ -1240,6 +1242,10 @@ html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
 	transform: translate(-50%,-50%);
 }
 @media(min-width:1600px){
+	html:not(.designer) [name*="OBB_button OBB_primary_button"],
+html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
+	font-size:1vw;
+}
 	html:not(.designer) .select-box[name*="OBB_calendar"] *,
 [name*="OBB_textbox"],[name*="OBB_textarea"] ,textarea,
 .input-control-watermark,
