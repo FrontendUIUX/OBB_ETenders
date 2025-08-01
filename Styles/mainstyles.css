@@ -1274,37 +1274,37 @@ span#fe27d996-8f35-cb63-c6eb-159a80092d7b,
 span#dbef2ceb-5bf5-ed0e-98cb-5630add6227f{
     position: relative;
 }
-i#togglePassword {
-    height: 2rem;
-    width: 2rem;
+i#togglePassword,
+i#togglePassword1{
+    height: 1.5rem;
+    width: 1.5rem;
     position: absolute;
     margin: 0!important;
     right: 0.8rem;
-    top: 3rem;
+    top: 3.4rem;
 }
 .fa-eye:before {
     content: ""!important;
     background-image: url(https://frontenduiux.github.io/OBB_ETenders/Images/eye-show.svg);
-    background-size: 2rem;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-	position:absolute;
-	top:0;
-	right:0;
-	height:2rem;
-	width:2rem;
+    position:absolute;
+    top:0;
+    right:0;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 .fa.fa-eye-slash{
     content: ""!important;
     background-image: url(https://frontenduiux.github.io/OBB_ETenders/Images/eye-hide.svg);
-    background-size: 2rem;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-	position:absolute;
-	top:0;
-	right:0;
-	height:2rem;
-	width:2rem;
+}
+i#togglePassword::before,
+i#togglePassword1::before{
+	content:""!important;
 }
 @media(min-width:1600px){
 	.empty-grid .grid-content-cell-wrapper {
