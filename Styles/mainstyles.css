@@ -1348,7 +1348,20 @@ a.dropdown > span{
 html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		padding-left:1rem!important;
 	}
+	[name*="AttachmentListsNonSMEData Label1"]>div>div{
+		display: flex!important;
+		align-items: center!important;
+	}
 @media(min-width:1600px){
+	
+	[name*="AttachmentListsNonSMEData Label1"]>div>div>span:first-child{
+		font-size: 2vw!important;
+}
+	html:not(.designer) [name*="OBB_button OBB_primary_button"],
+html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
+	font-size:1vw;
+	padding: 0.6vw 2vw;
+}
 	.grid-column-header-cell-content{
 		height:3vw;
 		padding:1vw!important;
