@@ -1353,6 +1353,17 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		align-items: center!important;
 	}
 @media(min-width:1600px){
+	span#be1f5533-2703-1283-91e2-dea4f607f193{
+    height: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+span#f95ad88d-bb59-9175-6f9e-f581b5a62436{
+    display:flex;
+    height:3vw;
+    align-content:center;
+}
 	td#\38 045da8e-fbf6-2785-88ce-9edf65552682, 
 	td#c2b54e05-058a-e4e8-00d1-406cf875ab16, 
 	td#\37 dbd9ea0-a3af-08f8-cd42-1be157d6274d, 
