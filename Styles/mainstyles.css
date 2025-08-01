@@ -1353,6 +1353,15 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		align-items: center!important;
 	}
 @media(min-width:1600px){
+	html:not(.designer) .theme-entry .message-box-content.error:before{
+    background-size:3vw;
+}
+	html:not(.designer) .theme-entry .popup-header{
+    padding:1vw 2vw;
+}
+	html:not(.designer) .popup.dialog .popup-header .popup-header-text{
+    font-size:1.4vw;
+}
 	html:not(.designer) .grid-body{
 	margin: 1vw!important;
 	width: calc(100% - 2vw);
