@@ -1346,6 +1346,9 @@ a.dropdown > span{
 	padding:0!important;
 }
 @media(min-width:1600px){
+	.input-control-watermark{
+	padding-left: 1vw!important;
+}
 	a.dropdown{
 	width: 3vw!important;
 }
