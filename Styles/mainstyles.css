@@ -1353,6 +1353,11 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		align-items: center!important;
 	}
 @media(min-width:1600px){
+	.popup.dialog{
+		min-width: 44vw;
+		min-height: 11vw;
+		height:auto!important;
+	}
 	html:not(.designer) .theme-entry .message-box-content.error:before{
     background-size:3vw;
 }
