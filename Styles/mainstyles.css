@@ -1358,6 +1358,9 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
     height: 4vw;
     top: .5vw;
 }
+.theme-entry .toolbar table td {
+	min-height:3vw!important;
+}
 	.theme-entry .message-box-content>.panel.full, .theme-entry .message-box-content.confirmation>.panel.full {
     margin-left: 4.9vw;
 }
