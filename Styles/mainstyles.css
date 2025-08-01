@@ -1270,12 +1270,29 @@ span#\33 585609f-0fb5-ed21-b958-02bb5f93b809
     height: auto!important;
 }
 /* show / hide password icon */
+span#fe27d996-8f35-cb63-c6eb-159a80092d7b,
+span#dbef2ceb-5bf5-ed0e-98cb-5630add6227f{
+    position: relative;
+}
+i#togglePassword {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    margin: 0!important;
+    right: 0.8rem;
+    top: 3rem;
+}
 .fa-eye:before {
     content: ""!important;
     background-image: url(https://frontenduiux.github.io/OBB_ETenders/Images/eye-show.svg);
     background-size: 2rem;
     background-repeat: no-repeat;
     background-position: center;
+	position:absolute;
+	top:0;
+	right:0;
+	height:2rem;
+	width:2rem;
 }
 .fa.fa-eye-slash{
     content: ""!important;
@@ -1283,6 +1300,11 @@ span#\33 585609f-0fb5-ed21-b958-02bb5f93b809
     background-size: 2rem;
     background-repeat: no-repeat;
     background-position: center;
+	position:absolute;
+	top:0;
+	right:0;
+	height:2rem;
+	width:2rem;
 }
 @media(min-width:1600px){
 	.empty-grid .grid-content-cell-wrapper {
