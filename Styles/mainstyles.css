@@ -1306,6 +1306,7 @@ i#togglePassword::before,
 i#togglePassword1::before{
 	content:""!important;
 }
+td#\36 65bba9b-94a4-179b-4bb6-7db4dd45000e {display: table-cell!important;}
 @media(min-width:1600px){
 	.empty-grid .grid-content-cell-wrapper {
     margin: 1vw auto;
