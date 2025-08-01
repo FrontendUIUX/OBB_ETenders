@@ -473,8 +473,8 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
 	font-size:1rem!important;
 	
 }
-.input-control-watermark{
-	padding-left: 0rem!important;
+.input-control-m-c .input-control-watermark {
+    padding-left: 0rem !important;
 }
 .filterLabel{
 	font-size:1rem;
