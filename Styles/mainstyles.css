@@ -1353,10 +1353,24 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		align-items: center!important;
 	}
 @media(min-width:1600px){
+	.theme-entry .message-box-content:before {
+    width: 4vw;
+    height: 4vw;
+    top: .5vw;
+}
+	.theme-entry .message-box-content>.panel.full, .theme-entry .message-box-content.confirmation>.panel.full {
+    margin-left: 4.9vw;
+}
+	.theme-entry .dialog.error-message:not(.runtime-message) .message-box-content, 
+	.theme-entry .dialog.warning-message:not(.runtime-message) .message-box-content, 
+	.theme-entry .dialog.info-message:not(.runtime-message) .message-box-content, 
+	.theme-entry .dialog.confirmation-message:not(.runtime-message) .message-box-content {
+    min-height: 4.9vw;
+}
 	.popup.dialog{
 		min-width: 44vw;
-		min-height: 11vw;
-		height:auto!important;
+		/* min-height: 11vw; */
+		/* height:auto!important; */
 	}
 	html:not(.designer) .theme-entry .message-box-content.error:before{
     background-size:3vw;
