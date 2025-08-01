@@ -1271,17 +1271,19 @@ span#\33 585609f-0fb5-ed21-b958-02bb5f93b809
 }
 /* show / hide password icon */
 span#fe27d996-8f35-cb63-c6eb-159a80092d7b,
-span#dbef2ceb-5bf5-ed0e-98cb-5630add6227f{
+span#dbef2ceb-5bf5-ed0e-98cb-5630add6227f,
+[name*="passwordFieldTable"]{
     position: relative;
 }
 i#togglePassword,
 i#togglePassword1{
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.7rem;
+    width: 1.7rem;
     position: absolute;
     margin: 0!important;
     right: 0.8rem;
-    top: 3.4rem;
+    top: 50%;
+	transform:translateY(-50%);
 }
 .fa-eye:before {
     content: ""!important;
@@ -1292,8 +1294,8 @@ i#togglePassword1{
     position:absolute;
     top:0;
     right:0;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.7rem;
+    width: 1.7rem;
 }
 .fa.fa-eye-slash{
     content: ""!important;
