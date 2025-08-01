@@ -471,6 +471,10 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
 [name*="OBB_dropdown"] *{
 	font-family:var(--regularFont);
 	font-size:1rem!important;
+	
+}
+.input-control-watermark{
+	padding-left: 1rem!important;
 }
 .filterLabel{
 	font-size:1rem;
@@ -1327,6 +1331,19 @@ a.dropdown{
 }
 a.dropdown > span{
 	position:relative;
+}
+[name*="OBB_calendar"] .input-control-m-c.styling-inner-wrapper,
+[name*="OBB_calendar"] .input-control-wrapper{
+	display:flex;
+	flex-direction:column;
+	padding: 0!important;
+	justify-content:center;
+}
+[name*="OBB_calendar"] .input-control-m-c{
+	padding-left:.7rem!important;
+}
+[name*="OBB_calendar"] .input-control-m-c input{
+	padding:0!important;
 }
 @media(min-width:1600px){
 	a.dropdown{
