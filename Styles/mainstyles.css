@@ -1269,6 +1269,21 @@ span#\33 585609f-0fb5-ed21-b958-02bb5f93b809
 .theme-entry .toolbar table td {
     height: auto!important;
 }
+/* show / hide password icon */
+.fa-eye:before {
+    content: ""!important;
+    background-image: url(https://frontenduiux.github.io/OBB_ETenders/Images/eye-show.svg);
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fa.fa-eye-slash{
+    content: ""!important;
+    background-image: url(https://frontenduiux.github.io/OBB_ETenders/Images/eye-hide.svg);
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 @media(min-width:1600px){
 	.empty-grid .grid-content-cell-wrapper {
     margin: 1vw auto;
