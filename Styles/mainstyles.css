@@ -1353,7 +1353,13 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		align-items: center!important;
 	}
 @media(min-width:1600px){
-	
+	td#\38 045da8e-fbf6-2785-88ce-9edf65552682, 
+	td#c2b54e05-058a-e4e8-00d1-406cf875ab16, 
+	td#\37 dbd9ea0-a3af-08f8-cd42-1be157d6274d, 
+	td#eb4aa284-91ee-abc7-1932-9e5f938473b7{
+		height:3vw!important;
+		padding:0 1vw;
+	}
 	[name*="AttachmentListsNonSMEData Label1"]>div>div>span:first-child{
 		font-size: 2vw!important;
 }
