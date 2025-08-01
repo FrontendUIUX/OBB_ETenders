@@ -92,7 +92,13 @@ html:not(.designer) .theme-entry .form{
     margin-top:1rem;
 }
 @media(min-width:1600px){
-
+.logo {
+    width: 10vw;
+}
+.logo svg{
+    height:100%;
+    width:100%;
+}
     	html:not(.designer) body{
     margin-top: 0vw!important;
 }
