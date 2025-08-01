@@ -1345,7 +1345,13 @@ a.dropdown > span{
 [name*="OBB_calendar"] .input-control-m-c input{
 	padding:0!important;
 }
+html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
+		padding-left:1rem!important;
+	}
 @media(min-width:1600px){
+	html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
+		padding-left:1vw!important;
+	}
 	.input-control-watermark{
 	padding-left: 1vw!important;
 }
