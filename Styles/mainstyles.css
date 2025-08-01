@@ -1349,6 +1349,11 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		padding-left:1rem!important;
 	}
 @media(min-width:1600px){
+	.grid-column-header-cell-content{
+		height:3vw;
+		padding:1vw!important;
+		font-size:1vw!important;
+	}
 	html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		padding-left:1vw!important;
 	}
