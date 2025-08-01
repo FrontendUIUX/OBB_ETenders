@@ -1353,6 +1353,9 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		align-items: center!important;
 	}
 @media(min-width:1600px){
+	[name*="commentSection"] .input-control-watermark{
+		top:.5vw;
+	}
 	html:not(.designer) [name*="OBB_textarea"]{
     font-size:1vw!important;
     border-radius: .5vw!important;
