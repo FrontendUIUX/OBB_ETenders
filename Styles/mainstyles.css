@@ -1363,7 +1363,7 @@ html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	padding: 0.6vw 2vw;
 }
 	.grid-column-header-cell-content{
-		height:3vw;
+		min-height: 1vw;
 		padding:1vw!important;
 		font-size:1vw!important;
 	}
