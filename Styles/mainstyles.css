@@ -1353,6 +1353,15 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		align-items: center!important;
 	}
 @media(min-width:1600px){
+	html:not(.designer) .grid-body{
+	margin: 1vw!important;
+	width: calc(100% - 2vw);
+	border-radius: .7vw;
+}
+	html:not(.designer) [name*="OBB_Collapse"]{
+	border-radius:1vw!important;
+	margin-bottom: 1vw;
+}
 	/* PADDINGS */
 /* PADDING 1rem - top, bottom, left, right */
 [name*="pt-1"]{
