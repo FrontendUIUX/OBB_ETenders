@@ -1310,6 +1310,16 @@ i#togglePassword1::before{
 }
 td#\36 65bba9b-94a4-179b-4bb6-7db4dd45000e {display: table-cell!important;}
 @media(min-width:1600px){
+	i#togglePassword,
+i#togglePassword1{
+    height: 1.7vw;
+    width: 1.7vw;
+    right: 0.8vw;
+}
+.fa-eye:before {
+    height: 1.7vw;
+    width: 1.7vw;
+}
 	.empty-grid .grid-content-cell-wrapper {
     margin: 1vw auto;
     font-size: 1vw;
