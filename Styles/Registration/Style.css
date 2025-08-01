@@ -92,6 +92,11 @@ html:not(.designer) .theme-entry .form{
     margin-top:1rem;
 }
 @media(min-width:1600px){
+    	html:not(.designer) [name="SignUpButton"]{
+    padding: .4vw 1vw;
+    border-radius: .5vw;
+    font-size: 1vw;
+}
 .logo {
     width: 10vw;
 }

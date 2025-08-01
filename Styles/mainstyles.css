@@ -1381,11 +1381,7 @@ html:not(.designer) [name*="OBB_Collapse"] .panel-body{
 	html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
 	font-size: 1.7vw;
 }
-	html:not(.designer) [name="SignUpButton"]{
-    padding: .4vw 1vw;
-    border-radius: .5vw;
-    font-size: 1vw;
-}
+
 	html:not(.designer) [name*="OBB_dropdown"] .select-box,
 html:not(.designer) .select-box[name*="OBB_calendar"],
 html:not(.designer) .input-control.select-box.lookup-box.picker-input.double-buttons,
