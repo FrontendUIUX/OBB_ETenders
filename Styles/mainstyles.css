@@ -875,6 +875,8 @@ border-bottom:none!important
 html:not(.designer) .theme-entry .popup-footer{
     padding:0rem 2rem 1rem;
     border-top:none!important;
+    width: 100%;
+    margin: 0!important;
 }
 html:not(.designer) .popup.dialog{
     height:fit-content!important;
