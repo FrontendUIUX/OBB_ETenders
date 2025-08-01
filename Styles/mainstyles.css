@@ -1353,6 +1353,11 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		align-items: center!important;
 	}
 @media(min-width:1600px){
+	html:not(.designer) [name*="OBB_textarea"]{
+    font-size:1vw!important;
+    border-radius: .5vw!important;
+    padding: .4vw 1vw!important;
+}
 	span#be1f5533-2703-1283-91e2-dea4f607f193{
     height: 3vw;
     display: flex;
