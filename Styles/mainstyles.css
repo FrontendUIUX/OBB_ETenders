@@ -1356,6 +1356,10 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		align-items: center!important;
 	}
 @media(min-width:1600px){
+	.theme-entry a.toolbar-button svg{
+		height:1vw;
+		width:1vw;
+	}
 		html:not(.designer) [name*="OBB_button"], html:not(.designer) .SourceCode-Forms-Controls-Web-Button {
     border-radius: .5vw;
 }
