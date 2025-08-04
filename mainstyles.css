@@ -223,7 +223,7 @@ html:not(.Designer) .active[name="btnOutgoing"]:focus .button-text,
 html:not(.Designer) .active[name="btnIncoming"]:focus .button-text{
 	color:var(--aqua)!important;
 }
-html:not(.designer) [name="Table2 OBB_header"] [name="headerItems"]{
+html:not(.designer) [name*="OBB_header"] [name="HeaderInternalContent"]{
 	display:flex!important;
 	justify-content:space-between!important;
 	width:100%!important
