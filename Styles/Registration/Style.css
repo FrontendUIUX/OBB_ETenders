@@ -103,6 +103,36 @@ html:not(.designer) .theme-entry .form{
 [name="RegistrationLowerSection"]{
     margin-top:1rem;
 }
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="LoginButton"]{
+    background-color:transparent!important;
+    color:var(--orange)!important;
+}
+html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="LoginButton"]:hover{
+    background-color:transparent!important;
+    color:var(--orange-hover)!important;
+}
+@media(min-width:992px){
+    html:not(.designer) .IntroSection{
+        flex-direction:row;
+    }
+    html:not(.designer) .video-container{
+    width: 50%;
+}
+html:not(.designer) .form-wrapper{
+    width: 50%;
+    border-radius:0;
+    
+}
+    
+    html:not(.designer) .video-container .intro h2{
+    display:block;
+}
+}
 @media(min-width:1600px){
     	html:not(.designer) [name="SignUpButton"]{
     padding: .4vw 1vw;
@@ -151,28 +181,4 @@ html:not(.designer) span[name*="SignUpDescription"] span[name*="SubHeader"]{
     margin-top:1vw;
 }
 }
-html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="LoginButton"]{
-    background-color:transparent!important;
-    color:var(--orange)!important;
-}
-html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="LoginButton"]:hover{
-    background-color:transparent!important;
-    color:var(--orange-hover)!important;
-}
-@media(min-width:992px){
-    html:not(.designer) .IntroSection{
-        flex-direction:row;
-    }
-    html:not(.designer) .video-container{
-    width: 50%;
-}
-html:not(.designer) .form-wrapper{
-    width: 50%;
-    border-radius:0;
-    
-}
-    
-    html:not(.designer) .video-container .intro h2{
-    display:block;
-}
-}
+
