@@ -117,6 +117,11 @@ html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="Log
     color:var(--orange-hover)!important;
 }
 @media(min-width:992px){
+    .logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
     html:not(.designer) .IntroSection{
         flex-direction:row;
     }
@@ -126,7 +131,8 @@ html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="Log
 html:not(.designer) .form-wrapper{
     width: 50%;
     border-radius:0;
-    
+    position: unset;
+    height: 100vh;
 }
     
     html:not(.designer) .video-container .intro h2{
