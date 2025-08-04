@@ -949,6 +949,22 @@ html:not(.designer) [name*="Cancel Button"]:hover{
 	border:1px solid var(--borderColor)!important;
 	background-color: transparent!important;
 }
+/* RESPONSIVE TABLES */
+@media(max-width:600px){
+    div#fe5dc88b-f21b-4d4a-8fce-220b0361c412_101ca16b-da7a-4060-7048-0bfc4aa722e2_515393ac-18c1-ff7c-67c1-778fbd5cc7b4_983934af-717c-4fb4-ab37-a4ad0026e2f1 table tbody tr{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        min-width: calc(100vw - 1rem);
+    }
+    div#fe5dc88b-f21b-4d4a-8fce-220b0361c412_101ca16b-da7a-4060-7048-0bfc4aa722e2_515393ac-18c1-ff7c-67c1-778fbd5cc7b4_983934af-717c-4fb4-ab37-a4ad0026e2f1 table tbody tr td{
+    width: 100% !important;
+    overflow: visible !important;
+   }
+     div#fe5dc88b-f21b-4d4a-8fce-220b0361c412_101ca16b-da7a-4060-7048-0bfc4aa722e2_515393ac-18c1-ff7c-67c1-778fbd5cc7b4_983934af-717c-4fb4-ab37-a4ad0026e2f1 .grid-column-headers{
+  display: none!important;
+ }
+}
 @media(min-width:1600px){
 		html:not(.designer) .tab-box-tabs{
 	padding: 0 1vw;
