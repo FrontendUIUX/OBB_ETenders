@@ -50,6 +50,8 @@ html:not(.designer) .panel-body,
 html:not(.designer) .IntroSection{
     height:100vh;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 html:not(.designer) .video-container{
     background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/Registration%20Background.png");
@@ -57,11 +59,20 @@ html:not(.designer) .video-container{
     background-position: top;
     background-repeat:no-repeat;
     height: 100%;
-    width: 50%;
+    width: 100%;
 }
 html:not(.designer) .form-wrapper{
-    width: 50%;
+    width: 100%;
     overflow: auto;
+    position: absolute;
+    z-index:1;
+    bottom:0;
+    left:0;
+    top: auto;
+    height:68vh;
+    background-color: white;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 html:not(.designer) .video-container .intro{
     display:flex;
@@ -75,6 +86,7 @@ html:not(.designer) .video-container .intro h2{
     width: 90%;
     font-family: var(--regularFont);
     font-size: 2rem;
+    display: none;
 }
 html:not(.designer) [name="RegistrationLowerSection"] [name="QuestionLabel"]{
       font-family:var(--regularFont);
@@ -146,4 +158,21 @@ html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="Log
 html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="LoginButton"]:hover{
     background-color:transparent!important;
     color:var(--orange-hover)!important;
+}
+@media(min-width:992px){
+    html:not(.designer) .IntroSection{
+        flex-direction:row;
+    }
+    html:not(.designer) .video-container{
+    width: 50%;
+}
+html:not(.designer) .form-wrapper{
+    width: 50%;
+    border-radius:0;
+    
+}
+    
+    html:not(.designer) .video-container .intro h2{
+    display:block;
+}
 }
