@@ -1324,7 +1324,7 @@ i#togglePassword1::before{
 }
 td#\36 65bba9b-94a4-179b-4bb6-7db4dd45000e {display: table-cell!important;}
 .theme-entry .input-control.select-box .input-control-buttons a>span span{
-	background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/Chevron.svg")!important;
+	/* background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/Chevron.svg")!important; */
 	background-size:contain;
 	background-position:center;
 	background-repeat:no-repeat;
