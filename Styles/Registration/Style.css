@@ -108,6 +108,11 @@ html:not(.designer) .theme-entry .form{
     align-items: center;
     justify-content: center;
 }
+.theme-entry .dropdown-box.input-control .input-control-wrapper>a{
+    height: 3rem!important;
+    min-height: 3rem!important;
+    line-height:1rem!important;
+}
 html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="LoginButton"]{
     background-color:transparent!important;
     color:var(--orange)!important;
@@ -116,6 +121,10 @@ html:not(.designer) .theme-entry .SourceCode-Forms-Controls-Web-Button[name="Log
     background-color:transparent!important;
     color:var(--orange-hover)!important;
 }
+    .theme-entry .dropdown-box.input-control .input-control-wrapper>a > span{
+        height:100%!important;
+        line-height: 3rem;
+    }
 @media(min-width:992px){
     .logo {
     display: flex;
@@ -140,6 +149,15 @@ html:not(.designer) .form-wrapper{
 }
 }
 @media(min-width:1600px){
+    .theme-entry .dropdown-box.input-control .input-control-wrapper>a > span{
+        line-height:3vw;
+    }
+    .theme-entry .dropdown-box.input-control .input-control-wrapper>a {
+    height: 3vw !important;
+    min-height: 3vw !important;
+    line-height: 1.5vw !important;
+   
+}
     	html:not(.designer) [name="SignUpButton"]{
     padding: .4vw 1vw;
     border-radius: .5vw;
