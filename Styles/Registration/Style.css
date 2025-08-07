@@ -149,6 +149,10 @@ html:not(.designer) .form-wrapper{
 }
 }
 @media(min-width:1600px){
+    html:not(.designer) [name*="OBB_label"],
+    html:not(.designer) [name*="OBB_asterik"]{
+        margin:1vw 0 .3vw;
+    }
     .theme-entry .dropdown-box.input-control .input-control-wrapper>a > span{
         line-height:3vw;
     }
