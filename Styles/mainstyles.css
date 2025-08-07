@@ -1723,4 +1723,8 @@ html:not(.designer) .sidebarVisible [name="OBB_header"] {
 .navbarBrand a{
 	width: 9vw;
 }
+div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_142620d0-7bfc-9e4b-5178-9fed52afed2f_Table,
+div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_3a600afe-5a56-b90b-c34f-9afa5a641987_Table{
+    gap: 1vw;
+}
 }
