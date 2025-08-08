@@ -5,6 +5,9 @@ html:not(.designer) span[name*="SignUpTitle"] span[name*="HeaderTitle"],
     color:var(--black);
     font-family: var(--regularFont);
 }
+.form .row > *{
+    margin: 0!important;
+}
 html:not(.designer) body {
     margin: 0!important;
     padding: 0rem!important;
