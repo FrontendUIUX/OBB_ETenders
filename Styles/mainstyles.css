@@ -989,9 +989,9 @@ html:not(.designer) .theme-entry table.grid-column-header-table {
 html:not(.designer) .theme-entry  .grid-column-headers{
 background-color:transparent!important;
 }
-html:not(.designer) .theme-entry .grid .grid-column-header-text{
+html:not(.designer) .theme-entry .grid .grid-column-header-text,
+html:not(.designer) .theme-entry.runtime-form span.runtime-list-item-wrap{
 	font-family:var(--regularFont)!important;
-	/* width: fit-content!important; */
 	font-size: .8vw!important;
 }
 html:not(.designer) .theme-entry .grid .grid-column-header-cell{
