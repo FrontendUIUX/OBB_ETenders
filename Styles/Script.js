@@ -60,3 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
         $('body').addClass("sidebarAvailable").append(sidebar);
     }
 });
+$(window).on("load", function () {
+    if ($(".tab-box-tabs").length) {
+        $('body').addClass('topbarExists');
+    }
+});
