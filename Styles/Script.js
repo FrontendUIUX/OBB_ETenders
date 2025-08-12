@@ -169,34 +169,10 @@ document.addEventListener("DOMContentLoaded", function () {
         } 
         else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/")) {
             menuItems = [
-                { text: "Home", url: "/Runtime/Runtime/Form/VRM.LandingForm/" },
-                {
-                    text: "New Request", url: "", children: [
-                        { text: "New Document", url: "/Runtime/Runtime/Form/NewDocCreation.SubmitForm/" },
-                        { text: "Archiving Document", url: "/Runtime/Runtime/Form/ArchivingDoc.SubmitForm/" }
-                    ]
-                },
-                { text: "Tasks List", url: "/Runtime/Runtime/Form/VRMTaskListForm/" },
-                {
-                    text: "New Document", url: "", children: [
-                        { text: "Completed", url: "/Runtime/Runtime/Form/VRMNewDocCompletedForm/" },
-                        { text: "In Progress", url: "/Runtime/Runtime/Form/VRMNewDocInProgressForm/" }
-                    ]
-                },
-                {
-                    text: "Archiving Document", url: "", children: [
-                        { text: "Completed", url: "/Runtime/Runtime/Form/VRMArchivingCompletedForm/" },
-                        { text: "In Progress", url: "/Runtime/Runtime/Form/VRMArchivingInProgressForm/" }
-                    ]
-                },
-                {
-                    text: "Request Access", url: "", children: [
-                        { text: "Completed", url: "/Runtime/Runtime/Form/VRMRequestAccessCompletedForm/" },
-                        { text: "In Progress", url: "/Runtime/Runtime/Form/VRMRequestAccessInProgressForm/" }
-                    ]
-                },
-
-                { text: "Archived Records", url: "/Runtime/Runtime/Form/VRMArchivedRecsForm/" }
+                { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.LandingPage/" },
+                { text: "Clarification Review Page", url: "#" },
+                { text: "Tenders/RFQs Page", url: "#" },
+                { text: "Worklist", url: "#" }
             ];
         }
         else if (currentUrl.includes("LetterRegistration.AuditableForm") || currentUrl.includes("LetterRegistration.MainForm") || currentUrl.includes("LetterRegistration.ReadOnlyForm")) {
