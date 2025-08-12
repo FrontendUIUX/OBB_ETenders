@@ -1236,11 +1236,12 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	border:1px solid var(--borderColor)!important;
 	border-radius:.7rem;
 	text-align: left;
-	padding:.5rem;
+	padding: 1.6rem;
 	justify-content: space-between;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span{
 	width:100%;
+	padding: 0;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"]{
 	width: 6rem!important;
