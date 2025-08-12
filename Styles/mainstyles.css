@@ -1384,6 +1384,11 @@ html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.col
 	transform:scaleY(-1);
 }
 @media(min-width:1600px){
+	html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper .panel-header-text > span,
+	html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper .grid-header-text> span{
+	min-height: 3vw;
+	line-height:3vw;
+}	
 	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
 	border-radius:2vw;
 	padding: 0.4vw 1.6vw;
