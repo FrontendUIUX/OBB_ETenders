@@ -1231,8 +1231,7 @@ html:not(.designer) img#aaa2922e-a9d6-57b9-4b35-a5e16e1477be_8c40e4b4-a56c-2593-
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	display:flex!important;
-	/* flex-direction:column!important; */
-	align-items: flex-start!important;
+	align-items: center!important;
 	justify-content: flex-end;
 	border:1px solid var(--borderColor)!important;
 	border-radius:.7rem;
@@ -1243,6 +1242,10 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span{
 	width:100%;
 }
+html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"]{
+	width: 6rem!important;
+}
+
 html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
     left: 15rem;
     width: calc(100vw - 15rem);
