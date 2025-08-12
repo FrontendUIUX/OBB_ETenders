@@ -181,7 +181,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Vendor Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsForm/" },
                 { text: "Worklist", url: "#" },
             ];
-        } 
+        }
+        else if(currentUrl.includes("InternalHub.Form/") || currentUrl.includes("SubmittedTenders.Form/")){
+            menuItems = [
+                { text: "Home", url: "/Runtime/Runtime/Form/InternalHub.Form/" },
+                { text: "Submitted Tenders", url: "/Runtime/Runtime/Form/SubmittedTenders.Form/" },
+            ];
+        }
         else {
             menuItems = [
             ];
