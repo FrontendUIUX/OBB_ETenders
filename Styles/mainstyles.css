@@ -1353,7 +1353,25 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		display: flex!important;
 		align-items: center!important;
 	}
+.theme-entry a.expand-vertical, .theme-entry a.expand-vertical:focus, 
+.theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical, 
+.theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus {
+	background-color: white;
+	height:3rem;
+	width: 3rem;
+	border-radius: 100%;
+	background-image:url("https://frontenduiux.github.io/OBB_Services/Images/chevDown.svg")!important ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 @media(min-width:1600px){
+.theme-entry a.expand-vertical, .theme-entry a.expand-vertical:focus, 
+.theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical, 
+.theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus{
+	height: 3vw;
+	width: 3vw;
+}
 	.theme-entry a.toolbar-button svg{
 		height:1vw;
 		width:1vw;
