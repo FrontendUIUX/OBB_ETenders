@@ -9,62 +9,62 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Function to create menu items
-        function createMenuItems(menuItems) {
-            menuItems.forEach(item => {
-                const link = $('<a>').attr('href', item.url).addClass('nav-link');
+        // function createMenuItems(menuItems) {
+        //     menuItems.forEach(item => {
+        //         const link = $('<a>').attr('href', item.url).addClass('nav-link');
 
-                // Determine Active State
-                if (window.location.href.includes(item.url)) {
-                    link.addClass('active');
-                }
+        //         // Determine Active State
+        //         if (window.location.href.includes(item.url)) {
+        //             link.addClass('active');
+        //         }
 
-                // Append Icon and Text
-                const iconElement = $('<img>').attr('src', `${item.icon}`).addClass('icon');
-                link.append(iconElement).append($('<span class="nav-link-text">').text(item.text));
-                sidebar.append(link);
-            });
-        }
+        //         // Append Icon and Text
+        //         const iconElement = $('<img>').attr('src', `${item.icon}`).addClass('icon');
+        //         link.append(iconElement).append($('<span class="nav-link-text">').text(item.text));
+        //         sidebar.append(link);
+        //     });
+        // }
 
         // Create Sidebar Container
-        const sidebar = $('<aside class="sidebar"></aside>');
+        // const sidebar = $('<aside class="sidebar"></aside>');
 
-        // Add Logo Section
-        const logoContainer = $('<div class="navbarBrand"></div>');
-        const logoLink = $('<a>', { target: '_blank' });
-        const logoImage = $('<img>', {
-            src: 'https://frontenduiux.github.io/OBB_ETenders/Images/OBBLogo.png',
-            alt: 'Oman Broad Band',
-        });
-        // Append the logo image to the link, then append to the logo container and sidebar
-        logoLink.append(logoImage);
-        logoContainer.append(logoLink);
-        sidebar.append(logoContainer);
+        // // Add Logo Section
+        // const logoContainer = $('<div class="navbarBrand"></div>');
+        // const logoLink = $('<a>', { target: '_blank' });
+        // const logoImage = $('<img>', {
+        //     src: 'https://frontenduiux.github.io/OBB_ETenders/Images/OBBLogo.png',
+        //     alt: 'Oman Broad Band',
+        // });
+        // // Append the logo image to the link, then append to the logo container and sidebar
+        // logoLink.append(logoImage);
+        // logoContainer.append(logoLink);
+        // sidebar.append(logoContainer);
 
-        // Sidebar Menu Sections
-        sidebar.append(`<div class="topic">Menu</div>`);
+        // // Sidebar Menu Sections
+        // sidebar.append(`<div class="topic">Menu</div>`);
 
-        // Define English and Arabic menu items
-        const englishMenuItems = [
-            { text: "Dashboard", url: "#", icon: "https://frontenduiux.github.io/OBB_ETenders/Images/menu.png" },
-            { text: "Submitted Tenders", url: "#", icon: "https://frontenduiux.github.io/OBB_ETenders/Images/submitted%20tasks.png" },
-        ];
+        // // Define English and Arabic menu items
+        // const englishMenuItems = [
+        //     { text: "Dashboard", url: "#", icon: "https://frontenduiux.github.io/OBB_ETenders/Images/menu.png" },
+        //     { text: "Submitted Tenders", url: "#", icon: "https://frontenduiux.github.io/OBB_ETenders/Images/submitted%20tasks.png" },
+        // ];
 
 
-        // Select menu items based on language
-        const menuItems = englishMenuItems;
+        // // Select menu items based on language
+        // const menuItems = englishMenuItems;
 
-        // Create menu items
-        createMenuItems(menuItems);
+        // // Create menu items
+        // createMenuItems(menuItems);
 
-        // Append Sidebar to the Body
-        $('body').addClass("sidebarAvailable").append(sidebar);
+        // // Append Sidebar to the Body
+        // $('body').addClass("sidebarAvailable").append(sidebar);
     }
 });
-$(window).on("load", function () {
-    if ($(".tab-box-tabs").length) {
-        $('body').addClass('topbarExists');
-    }
-});
+// $(window).on("load", function () {
+//     if ($(".tab-box-tabs").length) {
+//         $('body').addClass('topbarExists');
+//     }
+// });
 
 
 
@@ -166,7 +166,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.VendorManagementTeamDashboard.Form/" },
                 { text: "Vendor List", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
             ];
-        } else if (currentUrl.includes("VRM") || currentUrl.includes("ArchivingDoc") || currentUrl.includes("NewDocCreation") || currentUrl.includes("RequestAccess") || currentUrl.includes("VitalRecordManagement")) {
+        } 
+        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("NewDocCreation") || currentUrl.includes("RequestAccess") || currentUrl.includes("VitalRecordManagement")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/VRM.LandingForm/" },
                 {
@@ -207,157 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Old Data", url: "/Runtime/Runtime/Form/LetterRegistration.MainForm/" },
                 { text: "Old Logs", url: "/Runtime/Runtime/Form/LetterRegistration.AuditableForm1/" }
             ];
-        } else if (currentUrl.includes("Letter")) {
-            menuItems = [
-                { text: "Home", url: "/Runtime/Runtime/Form/LetterLandingForm/" },
-                { text: "Tasks List", url: "/Runtime/Runtime/Form/LetterTaskListForm/" },
-                { text: "Completed", url: "/Runtime/Runtime/Form/LetterCompletedForm/" },
-                { text: "In Progress", url: "/Runtime/Runtime/Form/LetterPendingForm/" },
-                { text: "Old Data", url: "/Runtime/Runtime/Form/LetterRegistration.MainForm/" },
-                { text: "Old Logs", url: "/Runtime/Runtime/Form/LetterRegistration.AuditableForm1/" }
-            ];
-        }
-        else if (currentUrl.includes("SAWP") || currentUrl.includes("WorkPermit") || currentUrl.includes("SiteAccess") || currentUrl.includes("RegistrationRequest.ReviewForm")) {
-            if (fqn) {
-                if (fqn.toLowerCase().includes("K2SQL".toLowerCase())) {
-                    if (currentUrl.includes("SAWPExternal") || currentUrl.includes("SAWP.LandingForm") || currentUrl.includes("SAWPSiteAccess") || currentUrl.includes("SiteAccessRequest")) {
-                        menuItems = [
-                            { text: "Home", url: "/Runtime/Runtime/Form/SAWP.LandingForm/" },
-                            {
-                                text: "New Request", url: "", children: [
-                                    { text: "Site Access", url: "/Runtime/Runtime/Form/SiteAccessRequest.SubmitForm/" }]
-                            },
-                            { text: "Tasks List", url: "/Runtime/Runtime/Form/SAWPExternalTaskListForm/" },
-                            {
-                                text: "Site Access", url: "", children: [
-                                    { text: "In Progress", url: "/Runtime/Runtime/Form/SAWPSiteAccessExternalInProgressForm/" },
-                                    { text: "Completed", url: "/Runtime/Runtime/Form/SAWPSiteAccessExternalCompletedForm/" }
-                                ]
-                            }
-                        ];
-                    }
-                } else {
-                    if (currentUrl.includes("SAWPInternal") || currentUrl.includes("SAWPSiteAccess") || currentUrl.includes("SAWPWorkPermit") || currentUrl.includes("RegistrationRequest.ReviewForm") || currentUrl.includes("SiteAccessRequest") || currentUrl.includes("WorkPermit.") || currentUrl.includes("WorkPermitRequest") || currentUrl.includes("SiteAccess.MainForm")) {
-                        menuItems = [
-                            { text: "Home", url: "/Runtime/Runtime/Form/SAWPInternal.LandingForm/" },
-                            { text: "Tasks List", url: "/Runtime/Runtime/Form/SAWPInternalTaskListForm/" },
-                            {
-                                text: "New Request", url: "", children: [
-                                    { text: "Site Access", url: "/Runtime/Runtime/Form/SiteAccessRequest.SubmitForm/" },
-                                    { text: "Work Permit", url: "/Runtime/Runtime/Form/WorkPermit.SubmitForm/" }
-                                ]
-                            },
-                            {
-                                text: "Site Access", url: "", children: [
-                                    { text: "In Progress", url: "/Runtime/Runtime/Form/SAWPSiteAccessInternalInProgressForm/" },
-                                    { text: "Completed", url: "/Runtime/Runtime/Form/SAWPSiteAccessInternalCompletedForm/" }
-                                ]
-                            },
-                            {
-                                text: "Work Permit", url: "", children: [
-                                    { text: "In Progress", url: "/Runtime/Runtime/Form/SAWPWorkPermitInternalInProgressForm/" },
-                                    { text: "Completed", url: "/Runtime/Runtime/Form/SAWPWorkPermitInternalCompletedForm/" }
-                                ]
-                            }
-                        ];
-                    }
-                }
-            } else {
-                if (currentUrl.includes("SAWPExternal") || currentUrl.includes("SAWP.LandingForm") || currentUrl.includes("SAWPSiteAccess")) {
-                    menuItems = [
-                        { text: "Home", url: "/Runtime/Runtime/Form/SAWP.LandingForm/" },
-                        {
-                            text: "New Request", url: "", children: [
-                                { text: "Site Access", url: "/Runtime/Runtime/Form/SiteAccessRequest.SubmitForm/" }]
-                        },
-                        { text: "Tasks List", url: "/Runtime/Runtime/Form/SAWPExternalTaskListForm/" },
-                        {
-                            text: "Site Access", url: "", children: [
-                                { text: "In Progress", url: "/Runtime/Runtime/Form/SAWPSiteAccessExternalInProgressForm/" },
-                                { text: "Completed", url: "/Runtime/Runtime/Form/SAWPSiteAccessExternalCompletedForm/" }
-                            ]
-                        }
-                    ];
-                } else if (currentUrl.includes("SAWPInternal") || currentUrl.includes("SAWPSiteAccess") || currentUrl.includes("SAWPWorkPermit") || currentUrl.includes("RegistrationRequest.ReviewForm")) {
-                    menuItems = [
-                        { text: "Home", url: "/Runtime/Runtime/Form/SAWPInternal.LandingForm/" },
-                        { text: "Tasks List", url: "/Runtime/Runtime/Form/SAWPInternalTaskListForm/" },
-                        {
-                            text: "New Request", url: "", children: [
-                                { text: "Site Access", url: "/Runtime/Runtime/Form/SiteAccessRequest.SubmitForm/" },
-                                { text: "Work Permit", url: "/Runtime/Runtime/Form/WorkPermit.SubmitForm/" }
-                            ]
-                        },
-                        {
-                            text: "Site Access", url: "", children: [
-                                { text: "In Progress", url: "/Runtime/Runtime/Form/SAWPSiteAccessInternalInProgressForm/" },
-                                { text: "Completed", url: "/Runtime/Runtime/Form/SAWPSiteAccessInternalCompletedForm/" }
-                            ]
-                        },
-                        {
-                            text: "Work Permit", url: "", children: [
-                                { text: "In Progress", url: "/Runtime/Runtime/Form/SAWPWorkPermitInternalInProgressForm/" },
-                                { text: "Completed", url: "/Runtime/Runtime/Form/SAWPWorkPermitInternalCompletedForm/" }
-                            ]
-                        }
-                    ];
-                }
-            }
-
-        } else if (currentUrl.includes("Visitor")) {
-            menuItems = [
-                { text: "Home", url: "/Runtime/Runtime/Form/VisitorLandingForm/" },
-                { text: "New Request", url: "/Runtime/Runtime/Form/VisitorRegistration.SubmitForm/" },
-                { text: "History", url: "/Runtime/Runtime/Form/VisitorHistory.Form/" },
-                { text: "Old Data", url: "/Runtime/Runtime/Form/VisitorRegistration.MainForm/" }
-            ];
-        } else if (currentUrl.includes("Feasability") || currentUrl.includes("Master+Data") || currentUrl.includes("My__task__Form") || currentUrl.includes("MyRequestForm") || currentUrl.includes("Feasibility") || currentUrl.includes("FSSP.MainForm")) {
-            menuItems = [
-                { text: "Home", url: "/Runtime/Runtime/Form/MyRequestForm/" },
-                { text: "New Request", url: "/Runtime/Runtime/Form/Master+Data/" },
-                { text: "Tasks List", url: "/Runtime/Runtime/Form/My__task__Form/" },
-                { text: "Completed", url: "/Runtime/Runtime/Form/FeasibilityCompletedRequestForm/" },
-                { text: "In Progress", url: "/Runtime/Runtime/Form/FeasibilityPendingRequestForm/" },
-                { text: "Old Data", url: "/Runtime/Runtime/Form/FSSP.MainForm/" }
-            ];
-        } else if (currentUrl.includes("Incoming") || currentUrl.includes("Outgoing") || currentUrl.includes("Outing") || currentUrl.includes("ICMS.DataDashboard") || currentUrl.includes("OCMS.DataDashboard")) {
-            menuItems = [
-                // { text: "Home", url: "/Runtime/Runtime/Form/IncomingRequest.AllRequestsForm/" },
-                {
-                    text: "New Request", url: "", children: [
-                        { text: "Incoming Request", url: "/Runtime/Runtime/Form/NewIncomingRequestCreation.SubmitForm/" },
-                        { text: "Outgoing Request", url: "/Runtime/Runtime/Form/NewOutingRequestCreation.SubmitForm/" }
-                    ]
-                },
-                {
-                    text: "Incoming Correspondence", url: "", children: [
-                        { text: "InProgress", url: "/Runtime/Runtime/Form/IncomingRequest.InProgressRequestForm/" },
-                        { text: "Closed", url: "/Runtime/Runtime/Form/IncomingRequest.ClosedRequestForm/" },
-                        { text: "All Requests", url: "/Runtime/Runtime/Form/IncomingRequest.AllRequestsForm/" },
-                        { text: "My Tasks", url: "/Runtime/Runtime/Form/IncomingRequest.Worklist/" },
-                        { text: "Old Data", url: "/Runtime/Runtime/Form/ICMS.DataDashboard/" }
-
-                    ]
-                },
-                {
-                    text: "Outgoing Correspondence", url: "", children: [
-                        { text: "InProgress", url: "/Runtime/Runtime/Form/OutgoingRequest.InProgressRequestForm/" },
-                        { text: "My Drafts", url: "/Runtime/Runtime/Form/OutgoingRequest.DraftRequestForm/" },
-                        { text: "All Requests", url: "/Runtime/Runtime/Form/OutgoingRequest.AllRequestsForm/" },
-                        { text: "My Tasks", url: "/Runtime/Runtime/Form/OutgoingRequest.WorklistForm/" },
-                        { text: "Old Data", url: "/Runtime/Runtime/Form/OCMS.DataDashboard/" }
-                    ]
-                }
-            ];
-
-        }
-        else if (currentUrl.includes("Suggestions") || currentUrl.includes("Suggestions.Form") || currentUrl.includes("AllSuggestionsForm") || currentUrl.includes("SuggestionsWorklist.Form")) {
-            menuItems = [
-                { text: "Home", url: "/Runtime/Runtime/Form/AllSuggestionsForm/" },
-                { text: "New Request", url: "/Runtime/Runtime/Form/Suggestions.Form/" },
-                { text: "Tasks List", url: "/Runtime/Runtime/Form/SuggestionsWorklist.Form/" },
-            ];
-        }
+        } 
         else {
             menuItems = [
             ];
@@ -415,19 +266,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+//
 const targets = document.querySelectorAll('.grid-body-content table.grid-content-table tbody');
-
 if (targets.length > 0) {
     targets.forEach((target) => {
         const observer = new MutationObserver(function () {
@@ -440,8 +280,6 @@ if (targets.length > 0) {
         observer.observe(target, { childList: true, subtree: true });
     });
 }
-
-
 function applyGrayscaleFix() {
     $('.grid-body-content table.grid-content-table tbody tr').each(function (index) {
         const $row = $(this);
@@ -474,9 +312,6 @@ function applyGrayscaleFix() {
         }
     });
 }
-
-
-
 function applyGrayscaleFix2() {
     $('.grid-body-content table.grid-content-table tbody tr').each(function (index) {
         const $row = $(this);
@@ -509,8 +344,6 @@ function applyGrayscaleFix2() {
         }
     });
 }
-
-
 function applyGrayscaleFix3() {
     $('.grid-body-content table.grid-content-table tbody tr').each(function (index) {
         const $row = $(this);
@@ -543,8 +376,6 @@ function applyGrayscaleFix3() {
         }
     });
 }
-
-
 function applyGrayscaleFix4() {
     $('.grid-body-content table.grid-content-table tbody tr').each(function (index) {
         const $row = $(this);
@@ -578,7 +409,6 @@ function applyGrayscaleFix4() {
         }
     });
 }
-
 // POC 
 document.addEventListener('DOMContentLoaded', function () {
     // Loop through all td elements with data-options attribute
