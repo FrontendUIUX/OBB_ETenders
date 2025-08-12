@@ -37,6 +37,7 @@ html:not(.designer) .topbarExists .tab-box-tabs li .tab{
 	color:#565656!important;
 	font-family:var(--regularFont);
 }
+
 html:not(.designer) body *{
 	font-family:var(--regularFont)!important;
 }
@@ -1383,7 +1384,15 @@ html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.col
 	background-size: 1.3rem;
 	transform:scaleY(-1);
 }
+@media(min-width:992px){
+	body.theme-entry.topbarExists {
+    margin-top: 13rem;
+}
+}
 @media(min-width:1600px){
+	body.theme-entry.topbarExists {
+    margin-top: 13vw;
+}
 	html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper .panel-header-text > span,
 	html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper .grid-header-text> span{
 	min-height: 3vw;
