@@ -1388,6 +1388,13 @@ html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.col
 	background-size: 1.3rem;
 	transform:scaleY(-1);
 }
+span#\35 799b0a5-a531-2dea-2f02-2841b85720da {
+    padding-left: 0;
+}
+
+span#c7e95771-5b68-40f6-48ee-018fac123216 {
+    padding-right: 0;
+}
 @media(min-width:992px){
 	body.theme-entry.topbarExists {
     margin-top: 13rem;
