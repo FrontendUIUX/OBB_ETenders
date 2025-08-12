@@ -1231,13 +1231,14 @@ html:not(.designer) img#aaa2922e-a9d6-57b9-4b35-a5e16e1477be_8c40e4b4-a56c-2593-
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	display:flex!important;
-	flex-direction:column!important;
+	/* flex-direction:column!important; */
 	align-items: flex-start!important;
 	justify-content: flex-end;
 	border:1px solid var(--borderColor)!important;
 	border-radius:.7rem;
 	text-align: left;
 	padding:.5rem;
+	justify-content: space-between;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span{
 	width:100%;
