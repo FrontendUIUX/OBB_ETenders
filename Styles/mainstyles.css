@@ -1356,21 +1356,38 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 html:not(.designer) .theme-entry a.expand-vertical, .theme-entry a.expand-vertical:focus, 
 html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical, 
 html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus {
-	background-color: white;
+	background-color: white!important;
 	height:3rem;
 	width: 3rem;
-	border-radius: 100%;
-	background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/chevDown.svg")!important ;
+	border-radius: 100%!important;
+	background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/chevDown.svg")!important;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 1.3rem;
+}
+html:not(.designer) .theme-entry a.collapse-vertical, .theme-entry a.collapse-vertical:focus, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.collapse-vertical, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.collapse-vertical:focus {
+	background-color: white!important;
+	height:3rem;
+	width: 3rem;
+	border-radius: 100%!important;
+	background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/chevDown.svg")!important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 1.3rem;
+	transform:scaleY(-1);
 }
 @media(min-width:1600px){
 html:not(.designer) .theme-entry a.expand-vertical, .theme-entry a.expand-vertical:focus, 
 html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical, 
-html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus{
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus,
+	html:not(.designer) .theme-entry a.collapse-vertical, .theme-entry a.collapse-vertical:focus, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.collapse-vertical, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.collapse-vertical:focus{
 	height: 3vw;
 	width: 3vw;
+	background-size: 1.3vw;
 }
 	.theme-entry a.toolbar-button svg{
 		height:1vw;
