@@ -1325,17 +1325,6 @@ i#togglePassword1::before{
 	content:""!important;
 }
 td#\36 65bba9b-94a4-179b-4bb6-7db4dd45000e {display: table-cell!important;}
-.theme-entry .input-control.select-box .input-control-buttons a>span span{
-	/* background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/Chevron.svg")!important; */
-	/* background-size:contain; */
-	/* background-position:center; */
-	/* background-repeat:no-repeat; */
-	/* height: 1rem; */
-	/* width: 1rem; */
-	/* top: 50%; */
-	/* transform:translateY(-50%); */
-	/* position:absolute; */
-}
 a.dropdown{
 	height: 100%!important;
 	width: 3rem!important;
@@ -1575,10 +1564,6 @@ html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	}
 	a.dropdown{
 	width: 3vw!important;
-}
-.theme-entry .input-control.select-box .input-control-buttons a>span span{
-	/* height: 1vw; */
-	/* width: 1vw; */
 }
 	i#togglePassword,
 i#togglePassword1{
