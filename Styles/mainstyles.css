@@ -1384,6 +1384,26 @@ html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.col
 	transform:scaleY(-1);
 }
 @media(min-width:1600px){
+		html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="dlblAnswer"]{
+	font-size:1.3vw!important
+}
+		html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="dlblHeading"]{
+	font-size:1vw!important
+}
+	html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	border-radius:.7vw;
+	padding: 1.6vw;
+	}
+		html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] {
+    width: 6vw !important;
+}
+	html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] img{
+    width: 4vw !important;
+}
+	.theme-entry a.toolbar-button svg{
+		height:1vw;
+		width:1vw;
+	}
 html:not(.designer) .theme-entry a.expand-vertical, .theme-entry a.expand-vertical:focus, 
 html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical, 
 html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus,
