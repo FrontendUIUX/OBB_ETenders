@@ -163,8 +163,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (currentUrl.includes("Dashboard.VendorManagementTeamDashboard.Form/") || currentUrl.includes("Vendor.VendorList.Form/") ) {
             menuItems = [
-                { text: "Home", url: "/Runtime/Runtime/Form/ArchivingLandingForm/" },
-                { text: "Tasks List", url: "/Runtime/Runtime/Form/RAPTaskListForm/" },
+                { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.VendorManagementTeamDashboard.Form/" },
+                { text: "Vendor List", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
             ];
         } else if (currentUrl.includes("VRM") || currentUrl.includes("ArchivingDoc") || currentUrl.includes("NewDocCreation") || currentUrl.includes("RequestAccess") || currentUrl.includes("VitalRecordManagement")) {
             menuItems = [
