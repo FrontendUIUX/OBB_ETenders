@@ -1353,9 +1353,9 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 		display: flex!important;
 		align-items: center!important;
 	}
-.theme-entry a.expand-vertical, .theme-entry a.expand-vertical:focus, 
-.theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical, 
-.theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus {
+html:not(.designer) .theme-entry a.expand-vertical, .theme-entry a.expand-vertical:focus, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus {
 	background-color: white;
 	height:3rem;
 	width: 3rem;
@@ -1366,9 +1366,9 @@ html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
 	background-size: contain;
 }
 @media(min-width:1600px){
-.theme-entry a.expand-vertical, .theme-entry a.expand-vertical:focus, 
-.theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical, 
-.theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus{
+html:not(.designer) .theme-entry a.expand-vertical, .theme-entry a.expand-vertical:focus, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus{
 	height: 3vw;
 	width: 3vw;
 }
