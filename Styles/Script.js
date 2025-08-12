@@ -175,14 +175,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Worklist", url: "#" }
             ];
         }
-        else if (currentUrl.includes("LetterRegistration.AuditableForm") || currentUrl.includes("LetterRegistration.MainForm") || currentUrl.includes("LetterRegistration.ReadOnlyForm")) {
+        else if (currentUrl.includes("Vendor.ExternalDashboard/") || currentUrl.includes("Vendor.ClarificationsForm/")) {
             menuItems = [
-                { text: "Home", url: "/Runtime/Runtime/Form/LetterLandingForm/" },
-                { text: "Tasks List", url: "/Runtime/Runtime/Form/LetterTaskListForm/" },
-                { text: "Completed", url: "/Runtime/Runtime/Form/LetterCompletedForm/" },
-                { text: "In Progress", url: "/Runtime/Runtime/Form/LetterPendingForm/" },
-                { text: "Old Data", url: "/Runtime/Runtime/Form/LetterRegistration.MainForm/" },
-                { text: "Old Logs", url: "/Runtime/Runtime/Form/LetterRegistration.AuditableForm1/" }
+                { text: "Home", url: "/Runtime/Runtime/Form/Vendor.ExternalDashboard/" },
+                { text: "Vendor Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsForm/" },
+                { text: "Worklist", url: "#" },
             ];
         } 
         else {
