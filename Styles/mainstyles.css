@@ -911,7 +911,8 @@ html:not(.designer) .theme-entry span[name*="profilePhoto"]{
 	padding: 0.4rem 1.6rem;
 	height: 3rem!important;
 	min-height:unset!important;
-	line-height:unset!important
+	line-height:unset!important;
+	margin-left: 4rem!important;
 }
 /* */
 html:not(.designer) .worklist-grid-column-header-cell-text,
