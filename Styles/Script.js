@@ -175,11 +175,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Worklist", url: "#" }
             ];
         }
-        else if (currentUrl.includes("Vendor.ExternalDashboard/") || currentUrl.includes("Vendor.ClarificationsForm/")) {
+        else if (currentUrl.includes("Vendor.ExternalDashboard/") || currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Vendor.ExternalDashboard/" },
                 { text: "Vendor Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsForm/" },
-                { text: "Worklist", url: "#" },
+                { text: "Worklist", url: "/Runtime/Runtime/Form/ExternalHub.Form/" },
             ];
         }
         else if(currentUrl.includes("InternalHub.Form/") || currentUrl.includes("SubmittedTenders.Form/")){
