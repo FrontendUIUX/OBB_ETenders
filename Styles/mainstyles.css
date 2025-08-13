@@ -1790,7 +1790,7 @@ html:not(.designer) [name*="OBB_label"]{
     font-size:1vw!important;
 }
 	html:not(.designer) .theme-entry.sidebarAvailable {
-    left: 16vw;
+    left: 0;
     width: calc(100% - 16vw);
     padding: 0 1rem;
     position: relative;
