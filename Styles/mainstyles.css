@@ -1282,9 +1282,9 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	text-align: left;
 	padding: 1.6rem!important;
 	justify-content: space-between;
-	width: 20rem;
+	width: 21rem;
 	margin-bottom: 1rem;
-	margin: 0 1rem 1rem;
+	margin: 0 .5rem 1rem;
 	position: relative;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] img{
