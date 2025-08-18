@@ -241,7 +241,7 @@ html:not(.designer) [name="Worklist"]{
 	display:block!important;
 }
 [name*="flex-wrap"]{
-	flex-wrap:wrap!important;
+	flex-wrap: wrap!important;
 }
 html:not(.Designer) .active[name="btnOutgoing"]:focus .button-text,
 html:not(.Designer) .active[name="btnIncoming"]:focus .button-text{
@@ -1263,6 +1263,10 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	text-align: left;
 	padding: 1.6rem!important;
 	justify-content: space-between;
+	width: 20rem;
+	margin-bottom: 1rem;
+	margin: 0 1rem 1rem;
+	position: relative;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] img{
 	height:100%;
@@ -1274,7 +1278,10 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"] span{
 	padding: 0;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"]{
-	width: 6rem!important;
+	width: 3rem!important;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
 }
 
 html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
