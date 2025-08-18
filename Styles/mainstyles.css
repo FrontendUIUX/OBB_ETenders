@@ -1261,6 +1261,11 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	padding: 1.6rem!important;
 	justify-content: space-between;
 }
+html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] img{
+	height:100%;
+	width:100%;
+	object-fit:contain;
+}
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span{
 	width:100%;
 	padding: 0;
