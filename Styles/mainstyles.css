@@ -247,6 +247,25 @@ html:not(.Designer) .active[name="btnOutgoing"]:focus .button-text,
 html:not(.Designer) .active[name="btnIncoming"]:focus .button-text{
 	color:var(--aqua)!important;
 }
+div#eee3ea1f-a365-433c-bce2-e02c338f1f07,
+span#\31 764f2e7-2b91-71cd-e3c3-85d5d91a3ce4 {
+    padding: 0;
+}
+span#\36 21c7dcd-fc2a-b6b4-65cd-d5bd1ee455b8,
+span#\39 339c4c0-0815-069e-5c66-f16ae4de132f,
+span#c4afdb30-1a1b-386f-8c92-f457ea4c2fde,
+span#\34 5aed624-b354-f81d-d2e7-1dba8121660a,
+span#e8406ea0-73cb-2d66-9dbe-ca07e29e8dc1 {
+    display: none;
+}
+
+div#eee3ea1f-a365-433c-bce2-e02c338f1f07 {
+    padding: 0;
+}
+
+span#\31 764f2e7-2b91-71cd-e3c3-85d5d91a3ce4 {
+    padding: 0;
+}
 html:not(.designer) .SourceCodeFormsControlsWorklist{
 	border-radius:1rem!important;
 	overflow:hidden;
