@@ -1258,7 +1258,7 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	border:1px solid var(--borderColor)!important;
 	border-radius:.7rem;
 	text-align: left;
-	padding: 1.6rem;
+	padding: 1.6rem!important;
 	justify-content: space-between;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span{
