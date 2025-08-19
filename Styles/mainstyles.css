@@ -1288,7 +1288,8 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	position: relative;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"]{
-	width: 27rem;
+	width: 28.4rem;
+	margin: 0;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] img{
 	height:100%;
