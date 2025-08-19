@@ -16,6 +16,9 @@
 	font-size:1rem;
 }
 @media(min-width:1600px){
+	 html:not(.designer) [name*="OBB_label"]{
+        font-size: 1vw!important;
+    }
 		html.no-border-box-support body{
 	margin:0!important;
 }

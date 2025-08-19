@@ -152,6 +152,9 @@ html:not(.designer) .form-wrapper{
 }
 }
 @media(min-width:1600px){
+    html:not(.designer) [name*="OBB_label"]{
+        font-size: 1vw!important;
+    }
     html:not(.designer) [name*="OBB_label"],
     html:not(.designer) [name*="OBB_asterik"]{
         margin:1vw 0 .3vw;
