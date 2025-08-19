@@ -1036,7 +1036,7 @@ background-color:transparent!important;
 html:not(.designer) .theme-entry .grid .grid-column-header-text,
 html:not(.designer) .theme-entry.runtime-form span.runtime-list-item-wrap{
 	font-family:var(--regularFont)!important;
-	font-size: .8vw!important;
+	font-size: 8pt!important;
 }
 html:not(.designer) .theme-entry .grid .grid-column-header-cell{
 	padding: 0;
@@ -1453,6 +1453,11 @@ div#\36 ab672ee-a1c8-1978-f363-82431b1d04ef_56ed7e67-ddc3-9111-724e-a3feeea8c26f
 }
 }
 @media(min-width:1600px){
+	html:not(.designer) .theme-entry .grid .grid-column-header-text,
+html:not(.designer) .theme-entry.runtime-form span.runtime-list-item-wrap{
+	font-family:var(--regularFont)!important;
+	font-size: .7vw!important;
+}
 	body.theme-entry.topbarExists {
     margin-top: 13vw;
 }
