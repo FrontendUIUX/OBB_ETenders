@@ -1310,10 +1310,10 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"
 	right: 1rem;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"] span[name*="kpiIcon"]{
-	width: 6rem!important;
+	/* width: 6rem!important;
 	position: relative;
 	top: unset;
-	right: unset;
+	right: unset; */
 } 
 html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
     left: 15rem;
@@ -1494,10 +1494,10 @@ html:not(.designer) .theme-entry .input-control.select-box.disabled .input-contr
 		font-size:1vw!important;
 	}
 	html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"] span[name*="kpiIcon"]{
-	width: 6vw!important;
+	/* width: 6vw!important;
 	position: relative;
 	top: unset;
-	right: unset;
+	right: unset; */
 } 
 	html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"]{
 	width: 29vw;
