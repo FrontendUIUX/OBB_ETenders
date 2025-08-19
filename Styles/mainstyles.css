@@ -1818,7 +1818,7 @@ html:not(.designer) [name*="OBB_Collapse"] .panel-body{
 	height: 5.4vw;
 }
 	html:not(.designer) [name*="HeaderDescriptionContainer"] [name*="HeaderDescription"]{
-	font-size:1vw;
+	font-size: 1vw!important;
 }
 	html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
 	font-size: 1.7vw;
