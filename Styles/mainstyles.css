@@ -1462,6 +1462,9 @@ div#\36 ab672ee-a1c8-1978-f363-82431b1d04ef_56ed7e67-ddc3-9111-724e-a3feeea8c26f
 }
 }
 @media(min-width:1600px){
+	html:not(.designer) body.theme-entry [name*="kpiContainer"] span{
+		font-size:1vw!important;
+	}
 	html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"] span[name*="kpiIcon"]{
 	width: 6vw!important;
 	position: relative;
@@ -1505,7 +1508,9 @@ html:not(.designer) .theme-entry.runtime-form span.runtime-list-item-wrap{
 }
 	html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	border-radius:.7vw;
-	padding: 1.6vw;
+	padding: 1.6vw!important;
+	width: 19vw;
+	margin: 0 .5vw 1vw;
 	}
 		html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] {
     width: 2vw !important;
