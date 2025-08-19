@@ -1469,6 +1469,9 @@ div#\36 ab672ee-a1c8-1978-f363-82431b1d04ef_56ed7e67-ddc3-9111-724e-a3feeea8c26f
 }
 }
 @media(min-width:1600px){
+	 html:not(.designer) [name*="OBB_label"]{
+        font-size: 1vw!important;
+    }
 		.theme-entry .popup.id-calendar-control-popup {
     width: 18vw !important;
     height: auto !important;
