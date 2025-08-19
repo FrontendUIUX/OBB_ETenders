@@ -1287,6 +1287,9 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	margin: 0 .5rem 1rem;
 	position: relative;
 }
+html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"]{
+	width: 29rem;
+}
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] img{
 	height:100%;
 	width:100%;
@@ -1302,7 +1305,12 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"
 	top: 1rem;
 	right: 1rem;
 }
-
+html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"] span[name*="kpiIcon"]{
+	width: 6rem!important;
+	position: relative;
+	top: unset;
+	right: unset;
+} 
 html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
     left: 15rem;
     width: calc(100vw - 15rem);
@@ -1453,6 +1461,15 @@ div#\36 ab672ee-a1c8-1978-f363-82431b1d04ef_56ed7e67-ddc3-9111-724e-a3feeea8c26f
 }
 }
 @media(min-width:1600px){
+	html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"] span[name*="kpiIcon"]{
+	width: 6vw!important;
+	position: relative;
+	top: unset;
+	right: unset;
+} 
+	html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"]{
+	width: 29vw;
+}
 	html:not(.designer) .theme-entry .grid .grid-column-header-text,
 html:not(.designer) .theme-entry.runtime-form span.runtime-list-item-wrap{
 	font-family:var(--regularFont)!important;
