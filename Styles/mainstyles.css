@@ -1462,6 +1462,21 @@ div#\36 ab672ee-a1c8-1978-f363-82431b1d04ef_56ed7e67-ddc3-9111-724e-a3feeea8c26f
 }
 }
 @media(min-width:1600px){
+		html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.date>span span, 
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.date:active>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.date>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:focus>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:focus>span span{
+	background-size: 1.1vw!important;
+	height: 3vw;
+	width: 3vw;
+}
+	a#\31 9420043-276a-7183-695f-0080d282e8fd_75083a77-02d7-21a8-6cc4-e541d7186ed3_Image{
+		height:3vw;
+		width:3vw;
+	}
 	html:not(.designer) .popup.dialog{
 		min-height: 14vw;
 	}
