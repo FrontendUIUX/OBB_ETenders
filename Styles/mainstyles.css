@@ -1512,9 +1512,6 @@ html:not(.designer) .theme-entry.runtime-form span.runtime-list-item-wrap{
     top: 1vw;
     right: 1vw;
 }
-	html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] img{
-    /* width: 4vw !important; */
-}
 	.theme-entry a.toolbar-button svg{
 		height:1vw;
 		width:1vw;
