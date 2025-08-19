@@ -16,10 +16,13 @@ iframe.runtime-popup[name="47a2f163-e949-46b2-988d-402f21a79719_1_1755593854531"
     min-height: 16rem;
 }
 [name*="customTile"] {
-    background-color: #f6f6f6;
+    /* background-color: #f6f6f6; */
     border-radius: 1rem;
-    padding: 1rem;
-    height: 10rem;
+    padding: 1rem!important;
+    height: 10rem!important;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
 }
 /*test*/
 /* PICKERS ICONS START */
