@@ -1288,7 +1288,7 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	position: relative;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"]{
-	width: 29rem;
+	width: 27rem;
 }
 html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] img{
 	height:100%;
