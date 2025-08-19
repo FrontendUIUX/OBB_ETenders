@@ -1485,10 +1485,12 @@ div#\36 ab672ee-a1c8-1978-f363-82431b1d04ef_56ed7e67-ddc3-9111-724e-a3feeea8c26f
 	padding: 1.6vw;
 	}
 		html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] {
-    width: 6vw !important;
+    width: 2vw !important;
+    top: 1vw;
+    right: 1vw;
 }
 	html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] img{
-    width: 4vw !important;
+    /* width: 4vw !important; */
 }
 	.theme-entry a.toolbar-button svg{
 		height:1vw;
