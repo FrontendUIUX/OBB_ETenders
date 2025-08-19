@@ -9,6 +9,9 @@
     --regularFont:"Co Headline";
     --transition:all .3s ease-in-out;
 }
+body.theme-entry.runtime-view{
+	background-color:transparent!important
+}
 /*test*/
 /* PICKERS ICONS START */
 html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.date>span span, 
