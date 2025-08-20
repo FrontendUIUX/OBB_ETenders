@@ -9,7 +9,7 @@
     --regularFont:"Co Headline";
     --transition:all .3s ease-in-out;
 }
-a.calender-control-button:hover
+a.calender-control-button:hover,
 a.dropdown.border-left-only:hover{
 	background-color:transparent!important;
 }
