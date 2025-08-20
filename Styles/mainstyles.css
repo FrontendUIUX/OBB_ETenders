@@ -9,6 +9,9 @@
     --regularFont:"Co Headline";
     --transition:all .3s ease-in-out;
 }
+a.calender-control-button:hover{
+	background-color:transparent!important;
+}
 body.theme-entry.runtime-view{
 	background-color:transparent!important
 }
