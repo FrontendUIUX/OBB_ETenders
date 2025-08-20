@@ -23,6 +23,10 @@ span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_b95a7498-ab62-971e-f374-b380b4b7e79
 span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_f10fbc03-cc7c-91e8-24cb-380efbc6b88a{
     background-color: #f7f7f7!important;
 }
+.theme-entry .input-control.select-box .input-control-buttons a.dropdown:hover>span span, 
+.theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:hover>span span{
+	background-position: 0 0;
+}
 a.calender-control-button:hover,
 a.dropdown.border-left-only:hover{
 	background-color:transparent!important;
