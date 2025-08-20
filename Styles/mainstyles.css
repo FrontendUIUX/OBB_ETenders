@@ -9,6 +9,9 @@
     --regularFont:"Co Headline";
     --transition:all .3s ease-in-out;
 }
+div#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table {
+    padding: 1rem 2rem;
+}
 a.calender-control-button:hover,
 a.dropdown.border-left-only:hover{
 	background-color:transparent!important;
