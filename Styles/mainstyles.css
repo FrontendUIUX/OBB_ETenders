@@ -429,8 +429,9 @@ html:not(.designer) body{
     font-family: var(--regularFont);
     background-color: white;
     margin-top: 6rem;
-    height: calc(100% - 4rem);
+    height: 100%;
     width: calc(100% - 0rem);
+    position: relative;
 }
 html:not(.designer) body.topbarExists{
 	margin-top:13.3rem;
@@ -439,13 +440,7 @@ html:not(.designer) tr.selected [src*="/Runtime/Style/eye.png"],
 html:not(.designer) tr.selected [src*="https://ck2-app-tst-1.obc.local//Runtime/Image.ashx"]{
 	filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(183deg) brightness(99%) contrast(91%);
 }
-html:not(.designer) .theme-entry.sidebarAvailable {
-    left: 15rem;
-    max-width: calc(100% - 0rem);
-    padding: 0 1rem;
-    position: relative;
-    width: calc(100% - 15rem);
-}
+
 html:not(.designer) .runtime-content{
     margin:0!important;
 }
@@ -659,6 +654,7 @@ display:flex;
     background-image: url("https://frontenduiux.github.io/OBB_Services/Images/Registration%20Background.png");
     background-size: cover;
     background-position: top;
+	transform:translateX(-100%);
 }
 .navbarBrand a{width: 9rem;display: block;margin: auto;}
 .navbarBrand a img{
@@ -1323,7 +1319,7 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	text-align: left;
 	padding: 1.6rem!important;
 	justify-content: space-between;
-	width: 21rem;
+	width: 100%;
 	margin-bottom: 1rem;
 	margin: 0 .5rem 1rem;
 	position: relative;
@@ -1347,10 +1343,7 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"
 	top: 1rem;
 	right: 1rem;
 }
-html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
-    left: 15rem;
-    width: calc(100vw - 15rem);
-}
+
 .popupManager[style*="position: absolute;"]{
 	height: 100vh!important;
 	width: 100vw!important;
@@ -1491,9 +1484,49 @@ span#c7e95771-5b68-40f6-48ee-018fac123216 {
 div#\36 ab672ee-a1c8-1978-f363-82431b1d04ef_56ed7e67-ddc3-9111-724e-a3feeea8c26f_Table {
     padding: 1rem;
 }
+div#ad5fd33b-1af7-81a5-cb8e-33cd06d540d9_14e85709-0a62-5be5-1c4f-d6e115fbf12a_Table {
+    flex-direction: column;
+    width: 100%;
+}
 @media(min-width:992px){
+	div#ad5fd33b-1af7-81a5-cb8e-33cd06d540d9_14e85709-0a62-5be5-1c4f-d6e115fbf12a_Table {
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+	html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
+    left: 15rem;
+    width: calc(100vw - 15rem);
+}
+	html:not(.designer) .theme-entry.sidebarAvailable {
+    left: 15rem;
+    max-width: calc(100% - 0rem);
+    padding: 0 1rem;
+    position: relative;
+    width: calc(100% - 15rem);
+}
+	.sidebar{
+		transform:translateX(0);
+	}
+	html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	width: 25rem;
+}
 	body.theme-entry.topbarExists {
     margin-top: 13rem;
+}
+}
+@media(min-width:1024px){
+		html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	width: 27rem;
+}
+}
+@media(min-width:1200px){
+		html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	width: 21rem;
+}
+}
+@media(min-width:1440px){
+		html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	width: 20rem;
 }
 }
 @media(min-width:1600px){
