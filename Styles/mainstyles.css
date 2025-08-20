@@ -310,6 +310,7 @@ html:not(.designer) .SourceCodeFormsControlsWorklist{
 }
 html:not(.designer) [name="DLName"]{
 	font-size: 1rem!important;
+	display: none;
 }
 html:not(.designer) div#d0e5951c-04b1-41f6-8482-bbb98c34e8cc_4d2cd33e-2345-417c-9d62-5b2ab67d9e55_a78c6f88-5c20-8a61-b557-643873abfd8f_1eb89a2d-3c0d-45b9-92bb-874012efeb68 {
     margin-top: -1rem;
@@ -326,7 +327,7 @@ html:not(.designer) [name*="OBB_header"]{
 	left: 0;
 	width:100%;
 	z-index: 2;
-	height: 6rem;
+	height: 10rem;
 	padding: 0 1rem!important;
 	display: flex!important;
 	align-items: center!important;
@@ -334,6 +335,7 @@ html:not(.designer) [name*="OBB_header"]{
 	padding-top:1rem!important;
 	padding-bottom:1rem!important;
 	/* height: 7.6rem; */
+	flex-direction: column;
 }
 html:not(.designer) [name="Account Picture"]{
 	margin-right:.5rem;
@@ -364,10 +366,9 @@ html:not(.designer) [name="OBB_header"] > div{
 	width:100%;
 	
 }
-html:not(.designer) [name*="HeaderTitleContainer"]{
-width:80%;}
+html:not(.designer) [name*="HeaderTitleContainer"]{width: 100%;}
 html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
-	font-size: 1.7rem;
+	font-size: 1rem;
 	font-family:var(--regularFont);
 	color:black;
 	padding: 0;
@@ -986,12 +987,13 @@ html:not(.designer) .theme-entry span[name*="profilePhoto"]{
 	border-radius:2rem;
 	display: flex!important;
 	align-items: center!important;
-	width: fit-content!important;
-	padding: 0.4rem 1.6rem;
+	width: 3rem!important;
+	padding: .8rem 0.8rem 1rem 1rem!important;
 	height: 3rem!important;
 	min-height:unset!important;
 	line-height:unset!important;
-	/* margin-left: 4rem!important; */
+	/* position: absolute; */
+	/* right: 1rem; */
 }
 /* */
 html:not(.designer) .worklist-grid-column-header-cell-text,
@@ -1489,6 +1491,25 @@ div#ad5fd33b-1af7-81a5-cb8e-33cd06d540d9_14e85709-0a62-5be5-1c4f-d6e115fbf12a_Ta
     width: 100%;
 }
 @media(min-width:992px){
+	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
+	border:1px solid rgb(220 220 220 / 80%)!important;
+	border-radius:2rem;
+	display: flex!important;
+	align-items: center!important;
+	width: fit-content!important;
+	padding: 0.4rem 1.6rem!important;
+	height: 3rem!important;
+	min-height:unset!important;
+	line-height:unset!important;
+}
+	html:not(.designer) [name="DLName"]{
+		display:inline;
+	}
+	html:not(.designer) [name*="HeaderTitleContainer"]{
+width:80%;}
+	html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
+	font-size: 1.7rem;
+}
 	div#ad5fd33b-1af7-81a5-cb8e-33cd06d540d9_14e85709-0a62-5be5-1c4f-d6e115fbf12a_Table {
     flex-direction: row;
     flex-wrap:wrap;
@@ -1496,6 +1517,8 @@ div#ad5fd33b-1af7-81a5-cb8e-33cd06d540d9_14e85709-0a62-5be5-1c4f-d6e115fbf12a_Ta
 	html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
     left: 15rem;
     width: calc(100vw - 15rem);
+    flex-direction: row;
+    height: 6rem;
 }
 	html:not(.designer) .theme-entry.sidebarAvailable {
     left: 15rem;
