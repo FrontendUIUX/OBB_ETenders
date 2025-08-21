@@ -655,9 +655,13 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
     padding: 0;
 }
 .theme-entry .top-calendar a {
-    margin-top: 1rem;
+    margin-top: 1rem!important;
     background-repeat: no-repeat;
-    height: 1rem;
+    height: 1rem!important;
+}
+.theme-entry .top-calendar a:hover {
+    color: var(--aqua) !important;
+    background-color: transparent !important;
 }
 .theme-entry .top-calendar a.top-calendar-right,
 .theme-entry .top-calendar a.top-calendar-left{
@@ -1586,6 +1590,28 @@ width:80%;}
 }
 }
 @media(min-width:1600px){
+		.theme-entry .day, .theme-entry .month, .theme-entry .year{
+		width:7vw!important;
+	}
+	.theme-entry .top-calendar a {
+    margin-top: 1vw!important;
+    height: 1vw!important;
+}
+	html:not(.designer) .theme-entry .message-box-content,
+html:not(.designer) .theme-entry .dialog .popup-body{
+    height: fit-content;
+    min-height: 5vw;
+}
+	.theme-entry .day {
+    font-size: 1vw;
+    height: 2.5vw!important;
+    width: 2.5vw!important;
+}
+.calendar-row .dayname{
+	height:2.5vw!important;
+	width:2.5vw!important;
+	margin-bottom:1vw;
+}
 	 html:not(.designer) [name*="OBB_label"]{
         font-size: 1vw!important;
     }
