@@ -161,6 +161,21 @@
 [name*="flex-wrap"]{
 	flex-wrap: wrap!important;
 }
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown>span span, 
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown:active>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:focus>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:focus>span span{
+	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/chev2.png")!important;
+	background-size:1.3rem;
+	background-repeat: no-repeat;
+	background-position: center!important;
+	height: 2rem;
+	width: 2rem;
+	background-color: transparent!important;
+}
 html:not(.designer) .theme-entry [name="registerAsVendor"]{
 	display:flex;
 	flex-direction:column;
@@ -1590,6 +1605,18 @@ width:80%;}
 }
 }
 @media(min-width:1600px){
+	html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown>span span, 
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown:active>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:focus>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:focus>span span{
+	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/chev2.png")!important;
+	background-size:1.3vw;
+	height: 2vw;
+	width: 2vw;
+}
 		.theme-entry .day, .theme-entry .month, .theme-entry .year{
 		width:7vw!important;
 	}
