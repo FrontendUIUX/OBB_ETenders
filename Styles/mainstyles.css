@@ -1608,6 +1608,9 @@ width:80%;}
 }
 }
 @media(min-width:1600px){
+	.theme-entry .grid.full .grid-body-content{
+    top:3vw!important;
+}
 	html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown>span span, 
 html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown:active>span span, 
 html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown>span span, 
