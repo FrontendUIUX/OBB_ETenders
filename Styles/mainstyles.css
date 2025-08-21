@@ -9,6 +9,28 @@
     --regularFont:"Co Headline";
     --transition:all .3s ease-in-out;
 }
+html:not(.designer) [name="registerAsVendor"]{
+	display:flex;
+	flex-direction:column;
+	background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/Banner.png");
+	background-repeat:no-repeat;
+	height: 25rem;
+	border-radius:1rem;
+	overflow:hidden;
+	padding:4rem 3rem!important;
+}
+html:not(.designer) [name="registerAsVendor"] [name*="cardTitle"]{
+	font-size:2.5rem;
+	color:#000000;
+}
+html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {
+ display:flex;
+	align-items:center;
+	background-color:var(--orange);
+	color:white;
+	border-radius:2rem;
+	padding:.4rem 2rem .7rem;
+}
 div#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table {
     padding: 1rem 2rem;
 }
