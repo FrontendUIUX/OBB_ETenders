@@ -9,158 +9,6 @@
     --regularFont:"Co Headline";
     --transition:all .3s ease-in-out;
 }
-html:not(.designer) .theme-entry [name="registerAsVendor"]{
-	display:flex;
-	flex-direction:column;
-	background:url("https://frontenduiux.github.io/OBB_ETenders/Images/Banner.png");
-	background-repeat:no-repeat;
-	height: 15rem;
-	margin: auto;
-	border-radius:1rem;
-	overflow: hidden!important;
-	padding:6rem 4rem!important;
-	width: calc(100% - 9rem);
-	background-size:cover;
-}
-html:not(.designer) [name="registerAsVendor"] [name*="cardTitle"]{
-	font-size:2.5rem;
-	color:#000000;
-}
-html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {
- display:flex;
-	align-items:center;
-	background-color:var(--orange);
-	color:white;
-	border-radius:2rem;
-	padding:.4rem 1.5rem .7rem 1.7rem;
-	width:fit-content;
-	margin-top:2rem;
-}
-html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{
-margin-left:.5rem;}
-div#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table {
-    padding: 1rem 2rem;
-}
-html:not(.designer) .picker-resolve{
-	opacity:0;
-}
-span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_d1d5e59f-16bc-978f-e801-515644314b2d,
-span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_9c643a95-2f95-4146-d605-c8309829e7b3,
-span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_a7128535-15a6-7f7b-4550-1229a58b1a24,
-span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_2f10dd60-5c96-3850-180c-5d983259cbfd,
-span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_bcb512ca-5123-32a0-d2d3-6566c945015c,
-span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_694199bc-6dce-0120-45c6-e56367c43df9,
-span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_1f4a64f9-185e-b10d-e42b-005f4846e08e,
-span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_b95a7498-ab62-971e-f374-b380b4b7e79e,
-span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_f10fbc03-cc7c-91e8-24cb-380efbc6b88a{
-    background-color: #f7f7f7!important;
-}
-.theme-entry .input-control.select-box .input-control-buttons a.dropdown:hover>span span, 
-.theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:hover>span span{
-	background-position: 0 0;
-}
-a.calender-control-button:hover,
-a.dropdown.border-left-only:hover{
-	background-color:transparent!important;
-}
-body.theme-entry.runtime-view{
-	background-color:transparent!important
-}
-iframe.runtime-popup[name="47a2f163-e949-46b2-988d-402f21a79719_1_1755593854531"] {
-    min-height: 16rem;
-}
-[name*="customTile"] {
-    /* background-color: #f6f6f6; */
-    border-radius: 1rem;
-    padding: 1rem!important;
-    height: 10rem!important;
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-}
-/*test*/
-/* PICKERS ICONS START */
-html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.date>span span, 
-html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.date:active>span span, 
-html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.date>span span, 
-html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:hover>span span, 
-html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:focus>span span, 
-html:not(.designer) .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:hover>span span, 
-html:not(.designer) .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:focus>span span{
-	background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/date.png")!important;
-	background-repeat:no-repeat;
-	background-position: center!important;
-	background-size: 1.1rem!important;
-	height:2rem;
-	width:2rem;
-}
-/* PICKERS ICONS END */
-html:not(.designer) .theme-entry .message-box-content.confirmation:before,
-html:not(.designer) .theme-entry .message-box-content.info:before,
-.theme-entry .message-box-content.message:before{
-	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/general.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-html:not(.designer) [name*="OBB_button OBB_primary_button"]:hover,
-html:not(.designer) .SourceCode-Forms-Controls-Web-Button:hover{
-	background-color:var(--orange-hover)!important;
-}
-html:not(.designer) .tab-box-tabs{
-	padding:0 1rem;
-	background-color:white;
-	margin-bottom: 0rem;
-	border-bottom:1px solid var(--borderColor)!important;
-	position:fixed!important;
-	top: 6rem;
-	width: calc(100vw - 17rem);
-	z-index: 2;
-	left: 15rem;
-}
-html:not(.designer) .topbarExists .tab-box-tabs li .tab{
-	position:relative;
-	padding: 2rem 0 2rem !important;
-	color:#565656!important;
-	font-family:var(--regularFont);
-}
-
-html:not(.designer) body *{
-	font-family:var(--regularFont)!important;
-}
-html:not(.designer) .grid-column-header-cell-content{
-	padding:0 1rem;
-}
-html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] {
-	display:flex;
-	align-items:center;
-	text-align:center;
-	padding:0;
-}
-html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] .grid-column-header-text{
-	font-family:var(--regularFont)!important;
-	width: fit-content!important;
-	margin:0 auto;
-	
-}
-html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected{
-	color:#131313!important;
-}
-html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected::after{
-	content:"";
-	position:absolute;
-	width:100%;
-	height:.3rem;
-	background-color:var(--orange);
-	bottom:0;
-	left:0;
-}
-html.no-border-box-support body{
-	margin:0!important;
-}
-html:not(.designer) [name="Worklist"]{
-	margin-top: 1rem;
-}
 @font-face {
     font-family:"Co Headline" ;
     src: url("https://frontenduiux.github.io/OBB_Services/fonts/Co%20Headline.otf");
@@ -313,6 +161,159 @@ html:not(.designer) [name="Worklist"]{
 [name*="flex-wrap"]{
 	flex-wrap: wrap!important;
 }
+html:not(.designer) .theme-entry [name="registerAsVendor"]{
+	display:flex;
+	flex-direction:column;
+	background:url("https://frontenduiux.github.io/OBB_ETenders/Images/Banner.png");
+	background-repeat:no-repeat;
+	height: 15rem;
+	margin: auto;
+	border-radius:1rem;
+	overflow: hidden!important;
+	padding:6rem 4rem!important;
+	width: calc(100% - 9rem);
+	background-size:cover;
+}
+html:not(.designer) [name="registerAsVendor"] [name*="cardTitle"]{
+	font-size:2.5rem;
+	color:#000000;
+}
+html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {
+ display:flex;
+	align-items:center;
+	background-color:var(--orange);
+	color:white;
+	border-radius:2rem;
+	padding:.4rem 1.5rem .7rem 1.7rem;
+	width:fit-content;
+	margin-top:2rem;
+}
+html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{
+margin-left:.5rem;}
+div#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table {
+    padding: 1rem 2rem;
+}
+html:not(.designer) .picker-resolve{
+	opacity:0;
+}
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_d1d5e59f-16bc-978f-e801-515644314b2d,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_9c643a95-2f95-4146-d605-c8309829e7b3,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_a7128535-15a6-7f7b-4550-1229a58b1a24,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_2f10dd60-5c96-3850-180c-5d983259cbfd,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_bcb512ca-5123-32a0-d2d3-6566c945015c,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_694199bc-6dce-0120-45c6-e56367c43df9,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_1f4a64f9-185e-b10d-e42b-005f4846e08e,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_b95a7498-ab62-971e-f374-b380b4b7e79e,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_f10fbc03-cc7c-91e8-24cb-380efbc6b88a{
+    background-color: #f7f7f7!important;
+}
+.theme-entry .input-control.select-box .input-control-buttons a.dropdown:hover>span span, 
+.theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:hover>span span{
+	background-position: 0 0;
+}
+a.calender-control-button:hover,
+a.dropdown.border-left-only:hover{
+	background-color:transparent!important;
+}
+body.theme-entry.runtime-view{
+	background-color:transparent!important
+}
+iframe.runtime-popup[name="47a2f163-e949-46b2-988d-402f21a79719_1_1755593854531"] {
+    min-height: 16rem;
+}
+[name*="customTile"] {
+    /* background-color: #f6f6f6; */
+    border-radius: 1rem;
+    padding: 1rem!important;
+    height: 10rem!important;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+/*test*/
+/* PICKERS ICONS START */
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.date>span span, 
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.date:active>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.date>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:focus>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:focus>span span{
+	background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/date.png")!important;
+	background-repeat:no-repeat;
+	background-position: center!important;
+	background-size: 1.1rem!important;
+	height:2rem;
+	width:2rem;
+}
+/* PICKERS ICONS END */
+html:not(.designer) .theme-entry .message-box-content.confirmation:before,
+html:not(.designer) .theme-entry .message-box-content.info:before,
+.theme-entry .message-box-content.message:before{
+	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/general.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+html:not(.designer) [name*="OBB_button OBB_primary_button"]:hover,
+html:not(.designer) .SourceCode-Forms-Controls-Web-Button:hover{
+	background-color:var(--orange-hover)!important;
+}
+html:not(.designer) .tab-box-tabs{
+	padding:0 1rem;
+	background-color:white;
+	margin-bottom: 0rem;
+	border-bottom:1px solid var(--borderColor)!important;
+	position:fixed!important;
+	top: 6rem;
+	width: calc(100vw - 17rem);
+	z-index: 2;
+	left: 15rem;
+}
+html:not(.designer) .topbarExists .tab-box-tabs li .tab{
+	position:relative;
+	padding: 2rem 0 2rem !important;
+	color:#565656!important;
+	font-family:var(--regularFont);
+}
+
+html:not(.designer) body *{
+	font-family:var(--regularFont)!important;
+}
+html:not(.designer) .grid-column-header-cell-content{
+	padding:0 1rem;
+}
+html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] {
+	display:flex;
+	align-items:center;
+	text-align:center;
+	padding:0;
+}
+html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] .grid-column-header-text{
+	font-family:var(--regularFont)!important;
+	width: fit-content!important;
+	margin:0 auto;
+	
+}
+html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected{
+	color:#131313!important;
+}
+html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected::after{
+	content:"";
+	position:absolute;
+	width:100%;
+	height:.3rem;
+	background-color:var(--orange);
+	bottom:0;
+	left:0;
+}
+html.no-border-box-support body{
+	margin:0!important;
+}
+html:not(.designer) [name="Worklist"]{
+	margin-top: 1rem;
+}
+
 html:not(.Designer) .active[name="btnOutgoing"]:focus .button-text,
 html:not(.Designer) .active[name="btnIncoming"]:focus .button-text{
 	color:var(--aqua)!important;
