@@ -161,6 +161,9 @@
 [name*="flex-wrap"]{
 	flex-wrap: wrap!important;
 }
+.theme-entry .base0.modal-element.ajaxLoader{
+	background-color: transparent!important;
+}
 html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown>span span, 
 html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown:active>span span, 
 html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown>span span, 
