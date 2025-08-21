@@ -9,15 +9,18 @@
     --regularFont:"Co Headline";
     --transition:all .3s ease-in-out;
 }
-html:not(.designer) [name="registerAsVendor"]{
+html:not(.designer) .theme-entry [name="registerAsVendor"]{
 	display:flex;
 	flex-direction:column;
-	background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/Banner.png");
+	background:url("https://frontenduiux.github.io/OBB_ETenders/Images/Banner.png");
 	background-repeat:no-repeat;
-	height: 25rem;
+	height: 15rem;
+	margin: auto;
 	border-radius:1rem;
-	overflow:hidden;
-	padding:4rem 3rem!important;
+	overflow: hidden!important;
+	padding:6rem 4rem!important;
+	width: calc(100% - 9rem);
+	background-size:cover;
 }
 html:not(.designer) [name="registerAsVendor"] [name*="cardTitle"]{
 	font-size:2.5rem;
@@ -29,8 +32,12 @@ html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {
 	background-color:var(--orange);
 	color:white;
 	border-radius:2rem;
-	padding:.4rem 2rem .7rem;
+	padding:.4rem 1.5rem .7rem 1.7rem;
+	width:fit-content;
+	margin-top:2rem;
 }
+html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{
+margin-left:.5rem;}
 div#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table {
     padding: 1rem 2rem;
 }
