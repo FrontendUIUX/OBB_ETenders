@@ -192,7 +192,10 @@ html:not(.designer) .theme-entry [name="registerAsVendor"]{
 	width: calc(100% - 9rem);
 	background-size:cover;
 }
-.ajaxLoader.modal-element{
+html:not(.designer) .theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button.help{
+	display: none!important;
+}
+html:not(.designer) .ajaxLoader.modal-element{
 	left: 50%!important;
 	top: 50%!important;
 	transform:translate(-50% , -50%)!important;
