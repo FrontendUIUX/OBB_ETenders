@@ -12,6 +12,9 @@
 div#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table {
     padding: 1rem 2rem;
 }
+html:not(.designer) .picker-resolve{
+	opacity:0;
+}
 span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_d1d5e59f-16bc-978f-e801-515644314b2d,
 span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_9c643a95-2f95-4146-d605-c8309829e7b3,
 span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_a7128535-15a6-7f7b-4550-1229a58b1a24,
