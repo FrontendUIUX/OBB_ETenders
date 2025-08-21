@@ -192,6 +192,12 @@ html:not(.designer) .theme-entry [name="registerAsVendor"]{
 	width: calc(100% - 9rem);
 	background-size:cover;
 }
+.ajaxLoader.modal-element{
+	left: 50%!important;
+	top: 50%!important;
+	transform:translate(-50% , -50%)!important;
+	position: fixed;
+}
 html:not(.designer) [name="registerAsVendor"] [name*="cardTitle"]{
 	font-size:2.5rem;
 	color:#000000;
