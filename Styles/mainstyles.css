@@ -215,6 +215,11 @@ html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {
 	width:fit-content;
 	margin-top:2rem;
 }
+html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] h4{
+	font-size:1rem!important;
+	color:white!important;
+	
+}
 html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{
 margin-left:.5rem;}
 div#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table {
