@@ -1723,7 +1723,7 @@ html:not(.designer) .theme-entry.runtime-form span.runtime-list-item-wrap{
 	html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	border-radius:.7vw;
 	padding: 1.6vw!important;
-	width: 19vw;
+	width: 26vw;
 	margin: 0 .5vw 1vw;
 	}
 		html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] {
