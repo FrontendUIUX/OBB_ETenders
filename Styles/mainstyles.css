@@ -1620,6 +1620,9 @@ width:80%;}
 		html:not(.designer) body.theme-entry [name*="kpiContainer"]{
 	width: 20rem;
 }
+			html:not(.designer) body.theme-entry [name*="largeTile"]{
+	width: 28rem;
+}
 }
 @media(min-width:1600px){
 	.theme-entry .grid.full .grid-body-content{
