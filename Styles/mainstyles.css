@@ -13,6 +13,10 @@
     font-family:"Co Headline" ;
     src: url("https://frontenduiux.github.io/OBB_Services/fonts/Co%20Headline.otf");
 }
+[name*="Button"]{
+	border: none!important;
+	outline: none!important;
+}
 /* PADDINGS */
 /* PADDING 1rem - top, bottom, left, right */
 [name*="pt-1"]{
@@ -891,7 +895,7 @@ html:not(.designer) [name="RFQTenderCreation_Button  OBB_button OBB_primary_butt
 }
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button[name*="OBB_button OBB_secondary_button"]{
 	color:var(--orange)!important;
-	border:1px solid var(--orange);
+	border:1px solid var(--orange)!important;
 	background-color:white!important;
 }
 html:not(.designer) .theme-entry .input-control.style-aware.radio  span{
