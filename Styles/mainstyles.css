@@ -1118,6 +1118,9 @@ font-size:8pt!important;
 	min-height: unset!important;
 }
 /* TABLE BRANDING START */
+table tbody tr td span{
+	font-size:.8rem!important
+}
 html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
 	background-color: #f6f6f6;
 	border-right: 1px solid rgb(220 220 220 / 80%);
