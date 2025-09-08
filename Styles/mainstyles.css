@@ -1177,6 +1177,7 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to 
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] ,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Higher Management Team"]/* related to etender, do not replace or remove*/,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "],
@@ -1205,6 +1206,7 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to 
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"] > span, 
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Higher Management Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Vendor Managament Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"] >span,
@@ -1222,7 +1224,8 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awa
 	font-size: 8pt;
 }
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"] > span{
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"] > span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] > span{
 	background-color:#EFEFEF;
 	color:#616161!important;
 }
