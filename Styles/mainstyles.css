@@ -1964,7 +1964,7 @@ span#f95ad88d-bb59-9175-6f9e-f581b5a62436{
 	html:not(.designer) [name*="OBB_button OBB_primary_button"],
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	font-size:1vw;
-	padding: 0.6vw 2vw;
+	padding: 0.2vw 2.4vw 0.5vw;
 }
 	.grid-column-header-cell-content{
 		min-height: 1vw;
