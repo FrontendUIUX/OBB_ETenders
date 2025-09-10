@@ -1590,7 +1590,21 @@ html[dir=ltr] .theme-entry .grid-header-wrapper .grid-header-controls,html[dir=l
     -webkit-box-orient:vertical;
     overflow:hidden;
     -webkit-line-clamp:1;
+	font-size:1rem;
+	width:80%;
 } /* to show only one line of the atachment*/
+.file-wrapper.showinfo.uploaded {
+    height: 3rem!important;
+    min-height: 3rem;
+    border: 1px solid var(--borderColor);
+    border-radius: .5rem!important;
+}
+.file-table{
+height:3rem!important;
+}
+.file-table tr td{
+    padding:0;
+}
 /*end*/
 @media(min-width:992px){
 	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
@@ -1658,9 +1672,15 @@ width:80%;}
 }
 }
 @media(min-width:1600px){
-	.theme-entry .grid.full .grid-body-content{
-    top:3vw!important;
+/*new changes*/
+.file-wrapper.showinfo.uploaded {
+    height: 3vw!important;
+    min-height: 3vw;
+    border-radius: .5vw!important;
 }
+.file-table{height:3vw!important;}
+.theme-entry .grid.full .grid-body-content{top:3vw!important;}
+/*end*/
 	html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown>span span, 
 html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown:active>span span, 
 html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown>span span, 
