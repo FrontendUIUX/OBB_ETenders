@@ -215,14 +215,14 @@ html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {
 	background-color:var(--orange);
 	color:white;
 	border-radius:2rem;
-	padding:.4rem 1.5rem .7rem 1.7rem;
+	padding:.5rem 1.5rem 1.1rem 1.7rem;
 	width:fit-content;
 	margin-top:2rem;
 }
 html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] h4{
 	font-size:1rem!important;
 	color:white!important;
-	padding: 0.4rem 0 0;
+	padding: 0.7rem 0 0;
 }
 html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{
 margin-left:.5rem;}
@@ -1576,7 +1576,6 @@ div#ad5fd33b-1af7-81a5-cb8e-33cd06d540d9_14e85709-0a62-5be5-1c4f-d6e115fbf12a_Ta
 html:not(.designer) [name="SignUpButton"]{padding-bottom: 0.8rem;} /*for the signup button*/
 .theme-entry .input-control.select-box .input-control-buttons a:focus {border:none;} /*for the calendar button*/
 html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{margin-bottom: -0.8rem;}
-html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {padding: .4rem 1.5rem 1.2rem 1.7rem !important;} /*register button in the external hub*/
 .mobile .theme-entry .grid-header-wrapper .grid-header-controls a,.mobile .theme-entry .panel-header-wrapper .panel-header-controls a {
     width: 3rem !important;
     height: 3rem !important;
