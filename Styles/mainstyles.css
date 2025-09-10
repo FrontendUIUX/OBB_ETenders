@@ -1585,6 +1585,12 @@ html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {padding: .4r
 html[dir=ltr] .theme-entry .grid-header-wrapper .grid-header-controls,html[dir=ltr] .theme-entry .panel-header-wrapper .grid-header-controls,html[dir=ltr] .theme-entry .grid-header-wrapper .panel-header-controls,html[dir=ltr] .theme-entry .panel-header-wrapper .panel-header-controls {
     padding-right: 0 !important;
 }
+.file-info.file-ellipsis {
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    -webkit-line-clamp:1;
+} /* to show only one line of the atachment*/
 /*end*/
 @media(min-width:992px){
 	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
