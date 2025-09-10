@@ -1241,6 +1241,20 @@ td#\30 64aa9f2-8dc0-4e3d-b02f-7e1ee8742977,
 	fill:#fff;
 	transition:all .3s ease-in-out;
 }
+/*added by dani*/
+html:not(.designer) [name="SignUpButton"]{padding-bottom: 0.8rem;} /*for the signup button*/
+.theme-entry .input-control.select-box .input-control-buttons a:focus {border:none;} /*for the calendar button*/
+html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{margin-bottom: -0.8rem;}
+html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {padding: .4rem 1.5rem 1.2rem 1.7rem !important;} /*register button in the external hub*/
+.mobile .theme-entry .grid-header-wrapper .grid-header-controls a,.mobile .theme-entry .panel-header-wrapper .panel-header-controls a {
+    width: 3rem !important;
+    height: 3rem !important;
+    margin: 0rem !important;
+}
+html[dir=ltr] .theme-entry .grid-header-wrapper .grid-header-controls,html[dir=ltr] .theme-entry .panel-header-wrapper .grid-header-controls,html[dir=ltr] .theme-entry .grid-header-wrapper .panel-header-controls,html[dir=ltr] .theme-entry .panel-header-wrapper .panel-header-controls {
+    padding-right: 0 !important;
+}
+/*end*/
 @media(min-width:1600px){
 	html:not(.designer) .tab-box-tabs{
 	padding: 0 1vw;
