@@ -1604,6 +1604,9 @@ height:3rem!important;
 .file-table tr td{
     padding:0;
 }
+.theme-entry a.toolbar-button:focus{
+	border:none!important;
+}
 /*end*/
 @media(min-width:992px){
 	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
