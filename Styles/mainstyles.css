@@ -625,6 +625,8 @@ html:not(.designer) .select-box[name*="OBB_calendar"]  .input-control-buttons,
 .searchDdl .select-box .input-control-m-c,
 .searchDdl .select-box .input-control-buttons{
     border:none!important;
+    align-content: center;
+    height: 100%!important;
 }
 html:not(.designer) .select-box[name*="OBB_calendar"] *,
 [name*="OBB_textbox"],[name*="OBB_textarea"] ,textarea,
