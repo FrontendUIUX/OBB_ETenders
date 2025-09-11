@@ -1635,6 +1635,10 @@ height:3rem!important;
 .theme-entry a.toolbar-button:focus{
 	border:none!important;
 }
+span#\31 e489858-29a8-1a34-c6bb-f5e8d6ad856f_cc0af9ec-9ee7-735d-f279-70868771fc50 {
+    margin: 0 .5rem;
+    width: calc(100% - 1rem);
+}
 /*end*/
 @media(min-width:992px){
 	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
