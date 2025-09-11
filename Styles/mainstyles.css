@@ -17,7 +17,7 @@
 	border: none!important;
 	outline: none!important;
 }
-.returnIcon,.viewIcon{
+.returnIcon,.viewIcon,.actionButton{
 	height: 2rem;
 	width: 2rem;
 	margin: auto;
