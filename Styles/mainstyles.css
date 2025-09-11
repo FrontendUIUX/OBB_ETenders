@@ -1489,7 +1489,13 @@ table td .select-box.dropdown-box.watermark,
 		height:3rem;
 		border:1px solid var(--borderColor)!important;
 		border-radius: .5rem!important;
+	box-sizing:border-box;
+	background-color:transparent;
 	}
+.input-control.select-box.lookup-box .input-control-m-c,
+.input-control.select-box.lookup-box  .input-control-buttons{
+border:none!important;
+}
 table td .select-box.dropdown-box.watermark .input-control-m-c,
 table td .select-box.dropdown-box.watermark .input-control-body, 
 table td .select-box.dropdown-box.watermark .input-control-buttons,
