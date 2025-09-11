@@ -1479,14 +1479,18 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"
 	left: 50%!important;
 	transform: translate(-50%,-50%);
 }
-table td .select-box.dropdown-box.watermark{
+table td .select-box.dropdown-box.watermark,
+.theme-entry .input-control.select-box{
 		height:3rem;
 		border:1px solid var(--borderColor)!important;
 		border-radius: .5rem!important;
 	}
 table td .select-box.dropdown-box.watermark .input-control-m-c,
 table td .select-box.dropdown-box.watermark .input-control-body, 
-table td .select-box.dropdown-box.watermark .input-control-buttons{
+table td .select-box.dropdown-box.watermark .input-control-buttons,
+.theme-entry .input-control.select-box .input-control-m-c,
+table td .select-box.dropdown-box .input-control-buttons,
+table td .select-box.dropdown-box .input-control-buttons{
 	border:none!important;
 }
 .toolbar  table  tbody  tr  td{
