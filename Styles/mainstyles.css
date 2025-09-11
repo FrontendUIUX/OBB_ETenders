@@ -13,6 +13,10 @@
     font-family:"Co Headline" ;
     src: url("https://frontenduiux.github.io/OBB_Services/fonts/Co%20Headline.otf");
 }
+div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_0e23ec66-6058-0555-3ff6-000bfc32780d,
+input#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_9552b5c7-e566-a903-5d6c-6c0fdd7c8b23{
+    border: none!important;
+}
 [name*="Button"]{
 	border: none!important;
 	outline: none!important;
