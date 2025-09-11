@@ -17,6 +17,16 @@
 	border: none!important;
 	outline: none!important;
 }
+.returnIcon,.viewIcon{
+	height: 2rem;
+	width: 2rem;
+	margin: auto;
+	cursor:pointer;
+}
+.returnIcon rect,.viewIcon rect{
+	fill:#fff;
+	transition:all .3s ease-in-out;
+}
 /* PADDINGS */
 /* PADDING 1rem - top, bottom, left, right */
 [name*="pt-1"]{
@@ -1002,7 +1012,7 @@ tr.selected .runtime-list-item-wrap{
 /* POPUP BRANDING START */
 html:not(.designer) .theme-entry .message-box-content,
 html:not(.designer) .theme-entry .dialog .popup-body{
-    height: fit-content;
+    height: fit-content!important;
 }
 html:not(.designer) .theme-entry .popup.dialog.error-message:not(.runtime-message) .message-box-content .panel-body-m-c{
 	margin: 0;
@@ -1309,6 +1319,24 @@ html:not(.designer) .grid-column-header-cell{
 	background-color: transparent;
 }
 /* TABLE BRANDING END */
+a#\30 0000000-0000-0000-0000-000000000000_b9d18129-dbb9-450e-a465-6400c8ec824e {
+    background-color: transparent!important;
+    color: var(--orange)!important;
+    padding: 0!important;
+}
+
+input#\30 0000000-0000-0000-0000-000000000000_e4cfee51-57c3-4802-8d32-bb5f60545b31,
+input#\30 0000000-0000-0000-0000-000000000000_9cf6c0a1-9745-4f7a-b44f-dbc79080a2ab,
+input#\30 0000000-0000-0000-0000-000000000000_71c2a992-0e04-48cf-939b-13af89841d0a,
+input#\30 0000000-0000-0000-0000-000000000000_a3f3415b-f4e2-4bcb-83c5-33e960df7171{
+    background-color: transparent;
+    border: 1px solid var(--borderColor);
+    margin: 0 0.4rem 1rem;
+    height:3rem;
+    width:3rem!important;
+    padding:0!important;
+    text-align:center;
+}
 .worklistToolbarHeaderTextWrapper .headerTxt{
 	font-size:1.5rem;
 	font-family: var(--regularFont);
