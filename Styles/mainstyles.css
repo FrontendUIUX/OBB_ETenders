@@ -1143,6 +1143,17 @@ html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
 html:not(.designer) .theme-entry .grid-body-content table td{
 	padding: 0 1rem!important;
 }
+html:not(.designer) .theme-entry .grid-body-content table td.file-tn-cell{
+	padding:0!important;
+	justify-content:center;
+	height:3rem;
+	width:3rem;
+}
+html:not(.designer) .theme-entry .grid-body-content table td.file-tn-cell img{
+	height:100%;
+	width:100%;
+	object-fit:contain;
+}
 html:not(.designer) .theme-entry td span.runtime-list-item{
 	font-family: var(--regularFont)!important;
 	font-weight: 300!important;
