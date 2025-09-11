@@ -199,7 +199,7 @@ html:not(.designer) .theme-entry [name="registerAsVendor"]{
 	background:url("https://frontenduiux.github.io/OBB_ETenders/Images/Banner.png");
 	background-repeat:no-repeat;
 	height: 15rem;
-	margin: auto;
+	margin: 1rem auto 2rem;
 	border-radius:1rem;
 	overflow: hidden!important;
 	padding:6rem 4rem!important;
@@ -232,7 +232,7 @@ html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {
 html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] h4{
 	font-size:1rem!important;
 	color:white!important;
-	padding: 0.2rem 0 0;
+	padding: 0.6rem 0 0;
 }
 html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{
 margin-left:.5rem;}
