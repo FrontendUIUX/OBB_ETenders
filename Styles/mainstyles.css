@@ -1668,6 +1668,10 @@ span#\31 e489858-29a8-1a34-c6bb-f5e8d6ad856f_cc0af9ec-9ee7-735d-f279-70868771fc5
 [name*="AttachmentListsNonSMEData Label1"] strong{
 	font-size: 1.1rem!important;
 }
+#a68ebdfb-3f51-df1d-6fc0-ea92ba4bb7b9_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table,
+#\34 e01a8e2-9f5c-96b9-7772-d9a883fa57db_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table{
+    padding:1rem;
+}
 /*end*/
 @media(min-width:992px){
 	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
