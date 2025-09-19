@@ -709,20 +709,20 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
 .theme-entry .popup.id-calendar-control-popup {
     width: 18rem!important;
     height: auto!important;
-    /*top: 0!important;*/
+    top: 0!important;
     right: 0!important;
     position: absolute;
 }
 .theme-entry .top-calendar a.today-title {
     border: none;
     border-radius: 0;
-    margin-top: 0.5rem !important;
+    margin-top: 1rem;
     padding: 0;
 }
 .theme-entry .top-calendar a {
     margin-top: 1rem!important;
     background-repeat: no-repeat;
-    height: 1.5rem!important;
+    height: 1rem!important;
 }
 .theme-entry .top-calendar a:hover {
     color: var(--aqua) !important;
