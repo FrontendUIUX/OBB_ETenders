@@ -709,7 +709,7 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
 .theme-entry .popup.id-calendar-control-popup {
     width: 18rem!important;
     height: auto!important;
-    top: 0!important;
+    /*top: 0!important;*/
     right: 0!important;
     position: absolute;
 }
