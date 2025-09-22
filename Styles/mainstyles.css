@@ -9,6 +9,14 @@
     --regularFont:"Co Headline";
     --transition:all .3s ease-in-out;
 }
+html:not(.designer) .theme-entry .message-box-content.warning:before{
+	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/Warning.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 50%;
+	transform: translateY(-50%);
+}
 @font-face {
     font-family:"Co Headline" ;
     src: url("https://frontenduiux.github.io/OBB_Services/fonts/Co%20Headline.otf");
