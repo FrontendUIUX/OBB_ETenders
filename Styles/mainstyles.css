@@ -1765,6 +1765,11 @@ width:80%;}
 }
 }
 @media(min-width:1600px){
+		div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_6ebe8c5f-fee3-56be-b5a7-58414bd44535_Table {
+    border-radius: .5vw;
+    padding-left: 1vw;
+    height: 3vw;
+}
 /*new changes*/
 .file-wrapper.showinfo.uploaded {
     height: 3vw!important;
