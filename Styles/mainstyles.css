@@ -672,6 +672,7 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
 	margin-bottom:.5rem;
 }
 .tooltip.validation{
+	position: fixed;
 	font-size: .8rem;
 	color: #ff6a6a!important;
 	background-color: white!important;
