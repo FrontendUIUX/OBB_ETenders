@@ -1770,6 +1770,9 @@ width:80%;}
     padding-left: 1vw;
     height: 3vw;
 }
+.styling-font {
+    font-size: 1vw;
+}
 /*new changes*/
 .file-wrapper.showinfo.uploaded {
     height: 3vw!important;
