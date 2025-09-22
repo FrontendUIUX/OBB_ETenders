@@ -13,6 +13,37 @@
     font-family:"Co Headline" ;
     src: url("https://frontenduiux.github.io/OBB_Services/fonts/Co%20Headline.otf");
 }
+div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_0e23ec66-6058-0555-3ff6-000bfc32780d,
+input#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_9552b5c7-e566-a903-5d6c-6c0fdd7c8b23,
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons{
+    border: none!important;
+	
+}
+div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_0e23ec66-6058-0555-3ff6-000bfc32780d .styling-font {
+    padding: 0!important;
+}
+html:not(.designer) .theme-entry input#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_9552b5c7-e566-a903-5d6c-6c0fdd7c8b23 {border-left:1px solid var(--borderColor)!important;border-radius:0!important;padding: 0 0 0 1rem!important;}
+div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_6ebe8c5f-fee3-56be-b5a7-58414bd44535_Table {
+    border: 1px solid var(--borderColor);
+    border-radius: .5rem;
+    /*padding: .4rem 1rem!important;*/
+	padding-left: 1rem;
+	height: 3rem;
+}
+[name*="Button"]{
+	border: none!important;
+	outline: none!important;
+}
+.returnIcon,.viewIcon,.actionButton{
+	height: 2rem;
+	width: 2rem;
+	margin: auto;
+	cursor:pointer;
+}
+.returnIcon rect,.viewIcon rect{
+	fill:#fff;
+	transition:all .3s ease-in-out;
+}
 /* PADDINGS */
 /* PADDING 1rem - top, bottom, left, right */
 [name*="pt-1"]{
@@ -185,7 +216,7 @@ html:not(.designer) .theme-entry [name="registerAsVendor"]{
 	background:url("https://frontenduiux.github.io/OBB_ETenders/Images/Banner.png");
 	background-repeat:no-repeat;
 	height: 15rem;
-	margin: auto;
+	margin: 1rem auto 2rem;
 	border-radius:1rem;
 	overflow: hidden!important;
 	padding:6rem 4rem!important;
@@ -211,14 +242,14 @@ html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {
 	background-color:var(--orange);
 	color:white;
 	border-radius:2rem;
-	padding:.4rem 1.5rem .7rem 1.7rem;
+	padding:.5rem 1.5rem 1.1rem 1.7rem;
 	width:fit-content;
 	margin-top:2rem;
 }
 html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] h4{
 	font-size:1rem!important;
 	color:white!important;
-	padding: 0.4rem 0 0;
+	padding: 0.2rem 0 0;
 }
 html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{
 margin-left:.5rem;}
@@ -611,6 +642,8 @@ html:not(.designer) .select-box[name*="OBB_calendar"]  .input-control-buttons,
 .searchDdl .select-box .input-control-m-c,
 .searchDdl .select-box .input-control-buttons{
     border:none!important;
+    align-content: center;
+    height: 100%!important;
 }
 html:not(.designer) .select-box[name*="OBB_calendar"] *,
 [name*="OBB_textbox"],[name*="OBB_textarea"] ,textarea,
@@ -891,7 +924,7 @@ html:not(.designer) [name="RFQTenderCreation_Button  OBB_button OBB_primary_butt
 }
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button[name*="OBB_button OBB_secondary_button"]{
 	color:var(--orange)!important;
-	border:1px solid var(--orange);
+	border:1px solid var(--orange)!important;
 	background-color:white!important;
 }
 html:not(.designer) .theme-entry .input-control.style-aware.radio  span{
@@ -998,7 +1031,7 @@ tr.selected .runtime-list-item-wrap{
 /* POPUP BRANDING START */
 html:not(.designer) .theme-entry .message-box-content,
 html:not(.designer) .theme-entry .dialog .popup-body{
-    height: fit-content;
+    height: fit-content!important;
 }
 html:not(.designer) .theme-entry .popup.dialog.error-message:not(.runtime-message) .message-box-content .panel-body-m-c{
 	margin: 0;
@@ -1118,6 +1151,9 @@ font-size:8pt!important;
 	min-height: unset!important;
 }
 /* TABLE BRANDING START */
+table tbody tr td span{
+	font-size:.8rem!important
+}
 html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
 	background-color: #f6f6f6;
 	border-right: 1px solid rgb(220 220 220 / 80%);
@@ -1125,6 +1161,17 @@ html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
 }
 html:not(.designer) .theme-entry .grid-body-content table td{
 	padding: 0 1rem!important;
+}
+html:not(.designer) .theme-entry .grid-body-content table td.file-tn-cell{
+	padding:0!important;
+	justify-content:center;
+	height:3rem;
+	width:3rem;
+}
+html:not(.designer) .theme-entry .grid-body-content table td.file-tn-cell img{
+	height:100%;
+	width:100%;
+	object-fit:contain;
 }
 html:not(.designer) .theme-entry td span.runtime-list-item{
 	font-family: var(--regularFont)!important;
@@ -1176,6 +1223,8 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting RM A
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] ,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Higher Management Team"]/* related to etender, do not replace or remove*/,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "],
@@ -1203,6 +1252,8 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting RM A
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"] > span, 
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Higher Management Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Vendor Managament Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"] >span,
@@ -1219,7 +1270,9 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awa
 	width:fit-content!important;
 	font-size: 8pt;
 }
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span{
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"] > span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] > span{
 	background-color:#EFEFEF;
 	color:#616161!important;
 }
@@ -1296,6 +1349,24 @@ html:not(.designer) .grid-column-header-cell{
 	background-color: transparent;
 }
 /* TABLE BRANDING END */
+a#\30 0000000-0000-0000-0000-000000000000_b9d18129-dbb9-450e-a465-6400c8ec824e {
+    background-color: transparent!important;
+    color: var(--orange)!important;
+    padding: 0!important;
+}
+
+input#\30 0000000-0000-0000-0000-000000000000_e4cfee51-57c3-4802-8d32-bb5f60545b31,
+input#\30 0000000-0000-0000-0000-000000000000_9cf6c0a1-9745-4f7a-b44f-dbc79080a2ab,
+input#\30 0000000-0000-0000-0000-000000000000_71c2a992-0e04-48cf-939b-13af89841d0a,
+input#\30 0000000-0000-0000-0000-000000000000_a3f3415b-f4e2-4bcb-83c5-33e960df7171{
+    background-color: transparent;
+    border: 1px solid var(--borderColor);
+    margin: 0 0.4rem 1rem;
+    height:3rem;
+    width:3rem!important;
+    padding:0!important;
+    text-align:center;
+}
 .worklistToolbarHeaderTextWrapper .headerTxt{
 	font-size:1.5rem;
 	font-family: var(--regularFont);
@@ -1427,14 +1498,27 @@ html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"
 	left: 50%!important;
 	transform: translate(-50%,-50%);
 }
-table td .select-box.dropdown-box.watermark{
+[name*="AttachmentListsNonSMEData"]  span{
+		font-size: 1.6rem!important;
+}
+table td .select-box.dropdown-box.watermark,
+.theme-entry .input-control.select-box{
 		height:3rem;
 		border:1px solid var(--borderColor)!important;
 		border-radius: .5rem!important;
+	box-sizing:border-box;
+	background-color:transparent;
 	}
+.input-control.select-box.lookup-box .input-control-m-c,
+.input-control.select-box.lookup-box  .input-control-buttons{
+border:none!important;
+}
 table td .select-box.dropdown-box.watermark .input-control-m-c,
 table td .select-box.dropdown-box.watermark .input-control-body, 
-table td .select-box.dropdown-box.watermark .input-control-buttons{
+table td .select-box.dropdown-box.watermark .input-control-buttons,
+.theme-entry .input-control.select-box .input-control-m-c,
+table td .select-box.dropdown-box .input-control-buttons,
+table td .select-box.dropdown-box .input-control-buttons{
 	border:none!important;
 }
 .toolbar  table  tbody  tr  td{
@@ -1559,6 +1643,53 @@ div#ad5fd33b-1af7-81a5-cb8e-33cd06d540d9_14e85709-0a62-5be5-1c4f-d6e115fbf12a_Ta
     flex-direction: column;
     width: 100%;
 }
+/*added by dani*/
+html:not(.designer) [name="SignUpButton"]{padding-bottom: 0.8rem;} /*for the signup button*/
+.theme-entry .input-control.select-box .input-control-buttons a:focus {border:none;} /*for the calendar button*/
+html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{margin-bottom: -0.8rem;}
+.mobile .theme-entry .grid-header-wrapper .grid-header-controls a,.mobile .theme-entry .panel-header-wrapper .panel-header-controls a {
+    width: 3rem !important;
+    height: 3rem !important;
+    margin: 0rem !important;
+}
+html[dir=ltr] .theme-entry .grid-header-wrapper .grid-header-controls,html[dir=ltr] .theme-entry .panel-header-wrapper .grid-header-controls,html[dir=ltr] .theme-entry .grid-header-wrapper .panel-header-controls,html[dir=ltr] .theme-entry .panel-header-wrapper .panel-header-controls {
+    padding-right: 0 !important;
+}
+.file-info.file-ellipsis {
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    -webkit-line-clamp:1;
+	font-size:1rem;
+	width:80%;
+} /* to show only one line of the atachment*/
+.file-wrapper.showinfo.uploaded {
+    height: 3rem!important;
+    min-height: 3rem;
+    border: 1px solid var(--borderColor);
+    border-radius: .5rem!important;
+}
+.file-table{
+height:3rem!important;
+}
+.file-table tr td{
+    padding:0;
+}
+.theme-entry a.toolbar-button:focus{
+	border:none!important;
+}
+span#\31 e489858-29a8-1a34-c6bb-f5e8d6ad856f_cc0af9ec-9ee7-735d-f279-70868771fc50 {
+    margin: 0 .5rem;
+    width: calc(100% - 1rem);
+}
+[name*="AttachmentListsNonSMEData Label1"] strong{
+	font-size: 1.1rem!important;
+}
+#a68ebdfb-3f51-df1d-6fc0-ea92ba4bb7b9_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table,
+#\34 e01a8e2-9f5c-96b9-7772-d9a883fa57db_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table{
+    padding:1rem;
+}
+/*end*/
 @media(min-width:992px){
 	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
 	border:1px solid rgb(220 220 220 / 80%)!important;
@@ -1625,9 +1756,15 @@ width:80%;}
 }
 }
 @media(min-width:1600px){
-	.theme-entry .grid.full .grid-body-content{
-    top:3vw!important;
+/*new changes*/
+.file-wrapper.showinfo.uploaded {
+    height: 3vw!important;
+    min-height: 3vw;
+    border-radius: .5vw!important;
 }
+.file-table{height:3vw!important;}
+.theme-entry .grid.full .grid-body-content{top:3vw!important;}
+/*end*/
 	html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown>span span, 
 html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown:active>span span, 
 html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown>span span, 
@@ -1951,7 +2088,7 @@ span#f95ad88d-bb59-9175-6f9e-f581b5a62436{
 	html:not(.designer) [name*="OBB_button OBB_primary_button"],
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	font-size:1vw;
-	padding: 0.6vw 2vw;
+	padding: 0.2vw 2.4vw 0.5vw;
 }
 	.grid-column-header-cell-content{
 		min-height: 1vw;
