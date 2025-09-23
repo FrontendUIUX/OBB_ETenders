@@ -1236,6 +1236,7 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] ,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Higher Management Team"]/* related to etender, do not replace or remove*/,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Welcome Letter Upload"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Vendor Managament Team"]/* related to etender, do not replace or remove*/,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"],
@@ -1269,6 +1270,7 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending revi
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"] > span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Welcome Letter Upload"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"] span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "] span{
 	border-radius:2rem;
@@ -1291,7 +1293,8 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending revi
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"] > span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "] > span{
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "] > span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Welcome Letter Upload"] > span{
 	background-color:#FFF3F0;
 	color:#FF8A65!important;
 }
