@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Vendor List", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
             ];
         } 
-        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/")) {
+        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Tender__RFQCreation.Form/") || currentUrl.includes("Tender__RFQCreationApproval.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.LandingPage/" },
                 { text: "Clarification Review Page", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.Form/" },
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Worklist", url: "#" }
             ];
         }
-        else if (currentUrl.includes("Vendor.ExternalDashboard/") || currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/")) {
+        else if (currentUrl.includes("Vendor.ExternalDashboard/") || currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/") || currentUrl.includes("VendorRegistration.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Vendor.ExternalDashboard/" },
                 { text: "Vendor Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsForm/" },
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         })
     };
-
+    
 });
 
 
@@ -418,5 +418,36 @@ document.addEventListener('DOMContentLoaded', function () {
         } catch (err) {
             console.warn("Could not parse data-options:", dataOptions);
         }
+    });
+});
+$(document).ready(function () {
+    let fqn = null; // declare properly
+
+    // Try to get user FQN
+    setTimeout(function () {
+        try {
+            fqn = SourceCode.Forms.Settings.User.FQN || null;
+            console.log("Logged-in User FQN:", fqn);
+            //menuBar();
+        } catch (e) {
+            console.error("Error retrieving FQN:", e);
+        }
+    }, 1000);
+
+    // Handle navbar click
+    $(document).on("click", ".navbarBrand a", function (e) {
+        e.preventDefault(); // stop default link behavior
+
+        if (fqn) {
+            if (fqn.toLowerCase().includes("OBC".toLowerCase())){
+                 console.log("Internal User");
+                window.location.href = "/Runtime/Runtime/Form/OBBHub.Form/";
+
+            }
+           else {
+            console.log("External User");
+            window.location.href = "/Runtime/Runtime/Form/OBBHubExternal.Form/";
+        }
+        } 
     });
 });
