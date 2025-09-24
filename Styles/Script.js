@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Vendor List", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
             ];
         } 
-        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/")) {
+        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Tender__RFQCreation.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.LandingPage/" },
                 { text: "Clarification Review Page", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.Form/" },
@@ -441,12 +441,12 @@ $(document).ready(function () {
         if (fqn) {
             if (fqn.toLowerCase().includes("OBC".toLowerCase())){
                  console.log("Internal User");
-                window.location.href = "https://ck2-app-tst-1.obc.local/Runtime/Runtime/Form/OBBHub.Form/";
+                window.location.href = "/Runtime/Runtime/Form/OBBHub.Form/";
 
             }
            else {
             console.log("External User");
-            window.location.href = "https://ck2-app-tst-1.obc.local/Runtime/Runtime/Form/OBBHubExternal.Form/";
+            window.location.href = "/Runtime/Runtime/Form/OBBHubExternal.Form/";
         }
         } 
     });
