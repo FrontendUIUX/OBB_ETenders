@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Vendor List", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
             ];
         } 
-        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Tender__RFQCreation.Form/")) {
+        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Tender__RFQCreation.Form/") || currentUrl.includes("Tender__RFQCreationApproval.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.LandingPage/" },
                 { text: "Clarification Review Page", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.Form/" },
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Worklist", url: "#" }
             ];
         }
-        else if (currentUrl.includes("Vendor.ExternalDashboard/") || currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/")) {
+        else if (currentUrl.includes("Vendor.ExternalDashboard/") || currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/") || currentUrl.includes("VendorRegistration.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Vendor.ExternalDashboard/" },
                 { text: "Vendor Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsForm/" },
