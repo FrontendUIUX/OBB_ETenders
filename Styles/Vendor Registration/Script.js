@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Worklist", url: "#" }
             ];
         }
-        else if (currentUrl.includes("Vendor.ExternalDashboard/") || currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/") || currentUrl.includes("VendorRegistration.Form/")) {
+        else if (currentUrl.includes("Vendor.ExternalDashboard/") || currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/") || currentUrl.includes("VendorRegistration.Form/") || currentUrl.includes("VendorRegistrationApproval.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Vendor.ExternalDashboard/" },
                 { text: "Vendor Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsForm/" },
