@@ -161,10 +161,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function menuBar() {
 
 
-        if (currentUrl.includes("Dashboard.VendorManagementTeamDashboard.Form/") || currentUrl.includes("Vendor.VendorList.Form/") ) {
+        if (currentUrl.includes("Dashboard.VendorManagementTeamDashboard.Form/") ||currentUrl.includes("Vendor.WelcomeLetterList.Form") || currentUrl.includes("Vendor.VendorList.Form/") ) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.VendorManagementTeamDashboard.Form/" },
-                { text: "Vendor List", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
+                //{ text: "Vendor List", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
+                { text: "Vendor List/Welcome Letters", url: "/Runtime/Runtime/Form/Vendor.WelcomeLetterList.Form/" },
             ];
         } 
         else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage/") || currentUrl.includes("Tensders.Awarding.Form")|| currentUrl.includes("VendorBiddingReadOnly.Form") || currentUrl.includes("Vendor.ClarificationsResponseForm") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Tender__RFQCreation.Form/") || currentUrl.includes("Tender__RFQCreationApproval.Form/")) {
@@ -178,13 +179,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Worklist", url: "#" }
             ];
         }
-        else if (currentUrl.includes("Vendor.ExternalDashboard/") ||currentUrl.includes("Vendor.WelcomeLetterList.Form") ||currentUrl.includes("VendorBidding.Form") || currentUrl.includes("Vendor.PostSubmissionClarificationsForm") ||currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/") || currentUrl.includes("VendorRegistration.Form/") || currentUrl.includes("VendorRegistrationApproval.Form/")) {
+        else if (currentUrl.includes("Vendor.ExternalDashboard/")  ||currentUrl.includes("VendorBidding.Form") || currentUrl.includes("Vendor.PostSubmissionClarificationsForm") ||currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/") || currentUrl.includes("VendorRegistration.Form/") || currentUrl.includes("VendorRegistrationApproval.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Vendor.ExternalDashboard/" },
                 { text: "Vendor Pre-Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsForm/" },
                 { text: "Vendor Post-Clarifications", url: "/Runtime/Runtime/Form/Vendor.PostSubmissionClarificationsForm/" },
                 { text: "Bidding", url: "/Runtime/Runtime/Form/VendorBidding.Form/" },
-                { text: "Vendor List/Welcome Letters", url: "/Runtime/Runtime/Form/Vendor.WelcomeLetterList.Form/" },
+                
                 { text: "Worklist", url: "/Runtime/Runtime/Form/ExternalHub.Form/" }
                 
             ];
