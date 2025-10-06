@@ -5,74 +5,52 @@
     --orange:#E57431;
 	--orange-hover: #a6501d;
     --description:#3E3E3E;
-    --borderColor:#E3E3E3;
+    --borderColor:#dfdfdf;
     --regularFont:"Co Headline";
     --transition:all .3s ease-in-out;
 }
-html:not(.designer) [name*="OBB_button OBB_primary_button"]:hover,
-html:not(.designer) .SourceCode-Forms-Controls-Web-Button:hover{
-	background-color:var(--orange-hover)!important;
-}
-html:not(.designer) .tab-box-tabs{
-	padding: 0 1rem;
-	background-color:white;
-	margin-bottom: 0rem;
-	border-bottom:1px solid var(--borderColor)!important;
-	position:fixed!important;
-	top: 6rem;
-	width: calc(100vw - 18rem);
-	z-index: 2;
-	left: 15rem;
-}
-html:not(.designer) .topbarExists .tab-box-tabs li .tab{
-	position:relative;
-	padding: 2rem 0 2rem !important;
-	color:#565656!important;
-	font-family:var(--regularFont);
-}
-html:not(.designer) body *{
-	font-family:var(--regularFont)!important;
-}
-html:not(.designer) .grid-column-header-cell-content{
-	padding:0 1rem;
-}
-html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] {
-	display:flex;
-	align-items:center;
-	/* justify-content:center; */
-	text-align:center;
-	/* max-width:100%!important; */
-	/* margin:0 -2rem; */
-	padding:0;
-}
-html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] .grid-column-header-text{
-	font-family:var(--regularFont)!important;
-	/* max-width: fit-content!important; */
-	width: fit-content!important;
-	margin:0 auto;
-	
-}
-html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected{
-	color:#131313!important;
-}
-html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected::after{
-	content:"";
-	position:absolute;
-	width:100%;
-	height:.3rem;
-	background-color:var(--orange);
-	bottom:0;
-	left:0;
-}
-html.no-border-box-support body{
-	margin:0!important;
-}
-html:not(.designer) [name="Worklist"]{
-	margin-top: 1rem;
+html:not(.designer) .theme-entry .message-box-content.warning:before{
+	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/Warning.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 50%;
+	transform: translateY(-50%);
 }
 @font-face {
     font-family:"Co Headline" ;
     src: url("https://frontenduiux.github.io/OBB_Services/fonts/Co%20Headline.otf");
+}
+div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_0e23ec66-6058-0555-3ff6-000bfc32780d,
+input#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_9552b5c7-e566-a903-5d6c-6c0fdd7c8b23,
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons{
+    border: none!important;
+	
+}
+div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_0e23ec66-6058-0555-3ff6-000bfc32780d .styling-font {
+    padding: 0!important;
+}
+html:not(.designer) .theme-entry input#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_9552b5c7-e566-a903-5d6c-6c0fdd7c8b23 {border-left:1px solid var(--borderColor)!important;border-radius:0!important;padding: 0 0 0 1rem!important;}
+div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_6ebe8c5f-fee3-56be-b5a7-58414bd44535_Table {
+    border: 1px solid var(--borderColor);
+    border-radius: .5rem;
+    /*padding: .4rem 1rem!important;*/
+	padding-left: 1rem;
+	height: 3rem;
+}
+[name*="Button"]{
+	border: none!important;
+	outline: none!important;
+}
+.returnIcon,.viewIcon,.actionButton{
+	height: 2rem;
+	width: 2rem;
+	margin: auto;
+	cursor:pointer;
+}
+.returnIcon rect,.viewIcon rect{
+	fill:#fff;
+	transition:all .3s ease-in-out;
 }
 /* PADDINGS */
 /* PADDING 1rem - top, bottom, left, right */
@@ -219,21 +197,224 @@ html:not(.designer) [name="Worklist"]{
 [name*="d-block"]{
 	display:block!important;
 }
+[name*="flex-wrap"]{
+	flex-wrap: wrap!important;
+}
+.theme-entry .base0.modal-element.ajaxLoader{
+	background-color: transparent!important;
+}
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown>span span, 
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown:active>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:focus>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:focus>span span{
+	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/chev2.png")!important;
+	background-size:1.3rem;
+	background-repeat: no-repeat;
+	background-position: center!important;
+	height: 2rem;
+	width: 2rem;
+	background-color: transparent!important;
+}
+html:not(.designer) .theme-entry [name="registerAsVendor"]{
+	display:flex;
+	flex-direction:column;
+	background:url("https://frontenduiux.github.io/OBB_ETenders/Images/Banner.png");
+	background-repeat:no-repeat;
+	height: 15rem;
+	margin: 1rem auto 2rem;
+	border-radius:1rem;
+	overflow: hidden!important;
+	padding:6rem 4rem!important;
+	width: calc(100% - 9rem);
+	background-size:cover;
+}
+html:not(.designer) .theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button.help{
+	display: none!important;
+}
+html:not(.designer) .ajaxLoader.modal-element{
+	left: 50%!important;
+	top: 50%!important;
+	transform:translate(-50% , -50%)!important;
+	position: fixed;
+}
+html:not(.designer) [name="registerAsVendor"] [name*="cardTitle"]{
+	font-size:2.5rem;
+	color:#000000;
+}
+html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {
+ display:flex;
+	align-items:center;
+	background-color:var(--orange);
+	color:white;
+	border-radius:2rem;
+	padding:.5rem 1.5rem 1.1rem 1.7rem;
+	width:fit-content;
+	margin-top:2rem;
+}
+html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] h4{
+	font-size:1rem!important;
+	color:white!important;
+	padding: 0.2rem 0 0;
+}
+html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{
+margin-left:.5rem;}
+div#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table {
+    padding: 1rem 2rem;
+}
+html:not(.designer) .picker-resolve{
+	opacity:0;
+}
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_d1d5e59f-16bc-978f-e801-515644314b2d,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_9c643a95-2f95-4146-d605-c8309829e7b3,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_a7128535-15a6-7f7b-4550-1229a58b1a24,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_2f10dd60-5c96-3850-180c-5d983259cbfd,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_bcb512ca-5123-32a0-d2d3-6566c945015c,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_694199bc-6dce-0120-45c6-e56367c43df9,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_1f4a64f9-185e-b10d-e42b-005f4846e08e,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_b95a7498-ab62-971e-f374-b380b4b7e79e,
+span#\38 f084940-fb4b-aef6-1282-d2e1f98b17cd_f10fbc03-cc7c-91e8-24cb-380efbc6b88a{
+    background-color: #f7f7f7!important;
+}
+.theme-entry .input-control.select-box .input-control-buttons a.dropdown:hover>span span, 
+.theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:hover>span span{
+	background-position: 0 0;
+}
+a.calender-control-button:hover,
+a.dropdown.border-left-only:hover{
+	background-color:transparent!important;
+}
+body.theme-entry.runtime-view{
+	background-color:transparent!important
+}
+iframe.runtime-popup[name="47a2f163-e949-46b2-988d-402f21a79719_1_1755593854531"] {
+    min-height: 16rem;
+}
+[name*="customTile"] {
+    /* background-color: #f6f6f6; */
+    border-radius: 1rem;
+    padding: 1rem!important;
+    height: 10rem!important;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+/*test*/
+/* PICKERS ICONS START */
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.date>span span, 
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.date:active>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.date>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:focus>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:focus>span span{
+	background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/date.png")!important;
+	background-repeat:no-repeat;
+	background-position: center!important;
+	background-size: 1.1rem!important;
+	height:2rem;
+	width:2rem;
+}
+/* PICKERS ICONS END */
+html:not(.designer) .theme-entry .message-box-content.confirmation:before,
+html:not(.designer) .theme-entry .message-box-content.info:before,
+.theme-entry .message-box-content.message:before{
+	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/general.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+html:not(.designer) [name*="OBB_button OBB_primary_button"]:hover,
+html:not(.designer) .SourceCode-Forms-Controls-Web-Button:hover{
+	background-color:var(--orange-hover)!important;
+}
+html:not(.designer) .tab-box-tabs{
+	padding:0 1rem;
+	background-color:white;
+	margin-bottom: 0rem;
+	border-bottom:1px solid var(--borderColor)!important;
+	position:fixed!important;
+	top: 6rem;
+	width: calc(100vw - 17rem);
+	z-index: 2;
+	left: 15rem;
+}
+html:not(.designer) .topbarExists .tab-box-tabs li .tab{
+	position:relative;
+	padding: 2rem 0 2rem !important;
+	color:#565656!important;
+	font-family:var(--regularFont);
+}
+
+html:not(.designer) body *{
+	font-family:var(--regularFont)!important;
+}
+html:not(.designer) .grid-column-header-cell-content{
+	padding:0 1rem;
+}
+html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] {
+	display:flex;
+	align-items:center;
+	text-align:center;
+	padding:0;
+}
+html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] .grid-column-header-text{
+	font-family:var(--regularFont)!important;
+	width: fit-content!important;
+	margin:0 auto;
+	
+}
+html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected{
+	color:#131313!important;
+}
+html:not(.designer) .topbarExists .tab-box-tabs li .tab.selected::after{
+	content:"";
+	position:absolute;
+	width:100%;
+	height:.3rem;
+	background-color:var(--orange);
+	bottom:0;
+	left:0;
+}
+html.no-border-box-support body{
+	margin:0!important;
+}
+html:not(.designer) [name="Worklist"]{
+	margin-top: 1rem;
+}
+
 html:not(.Designer) .active[name="btnOutgoing"]:focus .button-text,
 html:not(.Designer) .active[name="btnIncoming"]:focus .button-text{
 	color:var(--aqua)!important;
 }
-html:not(.designer) [name*="OBB_header"] [name="HeaderInternalContent"]{
-	display:flex!important;
-	justify-content:space-between!important;
-	width:100%!important
+div#eee3ea1f-a365-433c-bce2-e02c338f1f07,
+span#\31 764f2e7-2b91-71cd-e3c3-85d5d91a3ce4 {
+    padding: 0;
+}
+span#\36 21c7dcd-fc2a-b6b4-65cd-d5bd1ee455b8,
+span#\39 339c4c0-0815-069e-5c66-f16ae4de132f,
+span#c4afdb30-1a1b-386f-8c92-f457ea4c2fde,
+span#\34 5aed624-b354-f81d-d2e7-1dba8121660a,
+span#e8406ea0-73cb-2d66-9dbe-ca07e29e8dc1 {
+    display: none;
+}
+
+div#eee3ea1f-a365-433c-bce2-e02c338f1f07 {
+    padding: 0;
+}
+
+span#\31 764f2e7-2b91-71cd-e3c3-85d5d91a3ce4 {
+    padding: 0;
 }
 html:not(.designer) .SourceCodeFormsControlsWorklist{
 	border-radius:1rem!important;
 	overflow:hidden;
 }
-html:not(.designer) [name="UserName"]{
-	font-size: 1rem;
+html:not(.designer) [name="DLName"]{
+	font-size: 1rem!important;
+	display: none;
 }
 html:not(.designer) div#d0e5951c-04b1-41f6-8482-bbb98c34e8cc_4d2cd33e-2345-417c-9d62-5b2ab67d9e55_a78c6f88-5c20-8a61-b557-643873abfd8f_1eb89a2d-3c0d-45b9-92bb-874012efeb68 {
     margin-top: -1rem;
@@ -247,16 +428,18 @@ html:not(.designer) [name*="OBB_header"]{
 	background-color:#F2F2F6;
 	position: fixed;
 	top: 0;
-	left:0;
+	left: 0;
 	width:100%;
 	z-index: 2;
-	/* height: 6rem; */
+	height: 10rem;
 	padding: 0 1rem!important;
 	display: flex!important;
 	align-items: center!important;
 	justify-content: space-between;
 	padding-top:1rem!important;
 	padding-bottom:1rem!important;
+	/* height: 7.6rem; */
+	flex-direction: column;
 }
 html:not(.designer) [name="Account Picture"]{
 	margin-right:.5rem;
@@ -287,10 +470,9 @@ html:not(.designer) [name="OBB_header"] > div{
 	width:100%;
 	
 }
-html:not(.designer) [name*="HeaderTitleContainer"]{
-width:80%;}
+html:not(.designer) [name*="HeaderTitleContainer"]{width: 100%;}
 html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
-	font-size: 1.7rem;
+	font-size: 1rem;
 	font-family:var(--regularFont);
 	color:black;
 	padding: 0;
@@ -352,19 +534,18 @@ html:not(.designer) body{
     font-family: var(--regularFont);
     background-color: white;
     margin-top: 6rem;
-    height: calc(100% - 4rem);
+    height: 100%;
     width: calc(100% - 0rem);
+    position: relative;
+}
+html:not(.designer) body.topbarExists{
+	margin-top:13.3rem;
 }
 html:not(.designer) tr.selected [src*="/Runtime/Style/eye.png"],
 html:not(.designer) tr.selected [src*="https://ck2-app-tst-1.obc.local//Runtime/Image.ashx"]{
 	filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(183deg) brightness(99%) contrast(91%);
 }
-html:not(.designer) .theme-entry.sidebarAvailable{
-	left: 19rem;
-	width: calc(100%  - 19rem);
-	padding: 0 1rem;
-	position: relative;
-}
+
 html:not(.designer) .runtime-content{
     margin:0!important;
 }
@@ -469,6 +650,8 @@ html:not(.designer) .select-box[name*="OBB_calendar"]  .input-control-buttons,
 .searchDdl .select-box .input-control-m-c,
 .searchDdl .select-box .input-control-buttons{
     border:none!important;
+    align-content: center;
+    height: 100%!important;
 }
 html:not(.designer) .select-box[name*="OBB_calendar"] *,
 [name*="OBB_textbox"],[name*="OBB_textarea"] ,textarea,
@@ -476,6 +659,10 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
 [name*="OBB_dropdown"] *{
 	font-family:var(--regularFont);
 	font-size:1rem!important;
+	
+}
+[name*="Calendar OBB_calendar"] .input-control-m-c .input-control-watermark{
+	padding-left: 0rem!important;
 }
 .filterLabel{
 	font-size:1rem;
@@ -485,6 +672,7 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
 	margin-bottom:.5rem;
 }
 .tooltip.validation{
+	position: fixed;
 	font-size: .8rem;
 	color: #ff6a6a!important;
 	background-color: white!important;
@@ -528,8 +716,11 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
 	margin-bottom:1rem;
 }
 .theme-entry .popup.id-calendar-control-popup {
-    width: 18rem !important;
+    width: 18rem!important;
     height: auto!important;
+    /* top: 0!important; */
+    /* right: 0!important; */
+    /* position: absolute; */
 }
 .theme-entry .top-calendar a.today-title {
     border: none;
@@ -538,9 +729,13 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
     padding: 0;
 }
 .theme-entry .top-calendar a {
-    margin-top: 1rem;
+    margin-top: 1rem!important;
     background-repeat: no-repeat;
-    height: 1rem;
+    height: 1rem!important;
+}
+.theme-entry .top-calendar a:hover {
+    color: var(--aqua) !important;
+    background-color: transparent !important;
 }
 .theme-entry .top-calendar a.top-calendar-right,
 .theme-entry .top-calendar a.top-calendar-left{
@@ -571,6 +766,7 @@ display:flex;
     background-image: url("https://frontenduiux.github.io/OBB_Services/Images/Registration%20Background.png");
     background-size: cover;
     background-position: top;
+	transform:translateX(-100%);
 }
 .navbarBrand a{width: 9rem;display: block;margin: auto;}
 .navbarBrand a img{
@@ -594,6 +790,7 @@ display:flex;
 	text-decoration:none;
 	opacity:0.9;
 	position:relative;
+	font-size: .9rem;
 }
 .sidebar .nav-link .icon{
 	height: 1.5rem;
@@ -682,7 +879,6 @@ td#eb4aa284-91ee-abc7-1932-9e5f938473b7{
 html:not(.designer) [name*="OBB_button"],
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	border-radius:.5rem;
-	/* margin-left: 1rem; */
 	border:none;
 	transition:var(--transition);
 	font-family:var(--regularFont);
@@ -691,6 +887,8 @@ html:not(.designer) [name*="OBB_button OBB_primary_button"],
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
 	background-color:var(--orange)!important;
 	color:white!important;
+	font-size:1rem;
+	padding: 0.6rem 2rem 0.8rem;
 }
 html:not(.designer) .timepicker-buttons{
 display:flex;
@@ -735,7 +933,7 @@ html:not(.designer) [name="RFQTenderCreation_Button  OBB_button OBB_primary_butt
 }
 html:not(.designer) .SourceCode-Forms-Controls-Web-Button[name*="OBB_button OBB_secondary_button"]{
 	color:var(--orange)!important;
-	border:1px solid var(--orange);
+	border:1px solid var(--orange)!important;
 	background-color:white!important;
 }
 html:not(.designer) .theme-entry .input-control.style-aware.radio  span{
@@ -842,7 +1040,7 @@ tr.selected .runtime-list-item-wrap{
 /* POPUP BRANDING START */
 html:not(.designer) .theme-entry .message-box-content,
 html:not(.designer) .theme-entry .dialog .popup-body{
-    height: fit-content;
+    height: fit-content!important;
 }
 html:not(.designer) .theme-entry .popup.dialog.error-message:not(.runtime-message) .message-box-content .panel-body-m-c{
 	margin: 0;
@@ -862,6 +1060,7 @@ height:fit-content!important;
 html:not(.designer) .theme-entry .popup-header{
     padding:1rem 2rem;
     background-color:#f7f7f7;
+	left: 0;
     margin: 0!important;
     position: relative!important;
     height: fit-content!important;
@@ -873,6 +1072,8 @@ border-bottom:none!important
 html:not(.designer) .theme-entry .popup-footer{
     padding:0rem 2rem 1rem;
     border-top:none!important;
+    width: 100%;
+    margin: 0!important;
 }
 html:not(.designer) .popup.dialog{
     height:fit-content!important;
@@ -889,16 +1090,21 @@ html:not(.designer) .theme-entry .message-box-content.error:before{
     background-position:center;
 }
 /* POPUP BRANDING END */
+html:not(.designer) [name*="headerLeftSection"]{
+	width: 80%;
+}
 html:not(.designer) .theme-entry span[name*="profilePhoto"]{
 	border:1px solid rgb(220 220 220 / 80%)!important;
 	border-radius:2rem;
 	display: flex!important;
 	align-items: center!important;
-	width: fit-content!important;
-	padding: 0.4rem 1.6rem;
+	width: 3rem!important;
+	padding: .8rem 0.8rem 1rem 1rem!important;
 	height: 3rem!important;
 	min-height:unset!important;
-	line-height:unset!important
+	line-height:unset!important;
+	/* position: absolute; */
+	/* right: 1rem; */
 }
 /* */
 html:not(.designer) .worklist-grid-column-header-cell-text,
@@ -918,24 +1124,16 @@ font-size:8pt!important;
 	justify-content:center;
 	transition:all .3s ease-in-out;
 	padding: 1rem;
-	/* margin: 1rem; */
 	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/backgroundimage.png");
 	background-size: 116%;
 	background-repeat:no-repeat;
 	background-position:center;
 	transition:all .3s ease-in-out;
-	/* margin: 0 auto!important; */
 	margin-bottom: 0rem;
 }
 .SFC[name*="OBB_Service"]:hover{
 	background-size:126%;
 }
-.SFC[name*="OBB_Service"]:nth-child(3n+1){
-	/* margin-left:0; */
-}
-/* [name*="OBB_Service"]:hover{
-background-color:#00a9b550;;
-} */
 [name*="OBB_ServiceIcon"]{
 	width:4rem!important;
 	height:auto!important;
@@ -962,14 +1160,27 @@ background-color:#00a9b550;;
 	min-height: unset!important;
 }
 /* TABLE BRANDING START */
+table tbody tr td span{
+	font-size:.8rem!important
+}
 html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
 	background-color: #f6f6f6;
 	border-right: 1px solid rgb(220 220 220 / 80%);
 	cursor: pointer;
-	/* padding: 0 1rem; */
 }
-html:not(.designer) .theme-entry .grid-body-content table td:not(.center-align){
+html:not(.designer) .theme-entry .grid-body-content table td{
 	padding: 0 1rem!important;
+}
+html:not(.designer) .theme-entry .grid-body-content table td.file-tn-cell{
+	padding:0!important;
+	justify-content:center;
+	height:3rem;
+	width:3rem;
+}
+html:not(.designer) .theme-entry .grid-body-content table td.file-tn-cell img{
+	height:100%;
+	width:100%;
+	object-fit:contain;
 }
 html:not(.designer) .theme-entry td span.runtime-list-item{
 	font-family: var(--regularFont)!important;
@@ -982,15 +1193,14 @@ html:not(.designer) .theme-entry .grid table.grid-column-header-table td:last-ch
 html:not(.designer) .theme-entry table.grid-column-header-table {
     border-bottom: 1px solid rgb(220 220 220 / 80%);
     background-color:transparent!important;
-	width:100%!important;
 }
 html:not(.designer) .theme-entry  .grid-column-headers{
 background-color:transparent!important;
 }
-html:not(.designer) .theme-entry .grid .grid-column-header-text{
+html:not(.designer) .theme-entry .grid .grid-column-header-text,
+html:not(.designer) .theme-entry.runtime-form span.runtime-list-item-wrap{
 	font-family:var(--regularFont)!important;
-	/* max-width: fit-content!important; */
-	width: fit-content!important;
+	font-size: 8pt!important;
 }
 html:not(.designer) .theme-entry .grid .grid-column-header-cell{
 	padding: 0;
@@ -1001,14 +1211,13 @@ html:not(.designer) .theme-entry .grid table.grid-content-table.zebra-stripes tr
 	padding:1rem 0!important;
 }
 html:not(.designer) .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(even){
-	/* background-color:#F2F2F6!important; */
 	background-color:#F9F9FB!important;
 }
 html:not(.designer) .grid-body{
 	margin: 1rem!important;
 	width: calc(100% - 2rem);
 	border: 1px solid rgb(220 220 220 / 80%)!important;
-	border-radius: 2rem;
+	border-radius: .7rem;
 }
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Saved"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to FTTX Desgin Team"],
@@ -1016,17 +1225,20 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Rejected"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Open"],
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approve"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title*="Approved"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="FTTX Desgin Team Approved"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Completed"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting RM Approval"],
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Return"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"],
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending recipient action"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] ,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Higher Management Team"]/* related to etender, do not replace or remove*/,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Welcome Letter Upload"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "],
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending draft letter"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Vendor Managament Team"]/* related to etender, do not replace or remove*/,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"],
@@ -1043,19 +1255,22 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to Pricing Team"] >span.runtime-list-item,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Rejected"] >span.runtime-list-item,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Open"] >span.runtime-list-item,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approve"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title*="Approved"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="FTTX Desgin Team Approved"] >span.runtime-list-item,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Completed"] >span.runtime-list-item,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting RM Approval"] >span.runtime-list-item,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Return"] >span.runtime-list-item,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending recipient action"] >span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending draft letter"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"] > span, 
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] > span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Higher Management Team"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Vendor Managament Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"] > span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Welcome Letter Upload"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"] span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "] span{
 	border-radius:2rem;
@@ -1066,17 +1281,20 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awa
 	width:fit-content!important;
 	font-size: 8pt;
 }
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span{
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"] > span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] > span{
 	background-color:#EFEFEF;
 	color:#616161!important;
 }
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending recipient action"] >span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending draft letter"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Higher Management Team"] >span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Vendor Managament Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"] > span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "] > span{
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "] > span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Welcome Letter Upload"] > span{
 	background-color:#FFF3F0;
 	color:#FF8A65!important;
 }
@@ -1107,16 +1325,16 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Docu
 	background-color:#FFF5E5!important;
 	padding: 0.6rem 1.2rem!important;
 }
-html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Waiting Return"] >span,
-html:not(.designer)  [name*="OBB_statusContainer"] span[title="Waiting Return"],
+html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Returned to Vendor"] >span,
+html:not(.designer)  [name*="OBB_statusContainer"] span[title="Returned to Vendor"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"] span{
 	color:#D19D00!important;
 	background-color:#FAF5E5!important;
 	padding: 0.6rem 1.2rem!important;
 }
-html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Approve"] >span,
+html:not(.designer) .theme-entry .grid-content-cell-wrapper[title*="Approved"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="FTTX Desgin Team Approved"] > span,
-html:not(.designer)  [name*="OBB_statusContainer"] span[title="Approve"],
+html:not(.designer)  [name*="OBB_statusContainer"] span[title*="Approved"],
 html:not(.designer)  [name*="OBB_statusContainer"] span[title="FTTX Desgin Team Approved"]{
 	color:#009688!important;
 	background-color:#E5F4F3!important;
@@ -1129,7 +1347,7 @@ html:not(.designer)  [name*="OBB_statusContainer"] span[title="Open"]{
 	padding: 0.6rem 1.2rem!important;
 }
 html:not(.designer)  [name*="OBB_statusContainer"] span[title="Open"],
-html:not(.designer)  [name*="OBB_statusContainer"] span[title="Approve"],
+html:not(.designer)  [name*="OBB_statusContainer"] span[title*="Approved"],
 html:not(.designer)  [name*="OBB_statusContainer"] span[title="FTTX Desgin Team Approved"]{
 	border-radius:2rem; margin-left:1rem;
 }
@@ -1143,6 +1361,24 @@ html:not(.designer) .grid-column-header-cell{
 	background-color: transparent;
 }
 /* TABLE BRANDING END */
+a#\30 0000000-0000-0000-0000-000000000000_b9d18129-dbb9-450e-a465-6400c8ec824e {
+    background-color: transparent!important;
+    color: var(--orange)!important;
+    padding: 0!important;
+}
+
+input#\30 0000000-0000-0000-0000-000000000000_e4cfee51-57c3-4802-8d32-bb5f60545b31,
+input#\30 0000000-0000-0000-0000-000000000000_9cf6c0a1-9745-4f7a-b44f-dbc79080a2ab,
+input#\30 0000000-0000-0000-0000-000000000000_71c2a992-0e04-48cf-939b-13af89841d0a,
+input#\30 0000000-0000-0000-0000-000000000000_a3f3415b-f4e2-4bcb-83c5-33e960df7171{
+    background-color: transparent;
+    border: 1px solid var(--borderColor);
+    margin: 0 0.4rem 1rem;
+    height:3rem;
+    width:3rem!important;
+    padding:0!important;
+    text-align:center;
+}
 .worklistToolbarHeaderTextWrapper .headerTxt{
 	font-size:1.5rem;
 	font-family: var(--regularFont);
@@ -1189,11 +1425,23 @@ html:not(.designer) [name*="UserName"]{
 	position:relative;
 }
 html:not(.designer) [name*="Cancel Button"],
-html:not(.designer) [name*="Cancel Button"]:hover{
+html:not(.designer) [name*="Cancel Button"]:hover,
+html:not(.designer) [name*="button Cancel"],
+html:not(.designer) [name*="button Cancel"]:hover{
 	color: var(--orange)!important;
 	border:1px solid var(--borderColor)!important;
 	background-color: transparent!important;
+
 }
+html:not(.designer) a[name*="Button Return"],
+html:not(.designer) a[name*="Button Return"]:hover,
+html:not(.designer) a[name*="draftBtn"],
+html:not(.designer) a[name*="draftBtn"]:hover{
+	color: var(--orange)!important;
+	border:1px solid var(--orange)!important;
+	background-color: #FFF5E5!important;
+}
+
 html:not(.designer) .theme-entry .toolbars.double .toolbar table td{
 	height:unset!important;
 }
@@ -1211,41 +1459,206 @@ html:not(.designer) img#aaa2922e-a9d6-57b9-4b35-a5e16e1477be_8c40e4b4-a56c-2593-
 }
 /* Table Toolbar Buttons Alignment Start */
 /* VMS.AdministrationForm, LMS.AdministrationForm*/
-td#\39 9e0a7a0-73d3-eba6-9232-e7c5509f59df,
-td#\30 64aa9f2-8dc0-4e3d-b02f-7e1ee8742977,
-.toolbar-wrapper>table>tbody>tr:first-child > td:first-child {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.grid-content-cell-wrapper,.grid-content-cell-wrapper .runtime-list-item,.grid-content-cell-wrapper .runtime-list-item i{
-	height:100%;
-}
-.grid-content-cell-wrapper .runtime-list-item i{
-	display:flex;
-	align-items:center;
-	justify-content:center;
-}
 /* Table Toolbar Buttons Alignment End */
 /* BUTTONS BRANDING START */
 [name="LetterPendingFormCopy Area Item OBB_Collapse"] table col{
 	width: auto!important;
 }
-.returnIcon,.viewIcon{
-	height: 2rem;
-	width: 2rem;
-	margin: auto;
-	cursor:pointer;
+html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	display:flex!important;
+	align-items: center!important;
+	justify-content: flex-end;
+	border:1px solid var(--borderColor)!important;
+	border-radius:.7rem;
+	text-align: left;
+	padding: 1.6rem!important;
+	justify-content: space-between;
+	width: 97%;
+	margin-bottom: 1rem;
+	margin: 0 .5rem 1rem;
+	position: relative;
 }
-.returnIcon rect,.viewIcon rect{
-	fill:#fff;
-	transition:all .3s ease-in-out;
+html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"]{
+	width: 28.4rem;
+	margin: 0;
+}
+html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] img{
+	height:100%;
+	width:100%;
+	object-fit:contain;
+}
+html:not(.designer) body.theme-entry [name*="kpiContainer"] span{
+	width:100%;
+	padding: 0;
+}
+html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"]{
+	width: 3rem!important;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+.popupManager[style*="position: absolute;"]{
+	height: 100vh!important;
+	width: 100vw!important;
+	position: fixed!important;
+	z-index: 2;
+	left: 0!important;
+}
+.popup.dialog{
+	top: 50%!important;
+	left: 50%!important;
+	transform: translate(-50%,-50%);
+}
+[name*="AttachmentListsNonSMEData"]  span{
+		font-size: 1.6rem!important;
+}
+table td .select-box.dropdown-box.watermark,
+.theme-entry .input-control.select-box{
+		height:3rem;
+		border:1px solid var(--borderColor)!important;
+		border-radius: .5rem!important;
+	box-sizing:border-box;
+	background-color:transparent;
+	}
+.input-control.select-box.lookup-box .input-control-m-c,
+.input-control.select-box.lookup-box  .input-control-buttons{
+border:none!important;
+}
+table td .select-box.dropdown-box.watermark .input-control-m-c,
+table td .select-box.dropdown-box.watermark .input-control-body, 
+table td .select-box.dropdown-box.watermark .input-control-buttons,
+.theme-entry .input-control.select-box .input-control-m-c,
+table td .select-box.dropdown-box .input-control-buttons,
+table td .select-box.dropdown-box .input-control-buttons{
+	border:none!important;
+}
+.toolbar  table  tbody  tr  td{
+    display: flex!important;
+    align-items: center!important;
+    justify-content: flex-end!important;
+}
+span#c6f73f43-e3dc-773f-43ef-22426926b675,
+span#d8ed58d7-b90b-9108-de21-5b8e078c208b_e0668ca0-3af6-a734-7c56-dc19c30bb9e2,
+span#\33 585609f-0fb5-ed21-b958-02bb5f93b809
+{
+   border-radius:0!important;
+   padding:0!important;
+}
+.theme-entry .toolbar table td {
+    height: auto!important;
+}
+/* show / hide password icon */
+span#fe27d996-8f35-cb63-c6eb-159a80092d7b,
+span#dbef2ceb-5bf5-ed0e-98cb-5630add6227f,
+[name*="passwordFieldTable"]{
+    position: relative;
+}
+i#togglePassword,
+i#togglePassword1{
+    height: 1.7rem;
+    width: 1.7rem;
+    position: absolute;
+    margin: 0!important;
+    right: 0.8rem;
+    top: 50%;
+	transform:translateY(-50%);
+}
+.fa-eye:before {
+    content: ""!important;
+    background-image: url(https://frontenduiux.github.io/OBB_ETenders/Images/eye-show.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    top:0;
+    right:0;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+.fa.fa-eye-slash{
+    content: ""!important;
+    background-image: url(https://frontenduiux.github.io/OBB_ETenders/Images/eye-hide.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+i#togglePassword::before,
+i#togglePassword1::before{
+	content:""!important;
+}
+td#\36 65bba9b-94a4-179b-4bb6-7db4dd45000e {display: table-cell!important;}
+a.dropdown{
+	height: 100%!important;
+	width: 3rem!important;
+	position:relative;
+}
+a.dropdown > span{
+	position:relative;
+}
+[name*="OBB_calendar"] .input-control-m-c.styling-inner-wrapper,
+[name*="OBB_calendar"] .input-control-wrapper{
+	display:flex;
+	flex-direction:column;
+	padding: 0!important;
+	justify-content:center;
+}
+[name*="OBB_calendar"] .input-control-m-c{
+	padding-left:.7rem!important;
+}
+[name*="OBB_calendar"] .input-control-m-c input{
+	padding:0!important;
+}
+html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
+		padding-left:1rem!important;
+	}
+	[name*="AttachmentListsNonSMEData Label1"]>div>div{
+		display: flex!important;
+		align-items: center!important;
+	}
+html:not(.designer) .theme-entry a.expand-vertical, .theme-entry a.expand-vertical:focus, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus {
+	background-color: white!important;
+	height:3rem;
+	width: 3rem;
+	border-radius: 100%!important;
+	background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/chevDown.svg")!important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 1.3rem;
+}
+html:not(.designer) .theme-entry a.collapse-vertical, .theme-entry a.collapse-vertical:focus, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.collapse-vertical, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.collapse-vertical:focus {
+	background-color: white!important;
+	height:3rem;
+	width: 3rem;
+	border-radius: 100%!important;
+	background-image:url("https://frontenduiux.github.io/OBB_ETenders/Images/chevDown.svg")!important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 1.3rem;
+	transform:scaleY(-1);
+}
+span#\35 799b0a5-a531-2dea-2f02-2841b85720da {
+    padding-left: 0;
+}
+
+span#c7e95771-5b68-40f6-48ee-018fac123216 {
+    padding-right: 0;
+}
+div#\36 ab672ee-a1c8-1978-f363-82431b1d04ef_56ed7e67-ddc3-9111-724e-a3feeea8c26f_Table {
+    padding: 1rem;
+}
+div#ad5fd33b-1af7-81a5-cb8e-33cd06d540d9_14e85709-0a62-5be5-1c4f-d6e115fbf12a_Table {
+    flex-direction: column;
+    width: 100%;
 }
 /*added by dani*/
 html:not(.designer) [name="SignUpButton"]{padding-bottom: 0.8rem;} /*for the signup button*/
 .theme-entry .input-control.select-box .input-control-buttons a:focus {border:none;} /*for the calendar button*/
 html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] img{margin-bottom: -0.8rem;}
-html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {padding: .4rem 1.5rem 1.2rem 1.7rem !important;} /*register button in the external hub*/
 .mobile .theme-entry .grid-header-wrapper .grid-header-controls a,.mobile .theme-entry .panel-header-wrapper .panel-header-controls a {
     width: 3rem !important;
     height: 3rem !important;
@@ -1254,11 +1667,583 @@ html:not(.designer) [name="registerAsVendor"] [name*="buttonText"] {padding: .4r
 html[dir=ltr] .theme-entry .grid-header-wrapper .grid-header-controls,html[dir=ltr] .theme-entry .panel-header-wrapper .grid-header-controls,html[dir=ltr] .theme-entry .grid-header-wrapper .panel-header-controls,html[dir=ltr] .theme-entry .panel-header-wrapper .panel-header-controls {
     padding-right: 0 !important;
 }
+.file-info.file-ellipsis {
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    -webkit-line-clamp:1;
+	font-size:1rem;
+	width:80%;
+} /* to show only one line of the atachment*/
+.file-wrapper.showinfo.uploaded {
+    height: 3rem!important;
+    min-height: 3rem;
+    border: 1px solid var(--borderColor);
+    border-radius: .5rem!important;
+}
+.file-table{
+height:3rem!important;
+}
+.file-table tr td{
+    padding:0;
+}
+.theme-entry a.toolbar-button:focus{
+	border:none!important;
+}
+span#\31 e489858-29a8-1a34-c6bb-f5e8d6ad856f_cc0af9ec-9ee7-735d-f279-70868771fc50 {
+    margin: 0 .5rem;
+    width: calc(100% - 1rem);
+}
+[name*="AttachmentListsNonSMEData Label1"] strong{
+	font-size: 1.1rem!important;
+}
+#a68ebdfb-3f51-df1d-6fc0-ea92ba4bb7b9_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table,
+#\34 e01a8e2-9f5c-96b9-7772-d9a883fa57db_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table{
+    padding:1rem;
+}
 /*end*/
+@media(min-width:992px){
+	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
+	border:1px solid rgb(220 220 220 / 80%)!important;
+	border-radius:2rem;
+	display: flex!important;
+	align-items: center!important;
+	width: fit-content!important;
+	padding: 0.4rem 1.6rem!important;
+	height: 3rem!important;
+	min-height:unset!important;
+	line-height:unset!important;
+}
+	html:not(.designer) [name="DLName"]{
+		display:inline;
+	}
+	html:not(.designer) [name*="HeaderTitleContainer"]{
+width:80%;}
+	html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
+	font-size: 1.7rem;
+}
+	div#ad5fd33b-1af7-81a5-cb8e-33cd06d540d9_14e85709-0a62-5be5-1c4f-d6e115fbf12a_Table {
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+	html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
+    left: 15rem;
+    width: calc(100vw - 15rem);
+    flex-direction: row;
+    height: 6rem;
+}
+	html:not(.designer) .theme-entry.sidebarAvailable {
+    left: 15rem;
+    max-width: calc(100% - 0rem);
+    padding: 0 1rem;
+    position: relative;
+    width: calc(100% - 15rem);
+}
+	.sidebar{
+		transform:translateX(0);
+	}
+	html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	width: 25rem;
+}
+	body.theme-entry.topbarExists {
+    margin-top: 13rem;
+}
+}
+@media(min-width:1024px){
+		html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	width: 27rem;
+}
+}
+@media(min-width:1200px){
+		html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	width: 21rem;
+}
+}
+@media(min-width:1440px){
+		html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	width: 20rem;
+}
+			html:not(.designer) body.theme-entry [name*="largeTile"]{
+	width: 28rem;
+}
+}
 @media(min-width:1600px){
+		div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_6ebe8c5f-fee3-56be-b5a7-58414bd44535_Table {
+    border-radius: .5vw;
+    padding-left: 1vw;
+    height: 3vw;
+}
+.styling-font {
+    font-size: 1vw;
+}
+/*new changes*/
+.file-wrapper.showinfo.uploaded {
+    height: 3vw!important;
+    min-height: 3vw;
+    border-radius: .5vw!important;
+}
+.file-table{height:3vw!important;}
+.theme-entry .grid.full .grid-body-content{top:3vw!important;}
+/*end*/
+	html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown>span span, 
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.dropdown:active>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:focus>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.dropdown:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.dropdown:focus>span span{
+	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/chev2.png")!important;
+	background-size:1.3vw;
+	height: 2vw;
+	width: 2vw;
+}
+		.theme-entry .day, .theme-entry .month, .theme-entry .year{
+		width:7vw!important;
+	}
+	.theme-entry .top-calendar a {
+    margin-top: 1vw!important;
+    height: 1vw!important;
+}
+	html:not(.designer) .theme-entry .message-box-content,
+html:not(.designer) .theme-entry .dialog .popup-body{
+    height: fit-content;
+    min-height: 5vw;
+}
+	.theme-entry .day {
+    font-size: 1vw;
+    height: 2.5vw!important;
+    width: 2.5vw!important;
+}
+.calendar-row .dayname{
+	height:2.5vw!important;
+	width:2.5vw!important;
+	margin-bottom:1vw;
+}
+	 html:not(.designer) [name*="OBB_label"]{
+        font-size: 1vw!important;
+    }
+		.theme-entry .popup.id-calendar-control-popup {
+    width: 18vw !important;
+    height: auto !important;
+}
+		html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.date>span span, 
+html:not(.designer) .theme-entry .input-control.select-box .input-control-buttons a.date:active>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.active .input-control-buttons a.date>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.read-only .input-control-buttons a.date:focus>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:hover>span span, 
+html:not(.designer) .theme-entry .input-control.select-box.disabled .input-control-buttons a.date:focus>span span{
+	background-size: 1.1vw!important;
+	height: 3vw;
+	width: 3vw;
+}
+	a#\31 9420043-276a-7183-695f-0080d282e8fd_75083a77-02d7-21a8-6cc4-e541d7186ed3_Image{
+		height:3vw;
+		width:3vw;
+	}
+	html:not(.designer) .popup.dialog{
+		min-height: 14vw;
+	}
+	html:not(.designer) .popup.dialog .scroll-wrapper.message-box-content.info{
+		min-height: 5vw!important;
+	}
+	html:not(.designer) body.theme-entry [name*="kpiContainer"] span{
+		font-size:1vw!important;
+	}
+	html:not(.designer) body.theme-entry [name*="kpiContainer largeTile"]{
+	width: 29vw;
+}
+	html:not(.designer) .theme-entry .grid .grid-column-header-text,
+html:not(.designer) .theme-entry.runtime-form span.runtime-list-item-wrap{
+	font-family:var(--regularFont)!important;
+	font-size: .7vw!important;
+}
+	body.theme-entry.topbarExists {
+    margin-top: 13vw;
+}
+	html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper .panel-header-text > span,
+	html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper .grid-header-text> span{
+	min-height: 3vw;
+	line-height:3vw;
+}	
+	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
+	border-radius:2vw;
+	padding: 0.4vw 1.6vw;
+	height: 2vw!important;
+}
+	html:not(.designer) [name="Account Picture"] {
+    margin-right: .5vw;
+		height:2vw!important;
+		width:2vw!important;
+}
+	html:not(.designer) [name="DLName"] {
+    font-size: 1vw !important;
+}
+		html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="dlblAnswer"]{
+	font-size:1.3vw!important
+}
+		html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="dlblHeading"]{
+	font-size:1vw!important
+}
+	html:not(.designer) body.theme-entry [name*="kpiContainer"]{
+	border-radius:.7vw;
+	padding: 1.6vw!important;
+	width: 26vw;
+	margin: 0 .5vw 1vw;
+	}
+		html:not(.designer) body.theme-entry [name*="kpiContainer"] span[name*="kpiIcon"] {
+    width: 2vw !important;
+    top: 1vw;
+    right: 1vw;
+}
+	.theme-entry a.toolbar-button svg{
+		height:1vw;
+		width:1vw;
+	}
+html:not(.designer) .theme-entry a.expand-vertical, .theme-entry a.expand-vertical:focus, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.expand-vertical:focus,
+	html:not(.designer) .theme-entry a.collapse-vertical, .theme-entry a.collapse-vertical:focus, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.collapse-vertical, 
+html:not(.designer) .theme-entry #UsersConfig_secondPageOutside a.dropbutton.collapse-vertical:focus{
+	height: 3vw;
+	width: 3vw;
+	background-size: 1.3vw;
+}
+	.theme-entry a.toolbar-button svg{
+		height:1vw;
+		width:1vw;
+	}
+		html:not(.designer) [name*="OBB_button"], html:not(.designer) .SourceCode-Forms-Controls-Web-Button {
+    border-radius: .5vw;
+}
+	.theme-entry .message-box-content:before {
+    width: 4vw;
+    height: 4vw;
+    top: .5vw;
+}
+.theme-entry .toolbar table td {
+	min-height:3vw!important;
+}
+	.theme-entry .message-box-content>.panel.full, .theme-entry .message-box-content.confirmation>.panel.full {
+    margin-left: 4.9vw;
+}
+	.theme-entry .dialog.error-message:not(.runtime-message) .message-box-content, 
+	.theme-entry .dialog.warning-message:not(.runtime-message) .message-box-content, 
+	.theme-entry .dialog.info-message:not(.runtime-message) .message-box-content, 
+	.theme-entry .dialog.confirmation-message:not(.runtime-message) .message-box-content {
+    min-height: 4.9vw;
+}
+	.popup.dialog{
+		min-width: 44vw;
+		/* min-height: 11vw; */
+		/* height:auto!important; */
+	}
+	html:not(.designer) .theme-entry .message-box-content.error:before{
+    background-size:3vw;
+}
+	html:not(.designer) .theme-entry .popup-header{
+    padding:1vw 2vw;
+}
+	html:not(.designer) .popup.dialog .popup-header .popup-header-text{
+    font-size:1.4vw;
+}
+	html:not(.designer) .grid-body{
+	margin: 1vw!important;
+	width: calc(100% - 2vw);
+	border-radius: .7vw;
+}
+	html:not(.designer) [name*="OBB_Collapse"]{
+	border-radius:1vw!important;
+	margin-bottom: 1vw;
+}
+	/* PADDINGS */
+/* PADDING 1rem - top, bottom, left, right */
+[name*="pt-1"]{
+	padding-top:1vw!important;
+}
+[name*="pb-1"]{
+	padding-bottom:1vw!important;
+}
+[name*="pl-1"]{
+	padding-left:1vw!important;
+}
+[name*="pr-1"]{
+	padding-right:1vw!important;
+}
+/* PADDING 2rem - top, bottom, left, right */
+[name*="pt-2"]{
+	padding-top:2vw!important;
+}
+[name*="pb-2"]{
+	padding-bottom:2vw!important;
+}
+[name*="pl-2"]{
+	padding-left:2vw!important;
+}
+[name*="pr-2"]{
+	padding-right:2vw!important;
+}
+/* PADDING 3rem - top, bottom, left, right */
+[name*="pt-3"]{
+	padding-top:3vw!important;
+}
+[name*="pb-3"]{
+	padding-bottom:3vw!important;
+}
+[name*="pl-3"]{
+	padding-left:3vw!important;
+}
+[name*="pr-3"]{
+	padding-right:3vw!important;
+}
+/* PADDING 4rem - top, bottom, left, right */
+[name*="pt-4"]{
+	padding-top:4vw!important;
+}
+[name*="pb-4"]{
+	padding-bottom:4vw!important;
+}
+[name*="pl-4"]{
+	padding-left:4vw!important;
+}
+[name*="pr-4"]{
+	padding-right:4vw!important;
+}
+/* MARGINS */
+/* MARGIN 1rem - top, bottom, left, right */
+[name*="mt-1"]{
+	margin-top:1vw!important;
+}
+[name*="mb-1"]{
+	margin-bottom:1vw!important;
+}
+[name*="ml-1"]{
+	margin-left:1vw!important;
+}
+[name*="mr-1"]{
+	margin-right:1vw!important;
+}
+/* MARGIN 1.6rem - top, bottom, left, right */
+[name*="mt-16"]{
+	margin-top:1.6vw!important;
+}
+[name*="mb-16"]{
+	margin-bottom:1.6vw!important;
+}
+[name*="ml-16"]{
+	margin-left:1.6vw!important;
+}
+[name*="mr-16"]{
+	margin-right:1.6vw!important;
+}
+/* MARGIN 2rem - top, bottom, left, right */
+[name*="mt-2"]{
+	margin-top:2vw!important;
+}
+[name*="mb-2"]{
+	margin-bottom:2vw!important;
+}
+[name*="ml-2"]{
+	margin-left:2vw!important;
+}
+[name*="mr-2"]{
+	margin-right:2vw!important;
+}
+/* MARGIN 3rem - top, bottom, left, right */
+[name*="mt-3"]{
+	margin-top:3vw!important;
+}
+[name*="mb-3"]{
+	margin-bottom:3vw!important;
+}
+[name*="ml-3"]{
+	margin-left:3vw!important;
+}
+[name*="mr-3"]{
+	margin-right:3vw!important;
+}
+/* MARGIN 4rem - top, bottom, left, right */
+[name*="mt-4"]{
+	margin-top:4vw!important;
+}
+[name*="mb-4"]{
+	margin-bottom:4vw!important;
+}
+[name*="ml-4"]{
+	margin-left:4vw!important;
+}
+[name*="mr-4"]{
+	margin-right:4vw!important;
+}
+	[name*="commentSection"] .input-control-watermark{
+		top:.5vw;
+	}
+	html:not(.designer) [name*="OBB_textarea"]{
+    font-size:1vw!important;
+    border-radius: .5vw!important;
+    padding: .4vw 1vw!important;
+}
+	span#be1f5533-2703-1283-91e2-dea4f607f193{
+    height: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+span#f95ad88d-bb59-9175-6f9e-f581b5a62436{
+    display:flex;
+    height:3vw;
+    align-content:center;
+}
+	td#\38 045da8e-fbf6-2785-88ce-9edf65552682, 
+	td#c2b54e05-058a-e4e8-00d1-406cf875ab16, 
+	td#\37 dbd9ea0-a3af-08f8-cd42-1be157d6274d, 
+	td#eb4aa284-91ee-abc7-1932-9e5f938473b7{
+		height:3vw!important;
+		padding:0 1vw;
+	}
+	[name*="AttachmentListsNonSMEData Label1"]>div>div>span:first-child{
+		font-size: 2vw!important;
+}
+	html:not(.designer) [name*="OBB_button OBB_primary_button"],
+html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
+	font-size:1vw;
+	padding: 0.2vw 2.4vw 0.5vw;
+}
+	.grid-column-header-cell-content{
+		min-height: 1vw;
+		padding:1vw!important;
+		font-size:1vw!important;
+	}
+	html:not(.designer) .select-box[name*="OBB_calendar"] .input-control-m-c{
+		padding-left:1vw!important;
+	}
+	a.dropdown{
+	width: 3vw!important;
+}
+	i#togglePassword,
+i#togglePassword1{
+    height: 1.7vw;
+    width: 1.7vw;
+    right: 0.8vw;
+}
+.fa-eye:before {
+    height: 1.7vw;
+    width: 1.7vw;
+}
+	.empty-grid .grid-content-cell-wrapper {
+    margin: 1vw auto;
+    font-size: 1vw;
+}
+	#pgWizard .theme-entry .grid-header-wrapper .inline-editable, 
+	#pgWizard .theme-entry .panel-header-wrapper .inline-editable, 
+	.theme-entry .grid-header-wrapper .grid-header-text, 
+	.theme-entry .panel-header-wrapper .panel-header-text {
+    line-height: 4.4rem!important;
+}
+	html:not(.designer) .theme-entry td span.runtime-list-item{
+		font-size:.9vw!important;
+	}
+	table td .select-box.dropdown-box.watermark{
+		height:3vw;
+		border:1px solid var(--borderColor)!important;
+		border-radius: .5rem!important;
+	}
+	.theme-entry{
+		font-size:1vw!important;
+	}
+	.theme-entry .grid .grid-content-cell{
+		min-height:5vw!important;
+	}
+	html:not(.designer) [name*="OBB_button OBB_primary_button"],
+html:not(.designer) .SourceCode-Forms-Controls-Web-Button{
+	font-size:1vw;
+}
+	html:not(.designer) .select-box[name*="OBB_calendar"] *,
+[name*="OBB_textbox"],[name*="OBB_textarea"] ,textarea,
+.input-control-watermark,
+[name*="OBB_dropdown"] *{
+	font-family:var(--regularFont);
+	font-size:1vw!important;
+}
+	.theme-entry .grid-header-wrapper, .theme-entry .panel-header, .theme-entry .panel-header-c, .theme-entry .panel-header-wrapper {
+    height: 3vw;
+    line-height: 3vw;
+    min-height: 3vw;
+}
+	html:not(.designer) [name*="OBB_Collapse"] .panel-header{
+	height: 5vw;
+}
+	html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper .panel-header-text, 
+	html:not(.designer) [name*="OBB_Collapse"] .grid-header .grid-header-wrapper .grid-header-text {
+    font-size: 1.6vw;
+}
+	.sidebar .topic{
+		font-size:.9vw;
+	}
+	.sidebar .nav-link{
+		font-size:1vw;
+	}
+	html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper,
+html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper{
+	padding:1vw 2vw;
+	width: calc(100% - 4vw);
+}
+html:not(.designer) [name*="OBB_Collapse"] .panel-body{
+	padding: 1vw 2vw;
+}
+	html:not(.designer) [name*="OBB_header"]{
+	padding: 1vw!important;
+	height: 5.4vw;
+}
+	html:not(.designer) [name*="HeaderDescriptionContainer"] [name*="HeaderDescription"]{
+	font-size: 1vw!important;
+}
+	html:not(.designer) [name*="HeaderTitleContainer"] [name*="HeaderTitle"]{
+	font-size: 1.7vw;
+}
+
+	html:not(.designer) [name*="OBB_dropdown"] .select-box,
+html:not(.designer) .select-box[name*="OBB_calendar"],
+html:not(.designer) .input-control.select-box.lookup-box.picker-input.double-buttons,
+.searchDdl .select-box{
+    border-radius:.5vw!important;
+    height:2.9vw;
+    min-height:2.9vw;
+	font-size:1vw;
+}
+	html:not(.designer) [name*="OBB_textbox"],
+.filterTxt .input-control-m-c,
+.filterTxt input{
+    font-size:1vw!important;
+    border-radius: .5vw!important;
+    padding: .4vw 1vw!important;
+    min-height: 3vw!important;
+    height: 3vw!important;
+}
+	html:not(.designer) body{
+    margin-top: 7vw!important;
+}
+
+html:not(.designer) [name*="OBB_label"]{
+    font-size:1vw!important;
+}
+	html:not(.designer) .theme-entry.sidebarAvailable {
+    left: 0;
+    width: calc(100% - 16vw);
+    padding: 0 1rem;
+    position: relative;
+}
+	html:not(.designer) .sidebarAvailable [name*="OBB_header"]{
+    left: 16vw;
+    width: calc(100vw - 16vw);
+    height: 6vw;
+}
+	html:not(.designer) body.topbarExists{
+	margin-top:13.3vw;
+}
 	html:not(.designer) .tab-box-tabs{
 	padding: 0 1vw;
-	/* margin-bottom:2vw; */
 	top: 3.7vw;
 	width: calc(100vw - 18.8vw);
 	left: 16vw;
@@ -1281,5 +2266,9 @@ html:not(.designer) .sidebarVisible [name="OBB_header"] {
 }
 .navbarBrand a{
 	width: 9vw;
+}
+div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_142620d0-7bfc-9e4b-5178-9fed52afed2f_Table,
+div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_3a600afe-5a56-b90b-c34f-9afa5a641987_Table{
+    gap: 1vw;
 }
 }
