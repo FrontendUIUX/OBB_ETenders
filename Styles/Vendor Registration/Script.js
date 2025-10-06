@@ -459,3 +459,6 @@ $(document).ready(function () {
         } 
     });
 });
+$(window).on("scroll", function () {
+  $(".id-calendar-control-popup").hide();
+});
