@@ -1783,6 +1783,9 @@ width:80%;}
 }
 }
 @media(min-width:1600px){
+	html:not(.designer) .theme-entry a.toolbar-button span.button-text{
+    font-size: 1vw!important;
+}
 	.editor-cell[name*="phoneNumberContainer"]{
     display: flex!important;
     align-items: center!important;
