@@ -1783,6 +1783,16 @@ width:80%;}
 }
 }
 @media(min-width:1600px){
+
+
+div#\39 21cbae6-5b02-512c-f2ab-377c4ff39f68_835b8031-a79e-4133-64b5-e8bef1ecda29 .input-control-wrapper>a {
+    height: 3vw;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    padding:0 1vw;
+}
+
 	html:not(.designer) .theme-entry a.toolbar-button span.button-text{
     font-size: 1vw!important;
 }
