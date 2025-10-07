@@ -1716,6 +1716,10 @@ span#\31 e489858-29a8-1a34-c6bb-f5e8d6ad856f_cc0af9ec-9ee7-735d-f279-70868771fc5
 #\34 e01a8e2-9f5c-96b9-7772-d9a883fa57db_bffbdab8-8b3b-15aa-f0bf-d600acb5d34f_Table{
     padding:1rem;
 }
+
+div#\39 21cbae6-5b02-512c-f2ab-377c4ff39f68_39baf32d-d4d2-aa37-766e-6700557c0a66_Table {
+    gap: 1rem;
+}
 /*end*/
 @media(min-width:992px){
 	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
