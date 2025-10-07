@@ -38,6 +38,21 @@ div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_6ebe8c5f-fee3-56be-b5a7-58414bd44535
 	padding-left: 1rem;
 	height: 3rem;
 }
+.editor-cell[name*="phoneNumberContainer"]{
+    display: flex!important;
+    align-items: center!important;
+    border:1px solid var(--borderColor)!important;
+    height: 3rem!important;
+    min-height: 3rem!important;
+    border-radius: .5rem!important;
+    padding: 0!important;
+    margin: 0!Important;
+}
+
+[name*="phoneNumberContainer"] div#\39 21cbae6-5b02-512c-f2ab-377c4ff39f68_835b8031-a79e-4133-64b5-e8bef1ecda29,
+[name*="phoneNumberContainer"] input#\39 21cbae6-5b02-512c-f2ab-377c4ff39f68_1da35a78-5420-8802-5fea-699350467d97{
+    border:none!important;
+}
 [name*="Button"]{
 	border: none!important;
 	outline: none!important;
@@ -718,7 +733,7 @@ html:not(.designer) .select-box[name*="OBB_calendar"] *,
 .theme-entry .popup.id-calendar-control-popup {
     width: 18rem!important;
     height: auto!important;
-    top: 11rem !important;
+	 top: 11rem !important;
     right: 0!important;
     position: absolute;
 }
