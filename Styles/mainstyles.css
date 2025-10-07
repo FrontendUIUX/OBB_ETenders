@@ -1783,6 +1783,16 @@ width:80%;}
 }
 }
 @media(min-width:1600px){
+	.editor-cell[name*="phoneNumberContainer"]{
+    display: flex!important;
+    align-items: center!important;
+    border:1px solid var(--borderColor)!important;
+    height: 3vw!important;
+    min-height: 3vw!important;
+    border-radius: .5vw!important;
+    padding: 0!important;
+    margin: 0!important;
+}
 		div#\33 6df741a-b75c-d960-13a5-00b9bebf95cf_6ebe8c5f-fee3-56be-b5a7-58414bd44535_Table {
     border-radius: .5vw;
     padding-left: 1vw;
