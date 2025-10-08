@@ -161,14 +161,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function menuBar() {
 
 
-        if (currentUrl.includes("Dashboard.VendorManagementTeamDashboard.Form/") ||currentUrl.includes("Vendor.WelcomeLetterList.Form")|| currentUrl.includes("VendorRegistrationApproval.Form/") || currentUrl.includes("Vendor.VendorList.Form/") ) {
+        if (currentUrl.includes("Dashboard.VendorManagementTeamDashboard.Form/") || currentUrl.includes("VendorRegistrationReadOnly.Form") || currentUrl.includes("Vendor.WelcomeLetterList.Form")|| currentUrl.includes("VendorRegistrationApproval.Form/") || currentUrl.includes("Vendor.VendorList.Form/") ) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.VendorManagementTeamDashboard.Form/" },
                 //{ text: "Vendor List", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
                 { text: "Vendor List/Welcome Letters", url: "/Runtime/Runtime/Form/Vendor.WelcomeLetterList.Form/" },
             ];
         } 
-        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage/") || currentUrl.includes("Tensders.Awarding.Form")|| currentUrl.includes("VendorBiddingReadOnly.Form") || currentUrl.includes("Vendor.ClarificationsResponseForm") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Tender__RFQCreation.Form/") || currentUrl.includes("Tender__RFQCreationApproval.Form/")) {
+        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage/") ||currentUrl.includes("Tender__RFQCreationReadOnly.Form") || currentUrl.includes("Tensders.Awarding.Form")|| currentUrl.includes("VendorBiddingReadOnly.Form") || currentUrl.includes("Vendor.ClarificationsResponseForm") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Tender__RFQCreation.Form/") || currentUrl.includes("Tender__RFQCreationApproval.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.LandingPage/" },
                 
