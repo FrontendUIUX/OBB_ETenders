@@ -162,25 +162,27 @@ document.addEventListener("DOMContentLoaded", function () {
     function menuBar() {
 
 
-        if (currentUrl.includes("Dashboard.VendorManagementTeamDashboard.Form") || currentUrl.includes("VendorRegistrationReadOnly.Form") || currentUrl.includes("Vendor.WelcomeLetterList.Form")|| currentUrl.includes("VendorRegistrationApproval.Form/") || currentUrl.includes("Vendor.VendorList.Form/") ) {
+        if (currentUrl.includes("Dashboard.VendorManagementTeamDashboard.Form") ||currentUrl.includes("Vendor.VendorList.Form")|| currentUrl.includes("VendorRegistrationReadOnly.Form") || currentUrl.includes("Vendor.WelcomeLetterList.Form")|| currentUrl.includes("VendorRegistrationApproval.Form/") || currentUrl.includes("Vendor.VendorList.Form/") ) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.VendorManagementTeamDashboard.Form/" },
                 //{ text: "Vendor List", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
                 { text: "Vendor List/Welcome Letters", url: "/Runtime/Runtime/Form/Vendor.WelcomeLetterList.Form/" },
+                { text: "All Vendors and Statuses", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
             ];
         } 
-        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage") ||currentUrl.includes("Tender__RFQCreationReadOnly.Form") || currentUrl.includes("Tensders.Awarding.Form")|| currentUrl.includes("VendorBiddingReadOnly.Form") || currentUrl.includes("Vendor.ClarificationsResponseForm") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Tender__RFQCreation.Form/") || currentUrl.includes("Tender__RFQCreationApproval.Form/")) {
+        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage") ||currentUrl.includes("Tenders.BidOpening.Form")||currentUrl.includes("Tender__RFQCreationReadOnly.Form") || currentUrl.includes("Tensders.Awarding.Form")|| currentUrl.includes("VendorBiddingReadOnly.Form") || currentUrl.includes("Vendor.ClarificationsResponseForm") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Tender__RFQCreation.Form/") || currentUrl.includes("Tender__RFQCreationApproval.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.LandingPage/" },
                 
                 { text: "Tenders/RFQs Page", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.ListAllTenders/" },
                 { text: "Pre-Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsResponseForm/" },
+                { text: "RFQ/Tender Openning", url: "/Runtime/Runtime/Form/Tenders.BidOpening.Form/" },
                 { text: "Bids and Post-Clarifications", url: "/Runtime/Runtime/Form/VendorBiddingReadOnly.Form/" },
-                { text: "RFQ/Tender Openning and Awarding", url: "/Runtime/Runtime/Form/Tensders.Awarding.Form/" },
+                { text: "RFQ/Tender Awarding", url: "/Runtime/Runtime/Form/Tensders.Awarding.Form/" },
                 //{ text: "Worklist", url: "#" }
             ];
         }
-        else if (currentUrl.includes("Vendor.ExternalDashboard")||currentUrl.includes("VendorRenewal.Form") ||currentUrl.includes("VendorRegistrationReview.Form") ||currentUrl.includes("VendorBidding.Form") || currentUrl.includes("Vendor.PostSubmissionClarificationsForm") ||currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/") || currentUrl.includes("VendorRegistration.Form/") ) {
+        else if (currentUrl.includes("Vendor.ExternalDashboard")|| currentUrl.includes("VendorUpdateProfile.Form")||currentUrl.includes("VendorRenewal.Form") ||currentUrl.includes("VendorRegistrationReview.Form") ||currentUrl.includes("VendorBidding.Form") || currentUrl.includes("Vendor.PostSubmissionClarificationsForm") ||currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/") || currentUrl.includes("VendorRegistration.Form/") ) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Vendor.ExternalDashboard/" },
                 { text: "Vendor Pre-Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsForm/" },
@@ -204,8 +206,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 
                 { text: "Tenders/RFQs Page", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.ListAllTenders/" },
                 { text: "Pre-Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsResponseForm/" },
+                { text: "RFQ/Tender Openning", url: "/Runtime/Runtime/Form/Tenders.BidOpening.Form/" },
                 { text: "Bids and Post-Clarifications", url: "/Runtime/Runtime/Form/VendorBiddingReadOnly.Form/" },
-                { text: "RFQ/Tender Openning and Awarding", url: "/Runtime/Runtime/Form/Tensders.Awarding.Form/" },
+                { text: "RFQ/Tender Awarding", url: "/Runtime/Runtime/Form/Tensders.Awarding.Form/" },
                 //{ text: "Worklist", url: "#" }
             ];
         }
