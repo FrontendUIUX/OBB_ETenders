@@ -1392,6 +1392,9 @@ input#\30 0000000-0000-0000-0000-000000000000_a3f3415b-f4e2-4bcb-83c5-33e960df71
     padding:0!important;
     text-align:center;
 }
+#toggleSidebarBtn{
+	display:none;
+}
 .worklistToolbarHeaderTextWrapper .headerTxt{
 	font-size:1.5rem;
 	font-family: var(--regularFont);
@@ -1719,7 +1722,14 @@ div#\39 21cbae6-5b02-512c-f2ab-377c4ff39f68_39baf32d-d4d2-aa37-766e-6700557c0a66
     gap: 1rem;
 }
 /*end*/
+/* this is added to center the dashboard tiles - we are using an id because we cannot add a name to the container*/
+div#\34 ff8d86b-5aa1-bb2c-c1ad-3f80fddb4100_52a0baec-b972-48e4-ad3e-321407a43c81_Table {
+    padding: 0 1rem;
+}
 @media(min-width:992px){
+	div#\34 ff8d86b-5aa1-bb2c-c1ad-3f80fddb4100_52a0baec-b972-48e4-ad3e-321407a43c81_Table {
+    padding: 0;
+}
 	html:not(.designer) [name*="OBB_header"]{
 	background-color:#F2F2F6;
 	position: fixed;
