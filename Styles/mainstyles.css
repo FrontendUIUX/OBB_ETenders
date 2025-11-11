@@ -373,7 +373,7 @@ html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"]
 	display:flex;
 	align-items:center;
 	text-align:center;
-	padding:0;
+	padding: 0!important;
 }
 html:not(.designer) .grid-column-header-cell-content[style*="text-align:center"] .grid-column-header-text{
 	font-family:var(--regularFont)!important;
@@ -1184,9 +1184,31 @@ html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
 	background-color: #f6f6f6;
 	border-right: 1px solid rgb(220 220 220 / 80%);
 	cursor: pointer;
+	white-space: nowrap;
+}
+html:not(.designer) .theme-entry .grid table.grid-column-header-table td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: #f6f6f6;
+    height: auto;
+    min-width: 81% !important;
+    white-space: nowrap;
+}
+html:not(.designer) .theme-entry .grid-body-content table td:first-child{
+	position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    height: auto;
+    min-width: 81% !important;
+    white-space: nowrap;
 }
 html:not(.designer) .theme-entry .grid-body-content table td{
 	padding: 0 1rem!important;
+}
+html:not(.designer) .theme-entry .grid-body-content table tbody{
+	overflow-x:auto;
 }
 html:not(.designer) .theme-entry .grid-body-content table td.file-tn-cell{
 	padding:0!important;
