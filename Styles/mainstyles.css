@@ -446,15 +446,13 @@ html:not(.designer) [name*="OBB_header"]{
 	left: 0;
 	width:100%;
 	z-index: 2;
-	height: 10rem;
-	padding: 0 1rem!important;
+	height: 7rem;
+	padding: 1rem;
 	display: flex!important;
 	align-items: center!important;
 	justify-content: space-between;
-	padding-top:1rem!important;
-	padding-bottom:1rem!important;
-	/* height: 7.6rem; */
-	flex-direction: column;
+	padding-left: 6rem!important;
+	flex-direction: row;
 }
 html:not(.designer) [name="Account Picture"]{
 	margin-right:.5rem;
@@ -1722,6 +1720,23 @@ div#\39 21cbae6-5b02-512c-f2ab-377c4ff39f68_39baf32d-d4d2-aa37-766e-6700557c0a66
 }
 /*end*/
 @media(min-width:992px){
+	html:not(.designer) [name*="OBB_header"]{
+	background-color:#F2F2F6;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	z-index: 2;
+	height: 10rem;
+	padding: 0 1rem!important;
+	display: flex!important;
+	align-items: center!important;
+	justify-content: space-between;
+	padding-top:1rem!important;
+	padding-bottom:1rem!important;
+	/* height: 7.6rem; */
+	flex-direction: column;
+}
 	html:not(.designer) .theme-entry span[name*="profilePhoto"]{
 	border:1px solid rgb(220 220 220 / 80%)!important;
 	border-radius:2rem;
