@@ -864,7 +864,11 @@ html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper{
 	background-color: var(--aqua);
 	width: calc(100% - 4rem);
 	height:100%;
+	line-height: unset;
+	min-height: unset;
 }
+[name*="OBB_Collapse"] .grid-header .grid-header-wrapper{
+height:auto!important;}
 html:not(.designer) [name*="OBB_Collapse"] .panel-header .panel-header-c .panel-header-wrapper .panel-header-text,
 html:not(.designer) [name*="OBB_Collapse"] .grid-header  .grid-header-wrapper .grid-header-text{
 	font-size: 1.6rem;
