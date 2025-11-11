@@ -1262,7 +1262,6 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Saved"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to FTTX Desgin Team"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to Pricing Team"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted"],
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Resubmitted"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Rejected"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Open"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title*="Approved"],
@@ -1270,15 +1269,12 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="FTTX Desgin 
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Completed"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting RM Approval"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor"],
-html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Returned"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor Management Team"],
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Procurement Team"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] ,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Higher Management Team"]/* related to etender, do not replace or remove*/,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Procurement Team"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Welcome Letter Upload"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "],
@@ -1286,7 +1282,15 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"],
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"]{
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Floated"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pre Clarification"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Bidding"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Post Clarification"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Awarded"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Not Awarded"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Valid"],
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Bid Opening"]{
 	display:flex;
 	align-items:center;
 	justify-content:center;
@@ -1295,7 +1299,6 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing do
 }
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Saved"] >span.runtime-list-item,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted"] >span.runtime-list-item,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Resubmitted"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to FTTX Desgin Team"] >span.runtime-list-item,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to Pricing Team"] >span.runtime-list-item,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Rejected"] >span.runtime-list-item,
@@ -1305,15 +1308,12 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="FTTX Desgin 
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Completed"] >span.runtime-list-item,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting RM Approval"] >span.runtime-list-item,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor"] >span,
-html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Returned"] > span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Procurement Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor Management Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"] > span, 
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Higher Management Team"] >span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Procurement Team"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Vendor Managament Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"] >span,
@@ -1321,7 +1321,15 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for 
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Engineer"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Welcome Letter Upload"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"] span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "] span{
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "] span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Floated"] span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pre Clarification"] span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Post Clarification"] span
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Bidding"] span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Awarded"] span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Not Awarded"] span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Valid"] span,
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Bid Opening"] span{
 	border-radius:2rem!important;
 	min-height:unset!important;
 	height:unset!important;
@@ -1329,6 +1337,38 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awa
 	padding: 0.6rem 2rem!important;
 	width:fit-content!important;
 	font-size: 8pt;
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Bidding"] span{
+	color:#FFC107;
+	background-color:hwb(45deg 2.75% 0% / 15%)
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Floated"] span{
+	color:#007BFF;
+	background-color:hsl(211.06deg 100% 50% / 15%)
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pre Clarification"] span{
+	color:#17A2B8;
+	background-color#ffffff;
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pre Clarification"] span{
+	color:#6F42C1;
+	background-color:hwb(261.26deg 25.88% 24.31% / 15%);
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Awarded"] span{
+	color:#28A745;
+	background-color:hwb(133.7deg 15.69% 34.51% / 15%);
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Not Awarded"] span{
+	color:#DC3545;
+	background-color:hwb(354.25deg 20.78% 13.73% / 20%);
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Valid"] span{
+	color:#20C997;
+	background-color:#20c9974d;
+}
+html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Bid Opening"] span{
+	color:#0056B3;
+	background-color:hwb(211.17deg 0% 29.8% / 35%);
 }
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Closed"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Draft"] > span,
@@ -1338,7 +1378,6 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Expired"] > 
 }
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Higher Management Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Vendor Managament Team"] >span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending with Procurement Team"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending reviewer"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for E-Sign"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Pending for user to missing data"] >span,
@@ -1357,7 +1396,6 @@ html:not(.designer) .grid-content-cell-wrapper{
 	width: 100%!important;
 }
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted"] >span.runtime-list-item,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Resubmitted"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to FTTX Desgin Team"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Submitted to Pricing Team"] > span{
 	background-color:#ECEEF8;
@@ -1376,9 +1414,7 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Docu
 	background-color:#FFF5E5!important;
 	padding: 0.6rem 1.2rem!important;
 }
-html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Returned"] > span,
 html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Returned to Vendor"] >span,
-html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Procurement Team"]>span,
 html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Returned to Vendor Management Team"] >span,
 html:not(.designer)  [name*="OBB_statusContainer"] span[title="Returned to Vendor"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"] span{
