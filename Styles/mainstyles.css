@@ -1755,6 +1755,10 @@ div#\34 ff8d86b-5aa1-bb2c-c1ad-3f80fddb4100_52a0baec-b972-48e4-ad3e-321407a43c81
 div#\39 21cbae6-5b02-512c-f2ab-377c4ff39f68_835b8031-a79e-4133-64b5-e8bef1ecda29 {
     margin-right: .5rem;
 }
+
+input#\39 21cbae6-5b02-512c-f2ab-377c4ff39f68_1da35a78-5420-8802-5fea-699350467d97 {
+    width: 79%!important;
+}
 @media(min-width:992px){
 	div#\34 ff8d86b-5aa1-bb2c-c1ad-3f80fddb4100_52a0baec-b972-48e4-ad3e-321407a43c81_Table {
     padding: 0;
