@@ -1,18 +1,48 @@
 document.addEventListener("DOMContentLoaded", function () {
     const urlPath = window.location.pathname;
+    const fullUrl = window.location.href.toLowerCase();
 
-    if (urlPath !== "/Public/Public/Form.aspx") {
-        // Ensure jQuery is available
-        if (typeof jQuery === "undefined") {
-            console.error("jQuery is required for this script.");
-            return;
+    // Adjust form layout on specific page
+    if (urlPath === '/Public/Runtime/Form.aspx') {
+        const form = document.querySelector('.theme-entry .runtime-form');
+        if (form) {
+            form.style.width = '100%';
+            form.style.marginLeft = '0';
         }
-        $('body').addClass("sidebarAvailable").append(sidebar);
     }
-});
-document.addEventListener("DOMContentLoaded", initSidebarToggle);
-window.addEventListener("resize", initSidebarToggle);
 
+    // Exit early on specific runtime page
+    if (urlPath === "/Runtime/Runtime/Form.aspx") return;
+
+    // Ensure jQuery is available
+    if (typeof jQuery === "undefined") {
+        console.error("jQuery is required for this script.");
+        return;
+    }
+
+    const isArabic = fullUrl.includes("publicar");
+
+    // Create sidebar container
+    const sidebar = $('<div id="sidebar" class="sidebar"></div>');
+
+    // Logo section
+    const logoContainer = $('<div class="navbarBrand"><a href="#" target="_blank"><img src="https://frontenduiux.github.io/OBB_Services/Images/OBBLogo.png" alt="Oman Broad Band"></a></div>');
+    sidebar.append(logoContainer);
+
+    // Sidebar title
+    sidebar.append(`<div class="sidebar-section topic">${isArabic ? "القائمة" : "MENU"}</div>`);
+
+    // Add sidebar to body if not on the excluded path
+    if (urlPath !== "/Public/Public/Form.aspx") {
+        $('body').addClass("sidebarAvailable sidebarVisible").append(sidebar);
+    }
+
+    // Initialize sidebar functionality
+    initSidebarContent();
+    initSidebarToggle();
+});
+
+// Sidebar toggle functionality
 function initSidebarToggle() {
     const sidebar = document.querySelector(".sidebar");
     const existingBtn = document.getElementById("toggleSidebarBtn");
@@ -39,6 +69,7 @@ function initSidebarToggle() {
         toggleButton.style.position = "fixed";
         toggleButton.style.top = "10px";
         toggleButton.style.left = "10px";
+        toggleButton.style.background = "transparent";
 
         document.body.appendChild(toggleButton);
 
@@ -49,46 +80,9 @@ function initSidebarToggle() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const urlPath = window.location.pathname;
-    const fullUrl = window.location.href.toLowerCase();
-
-    // Adjust form layout on specific page
-    if (urlPath === '/Public/Runtime/Form.aspx') {
-        const form = document.querySelector('.theme-entry .runtime-form');
-        if (form) {
-            form.style.width = '100%';
-            form.style.marginLeft = '0';
-        }
-    }
-
-    // Exit early on specific runtime page
-    if (urlPath === "/Runtime/Runtime/Form.aspx") return;
-
-    // Ensure jQuery is loaded
-    if (typeof jQuery === "undefined") {
-        console.error("jQuery is required for this script.");
-        return;
-    }
-
-    const isArabic = fullUrl.includes("publicar");
-
-    // Sidebar container
-    const sidebar = $('<div id="sidebar" class="sidebar"></div>');
-
-    // Logo section (empty href and src as placeholders)
-    const logoContainer = $('<div class="navbarBrand"><a target="_blank"><img src="https://frontenduiux.github.io/OBB_Services/Images/OBBLogo.png" alt="Oman Broad Band"></a></div>');
-    const logoLink = $('<a href="#"></a>');
-    logoContainer.append(logoLink);
-    sidebar.append(logoContainer);
-
-    // Sidebar title
-    sidebar.append(`<div class="sidebar-section topic">${isArabic ? "القائمة" : "MENU"}</div>`);
-
-    var fqn = null;
-    // Menu items
-
-    let menuItems;
+// Initialize sidebar content
+function initSidebarContent() {
+    let fqn = null;
     const currentUrl = window.location.href;
 
     $(document).ready(function () {
@@ -96,32 +90,42 @@ document.addEventListener("DOMContentLoaded", function () {
             try {
                 fqn = SourceCode.Forms.Settings.User.FQN;
                 console.log("Logged-in User FQN:" + fqn);
-                
                 menuBar();
-
             } catch (e) {
                 console.error("Error retrieving FQN:", e);
             }
         }, 1000);
     });
 
-
-
-
     function menuBar() {
+        const sidebar = $('#sidebar');
+        let menuItems = [];
 
-
-        if (currentUrl.includes("Dashboard.VendorManagementTeamDashboard.Form") ||currentUrl.includes("Vendor.VendorList.Form")|| currentUrl.includes("VendorRegistrationReadOnly.Form") || currentUrl.includes("Vendor.WelcomeLetterList.Form")|| currentUrl.includes("VendorRegistrationApproval.Form/") || currentUrl.includes("Vendor.VendorList.Form/") ) {
+        if (currentUrl.includes("Dashboard.VendorManagementTeamDashboard.Form") || 
+            currentUrl.includes("Vendor.VendorList.Form") || 
+            currentUrl.includes("VendorRegistrationReadOnly.Form") || 
+            currentUrl.includes("Vendor.WelcomeLetterList.Form") || 
+            currentUrl.includes("VendorRegistrationApproval.Form/") || 
+            currentUrl.includes("Vendor.VendorList.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.VendorManagementTeamDashboard.Form/" },
                 { text: "Vendor List/Welcome Letters", url: "/Runtime/Runtime/Form/Vendor.WelcomeLetterList.Form/" },
                 { text: "All Vendors and Statuses", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
             ];
         } 
-        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage") ||currentUrl.includes("Tenders.BidOpening.Form")||currentUrl.includes("Tender__RFQCreationReadOnly.Form") || currentUrl.includes("Tensders.Awarding.Form")|| currentUrl.includes("VendorBiddingReadOnly.Form") || currentUrl.includes("Vendor.ClarificationsResponseForm") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/") || currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || currentUrl.includes("Tender__RFQCreation.Form/") || currentUrl.includes("Tender__RFQCreationApproval.Form/")) {
+        else if (currentUrl.includes("Dashboard.ProcurementTeamDashboard.LandingPage") ||
+                 currentUrl.includes("Tenders.BidOpening.Form") ||
+                 currentUrl.includes("Tender__RFQCreationReadOnly.Form") || 
+                 currentUrl.includes("Tensders.Awarding.Form") || 
+                 currentUrl.includes("VendorBiddingReadOnly.Form") || 
+                 currentUrl.includes("Vendor.ClarificationsResponseForm") || 
+                 currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || 
+                 currentUrl.includes("Dashboard.ProcurementTeamDashboard.Form/") || 
+                 currentUrl.includes("Dashboard.ProcurementTeamDashboard.ListAllTenders/") || 
+                 currentUrl.includes("Tender__RFQCreation.Form/") || 
+                 currentUrl.includes("Tender__RFQCreationApproval.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.LandingPage/" },
-                
                 { text: "Tenders/RFQs Page", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.ListAllTenders/" },
                 { text: "Pre-Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsResponseForm/" },
                 { text: "RFQ/Tender Openning", url: "/Runtime/Runtime/Form/Tenders.BidOpening.Form/" },
@@ -129,26 +133,31 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "RFQ/Tender Awarding", url: "/Runtime/Runtime/Form/Tensders.Awarding.Form/" },
             ];
         }
-        else if (currentUrl.includes("Vendor.ExternalDashboard")|| currentUrl.includes("VendorUpdateProfile.Form")||currentUrl.includes("VendorRenewal.Form") ||currentUrl.includes("VendorRegistrationReview.Form") ||currentUrl.includes("VendorBidding.Form") || currentUrl.includes("Vendor.PostSubmissionClarificationsForm") ||currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/") || currentUrl.includes("VendorRegistration.Form/") ) {
+        else if (currentUrl.includes("Vendor.ExternalDashboard") || 
+                 currentUrl.includes("VendorUpdateProfile.Form") ||
+                 currentUrl.includes("VendorRenewal.Form") || 
+                 currentUrl.includes("VendorRegistrationReview.Form") || 
+                 currentUrl.includes("VendorBidding.Form") || 
+                 currentUrl.includes("Vendor.PostSubmissionClarificationsForm") ||
+                 currentUrl.includes("Vendor.ClarificationsForm/") || 
+                 currentUrl.includes("ExternalHub.Form/") || 
+                 currentUrl.includes("VendorRegistration.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Vendor.ExternalDashboard/" },
                 { text: "Vendor Pre-Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsForm/" },
                 { text: "Vendor Post-Clarifications", url: "/Runtime/Runtime/Form/Vendor.PostSubmissionClarificationsForm/" },
                 { text: "Bidding", url: "/Runtime/Runtime/Form/VendorBidding.Form/" },
-                
             ];
         }
-        else if(currentUrl.includes("InternalHub.Form/") || currentUrl.includes("SubmittedTenders.Form/")){
+        else if (currentUrl.includes("InternalHub.Form/") || currentUrl.includes("SubmittedTenders.Form/")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/InternalHub.Form/" },
                 { text: "Submitted Tenders", url: "/Runtime/Runtime/Form/SubmittedTenders.Form/" },
             ];
         }
-
-        else if (currentUrl.includes("Tender__RFQCreationReview.Form") && fqn.includes("OBC\\")){
+        else if (currentUrl.includes("Tender__RFQCreationReview.Form") && fqn && fqn.includes("OBC\\")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.LandingPage/" },
-                
                 { text: "Tenders/RFQs Page", url: "/Runtime/Runtime/Form/Dashboard.ProcurementTeamDashboard.ListAllTenders/" },
                 { text: "Pre-Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsResponseForm/" },
                 { text: "RFQ/Tender Openning", url: "/Runtime/Runtime/Form/Tenders.BidOpening.Form/" },
@@ -156,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "RFQ/Tender Awarding", url: "/Runtime/Runtime/Form/Tensders.Awarding.Form/" },
             ];
         }
-        else if (currentUrl.includes("Tender__RFQCreationReview.Form") && !fqn.includes("OBC\\")){
+        else if (currentUrl.includes("Tender__RFQCreationReview.Form") && fqn && !fqn.includes("OBC\\")) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Vendor.ExternalDashboard/" },
                 { text: "Vendor Pre-Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsForm/" },
@@ -165,11 +174,11 @@ document.addEventListener("DOMContentLoaded", function () {
             ];
         }        
         else {
-            menuItems = [
-            ];
+            menuItems = [];
         }
+
         // Build menu
-        if (menuItems) {
+        if (menuItems && menuItems.length > 0) {
             menuItems.forEach(item => {
                 const hasChildren = Array.isArray(item.children) && item.children.length > 0;
 
@@ -206,22 +215,15 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
 
-        // Add sidebar to body
-        $('body').append(sidebar);
-        $('body').addClass('sidebarVisible');
         $(window).on("load", function () {
             if ($(".tab-box-tabs").length) {
                 $('body').addClass('topbarExists');
             }
+        });
+    }
+}
 
-        })
-    };
-    
-});
-
-
-
-//
+// Grid content observation and grayscale fixes
 const targets = document.querySelectorAll('.grid-body-content table.grid-content-table tbody');
 if (targets.length > 0) {
     targets.forEach((target) => {
@@ -235,19 +237,16 @@ if (targets.length > 0) {
         observer.observe(target, { childList: true, subtree: true });
     });
 }
+
 function applyGrayscaleFix() {
     $('.grid-body-content table.grid-content-table tbody tr').each(function (index) {
         const $row = $(this);
 
-
-
         if (index === 0) {
             const lastTd = $row.find('td').last();
             const lastIcon = lastTd.find('i[id^="ID1_"]');
-            if (lastIcon.length === 0) return; // Skip processing if not matching
+            if (lastIcon.length === 0) return;
         }
-
-
 
         const tds = $row.find('td');
         const fileTypeTd = tds.eq(2);
@@ -267,19 +266,16 @@ function applyGrayscaleFix() {
         }
     });
 }
+
 function applyGrayscaleFix2() {
     $('.grid-body-content table.grid-content-table tbody tr').each(function (index) {
         const $row = $(this);
 
-
-
         if (index === 0) {
             const lastTd = $row.find('td').last();
             const lastIcon = lastTd.find('i[id^="ActionID2_"]');
-            if (lastIcon.length === 0) return; // Skip processing if not matching
+            if (lastIcon.length === 0) return;
         }
-
-
 
         const tds = $row.find('td');
         const fileTypeTd = tds.eq(2);
@@ -299,19 +295,16 @@ function applyGrayscaleFix2() {
         }
     });
 }
+
 function applyGrayscaleFix3() {
     $('.grid-body-content table.grid-content-table tbody tr').each(function (index) {
         const $row = $(this);
 
-
-
-
         if (index === 0) {
             const lastTd = $row.find('td').last();
             const lastIcon = lastTd.find('i[id^="IDAction_"]');
-            if (lastIcon.length === 0) return; // Skip processing if not matching
+            if (lastIcon.length === 0) return;
         }
-
 
         const tds = $row.find('td');
         const fileTypeTd = tds.eq(2);
@@ -331,19 +324,16 @@ function applyGrayscaleFix3() {
         }
     });
 }
+
 function applyGrayscaleFix4() {
     $('.grid-body-content table.grid-content-table tbody tr').each(function (index) {
         const $row = $(this);
 
-
-
-
         if (index === 0) {
             const lastTd = $row.find('td').last();
             const lastIcon = lastTd.find('i[id^="ActionID6_"]');
-            if (lastIcon.length === 0) return; // Skip processing if not matching
+            if (lastIcon.length === 0) return;
         }
-
 
         const tds = $row.find('td');
         const fileTypeTd = tds.eq(2);
@@ -355,7 +345,6 @@ function applyGrayscaleFix4() {
             const fileType = (parsed.value || "").toLowerCase();
 
             if (fileType === '325') {
-
                 const img = $row.find('i[id^="ActionID6_"] > img');
                 img.attr('style', 'filter: grayscale(1) !important; width: 20px; height: 20px; cursor: pointer;');
             }
@@ -364,9 +353,9 @@ function applyGrayscaleFix4() {
         }
     });
 }
-// POC 
+
+// POC - Make certain elements non-clickable based on status
 document.addEventListener('DOMContentLoaded', function () {
-    // Loop through all td elements with data-options attribute
     document.querySelectorAll('td[data-options]').forEach(function (td) {
         let dataOptions = td.getAttribute('data-options');
 
@@ -375,10 +364,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let value = options.value;
 
             if (value === "Rejected" || value === "Approved") {
-                // Get the <tr> (row) this <td> belongs to
                 let row = td.parentElement;
-
-                // Find sibling <td> that has <i> with GetAction1 in onclick
                 let targetTd = Array.from(row.children).find(cell => {
                     let iTag = cell.querySelector('i[onclick*="GetAction1"]');
                     return iTag !== null;
@@ -396,37 +382,39 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-$(document).ready(function () {
-    let fqn = null; // declare properly
 
-    // Try to get user FQN
+// Navbar brand click handler
+$(document).ready(function () {
+    let fqn = null;
+
     setTimeout(function () {
         try {
             fqn = SourceCode.Forms.Settings.User.FQN || null;
             console.log("Logged-in User FQN:", fqn);
-            //menuBar();
         } catch (e) {
             console.error("Error retrieving FQN:", e);
         }
     }, 1000);
 
-    // Handle navbar click
     $(document).on("click", ".navbarBrand a", function (e) {
-        e.preventDefault(); // stop default link behavior
+        e.preventDefault();
 
         if (fqn) {
-            if (fqn.toLowerCase().includes("OBC".toLowerCase())){
-                 console.log("Internal User");
+            if (fqn.toLowerCase().includes("OBC".toLowerCase())) {
+                console.log("Internal User");
                 window.location.href = "/Runtime/Runtime/Form/OBBHub.Form/";
-
+            } else {
+                console.log("External User");
+                window.location.href = "/Runtime/Runtime/Form/OBBHubExternal.Form/";
             }
-           else {
-            console.log("External User");
-            window.location.href = "/Runtime/Runtime/Form/OBBHubExternal.Form/";
         }
-        } 
     });
 });
+
+// Hide calendar popup on scroll
 $(window).on("scroll", function () {
-  $(".id-calendar-control-popup").hide();
+    $(".id-calendar-control-popup").hide();
 });
+
+// Re-initialize toggle on resize
+window.addEventListener("resize", initSidebarToggle);
