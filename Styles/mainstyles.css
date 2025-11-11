@@ -1269,6 +1269,7 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="FTTX Desgin 
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Completed"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting RM Approval"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor"],
+html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Returned"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor Management Team"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Procurement Team"],
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"],
@@ -1302,6 +1303,7 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="FTTX Desgin 
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Completed"] >span.runtime-list-item,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting RM Approval"] >span.runtime-list-item,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor"] >span,
+html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Returned"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Procurement Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Vendor Management Team"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Document Signature"] > span,
@@ -1371,6 +1373,7 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Waiting Docu
 	background-color:#FFF5E5!important;
 	padding: 0.6rem 1.2rem!important;
 }
+html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Returned"] > span,
 html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Returned to Vendor"] >span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Returned to Procurement Team"]>span,
 html:not(.designer) .theme-entry .grid-content-cell-wrapper[title="Returned to Vendor Management Team"] >span,
