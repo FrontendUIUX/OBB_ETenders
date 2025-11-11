@@ -7,99 +7,48 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("jQuery is required for this script.");
             return;
         }
-
-        // Function to create menu items
-        // function createMenuItems(menuItems) {
-        //     menuItems.forEach(item => {
-        //         const link = $('<a>').attr('href', item.url).addClass('nav-link');
-
-        //         // Determine Active State
-        //         if (window.location.href.includes(item.url)) {
-        //             link.addClass('active');
-        //         }
-
-        //         // Append Icon and Text
-        //         const iconElement = $('<img>').attr('src', `${item.icon}`).addClass('icon');
-        //         link.append(iconElement).append($('<span class="nav-link-text">').text(item.text));
-        //         sidebar.append(link);
-        //     });
-        // }
-
-        // Create Sidebar Container
-        // const sidebar = $('<aside class="sidebar"></aside>');
-
-        // // Add Logo Section
-        // const logoContainer = $('<div class="navbarBrand"></div>');
-        // const logoLink = $('<a>', { target: '_blank' });
-        // const logoImage = $('<img>', {
-        //     src: 'https://frontenduiux.github.io/OBB_ETenders/Images/OBBLogo.png',
-        //     alt: 'Oman Broad Band',
-        // });
-        // // Append the logo image to the link, then append to the logo container and sidebar
-        // logoLink.append(logoImage);
-        // logoContainer.append(logoLink);
-        // sidebar.append(logoContainer);
-
-        // // Sidebar Menu Sections
-        // sidebar.append(`<div class="topic">Menu</div>`);
-
-        // // Define English and Arabic menu items
-        // const englishMenuItems = [
-        //     { text: "Dashboard", url: "#", icon: "https://frontenduiux.github.io/OBB_ETenders/Images/menu.png" },
-        //     { text: "Submitted Tenders", url: "#", icon: "https://frontenduiux.github.io/OBB_ETenders/Images/submitted%20tasks.png" },
-        // ];
-
-
-        // // Select menu items based on language
-        // const menuItems = englishMenuItems;
-
-        // // Create menu items
-        // createMenuItems(menuItems);
-
-        // Append Sidebar to the Body
         $('body').addClass("sidebarAvailable").append(sidebar);
     }
 });
-// $(window).on("load", function () {
-//     if ($(".tab-box-tabs").length) {
-//         $('body').addClass('topbarExists');
-//     }
-// });
+document.addEventListener("DOMContentLoaded", initSidebarToggle);
+window.addEventListener("resize", initSidebarToggle);
 
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
+function initSidebarToggle() {
     const sidebar = document.querySelector(".sidebar");
+    const existingBtn = document.getElementById("toggleSidebarBtn");
 
-    // Only add button for screens < 992px
-    if (window.innerWidth < 992 && sidebar) {
-        console.log("mobile view");
-        const toggleButton = document.createElement('button');
-        toggleButton.id = 'toggleSidebarBtn';
+    // If mobile and button doesn't exist → create it
+    if (window.innerWidth < 992 && sidebar && !existingBtn) {
+        console.log("📱 Mobile detected — adding toggle button");
+
+        const toggleButton = document.createElement("button");
+        toggleButton.id = "toggleSidebarBtn";
         toggleButton.innerHTML = `
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
-          fill="#ffffff"></path>
-      </svg>
-    `;
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.8 10.8031H1.2C0.5376 10.8031 0 11.3407 0 12.0031C0 12.6667 0.5376 13.2031 1.2 13.2031H22.8C23.4624 13.2031 24 12.6667 24 12.0031C24 11.3407 23.4624 10.8031 22.8 10.8031ZM22.8 20.4031H1.2C0.5376 20.4031 0 20.9407 0 21.6031C0 22.2667 0.5376 22.8031 1.2 22.8031H22.8C23.4624 22.8031 24 22.2667 24 21.6031C24 20.9407 23.4624 20.4031 22.8 20.4031ZM1.2 3.60312H22.8C23.4624 3.60312 24 3.06672 24 2.40312C24 1.74072 23.4624 1.20312 22.8 1.20312H1.2C0.5376 1.20312 0 1.74072 0 2.40312C0 3.06672 0.5376 3.60312 1.2 3.60312Z"
+                    fill="#616162"/>
+            </svg>
+        `;
 
-        // Optional styling
         toggleButton.style.border = "none";
         toggleButton.style.padding = "8px";
         toggleButton.style.margin = "10px";
         toggleButton.style.cursor = "pointer";
         toggleButton.style.zIndex = "1000";
+        toggleButton.style.position = "fixed";
+        toggleButton.style.top = "10px";
+        toggleButton.style.left = "10px";
 
-        document.body.appendChild(toggleButton); // or document.body.insertBefore(toggleButton, sidebar);
+        document.body.appendChild(toggleButton);
 
-        toggleButton.addEventListener('click', () => {
-            sidebar.classList.toggle('visible');
-            document.body.classList.toggle('collapseSidebar');
+        toggleButton.addEventListener("click", () => {
+            sidebar.classList.toggle("visible");
+            document.body.classList.toggle("collapseSidebar");
         });
     }
-});
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const urlPath = window.location.pathname;
     const fullUrl = window.location.href.toLowerCase();
@@ -165,7 +114,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentUrl.includes("Dashboard.VendorManagementTeamDashboard.Form") ||currentUrl.includes("Vendor.VendorList.Form")|| currentUrl.includes("VendorRegistrationReadOnly.Form") || currentUrl.includes("Vendor.WelcomeLetterList.Form")|| currentUrl.includes("VendorRegistrationApproval.Form/") || currentUrl.includes("Vendor.VendorList.Form/") ) {
             menuItems = [
                 { text: "Home", url: "/Runtime/Runtime/Form/Dashboard.VendorManagementTeamDashboard.Form/" },
-                //{ text: "Vendor List", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
                 { text: "Vendor List/Welcome Letters", url: "/Runtime/Runtime/Form/Vendor.WelcomeLetterList.Form/" },
                 { text: "All Vendors and Statuses", url: "/Runtime/Runtime/Form/Vendor.VendorList.Form/" },
             ];
@@ -179,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "RFQ/Tender Openning", url: "/Runtime/Runtime/Form/Tenders.BidOpening.Form/" },
                 { text: "Bids and Post-Clarifications", url: "/Runtime/Runtime/Form/VendorBiddingReadOnly.Form/" },
                 { text: "RFQ/Tender Awarding", url: "/Runtime/Runtime/Form/Tensders.Awarding.Form/" },
-                //{ text: "Worklist", url: "#" }
             ];
         }
         else if (currentUrl.includes("Vendor.ExternalDashboard")|| currentUrl.includes("VendorUpdateProfile.Form")||currentUrl.includes("VendorRenewal.Form") ||currentUrl.includes("VendorRegistrationReview.Form") ||currentUrl.includes("VendorBidding.Form") || currentUrl.includes("Vendor.PostSubmissionClarificationsForm") ||currentUrl.includes("Vendor.ClarificationsForm/") || currentUrl.includes("ExternalHub.Form/") || currentUrl.includes("VendorRegistration.Form/") ) {
@@ -188,8 +135,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "Vendor Pre-Clarifications", url: "/Runtime/Runtime/Form/Vendor.ClarificationsForm/" },
                 { text: "Vendor Post-Clarifications", url: "/Runtime/Runtime/Form/Vendor.PostSubmissionClarificationsForm/" },
                 { text: "Bidding", url: "/Runtime/Runtime/Form/VendorBidding.Form/" },
-                
-                //{ text: "Worklist", url: "/Runtime/Runtime/Form/ExternalHub.Form/" }
                 
             ];
         }
@@ -209,7 +154,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "RFQ/Tender Openning", url: "/Runtime/Runtime/Form/Tenders.BidOpening.Form/" },
                 { text: "Bids and Post-Clarifications", url: "/Runtime/Runtime/Form/VendorBiddingReadOnly.Form/" },
                 { text: "RFQ/Tender Awarding", url: "/Runtime/Runtime/Form/Tensders.Awarding.Form/" },
-                //{ text: "Worklist", url: "#" }
             ];
         }
         else if (currentUrl.includes("Tender__RFQCreationReview.Form") && !fqn.includes("OBC\\")){
