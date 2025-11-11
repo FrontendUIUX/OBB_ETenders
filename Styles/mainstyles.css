@@ -1845,6 +1845,9 @@ width:80%;}
 }
 }
 @media(min-width:1600px){
+	[name*="AttachmentListsNonSMEData Label1"] strong {
+    font-size: 1.1vw !important;
+}
 div#\39 21cbae6-5b02-512c-f2ab-377c4ff39f68_835b8031-a79e-4133-64b5-e8bef1ecda29 .styling-font {
     padding: 0;
 }
