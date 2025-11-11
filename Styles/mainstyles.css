@@ -1187,22 +1187,22 @@ html:not(.designer) .theme-entry .grid table.grid-column-header-table td{
 	white-space: nowrap;
 }
 html:not(.designer) .theme-entry .grid table.grid-column-header-table td:first-child {
-    position: sticky;
+    /* position: sticky;
     left: 0;
     z-index: 1;
     background-color: #f6f6f6;
     height: auto;
     min-width: 81% !important;
-    white-space: nowrap;
+    white-space: nowrap; */
 }
 html:not(.designer) .theme-entry .grid-body-content table td:first-child{
-	position: sticky;
+	/* position: sticky;
     left: 0;
     z-index: 1;
     background-color: #ffffff;
     height: auto;
     min-width: 81% !important;
-    white-space: nowrap;
+    white-space: nowrap; */
 }
 html:not(.designer) .theme-entry .grid-body-content table td{
 	padding: 0 1rem!important;
