@@ -1314,7 +1314,7 @@ html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awa
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Welcome Letter Upload"] > span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Preparing document"] span,
 html:not(.designer) .theme-entry  .grid-content-cell-wrapper[title="Approval Awaiting from NOC Lead "] span{
-	border-radius:2rem;
+	border-radius:2rem!important;
 	min-height:unset!important;
 	height:unset!important;
 	line-height:unset!important;
