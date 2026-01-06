@@ -141,7 +141,9 @@ function initSidebarContent() {
                  currentUrl.includes("Vendor.PostSubmissionClarificationsForm") ||
                  currentUrl.includes("Vendor.ClarificationsForm/") || 
                  currentUrl.includes("ExternalHub.Form/") || 
-                 currentUrl.includes("VendorRegistration.Form/")) {
+                 currentUrl.includes("VendorRegistration.Form/") ||
+                 currentUrl.includes("VendorRenewalProfile.Form"))
+                  {
             menuItems = [
                 { text: "Home", url: "/eservices/Runtime/Form/Vendor.ExternalDashboard/" },
                 { text: "Vendor Pre-Clarifications", url: "/eservices/Runtime/Form/Vendor.ClarificationsForm/" },
