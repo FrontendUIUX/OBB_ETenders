@@ -10,7 +10,8 @@
     --transition:all .3s ease-in-out;
 }
 .theme-entry .input-control.select-box.picker-input[data-maxrows="1"] div.editable-area{
-	overflow: auto!important;
+	overflow-x: auto!important;
+	height: 3.5rem!important;
 }
 html:not(.designer) .theme-entry .message-box-content.warning:before{
 	background-image: url("https://frontenduiux.github.io/OBB_Services/Images/Warning.svg");
